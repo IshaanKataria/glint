@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cluely.com
+
+# Sitemaps
+Sitemap: https://cluely.com/sitemap.xml

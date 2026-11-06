@@ -1,0 +1,361 @@
+{
+  "pages": [
+    {
+      "path": "/investment-disclaimer",
+      "status": 200,
+      "final": "https://cluely.com/investment-disclaimer",
+      "bytes": 98919,
+      "title": "Investment Solicitation Disclaimer | Cluely",
+      "desc": "Applies to: All social media accounts operated by Cluely, Inc, inclusive of cofounders, executives, and employees with the branded Cluely badge.  Key Disclaimer",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200,
+      "final": "https://cluely.com/privacy-policy",
+      "bytes": 166065,
+      "title": "Privacy Policy | Cluely",
+      "desc": "Your privacy is important to us. This Privacy Policy (\"Policy\") applies to services provided by Cluely, Inc. (\"we\", \"us\", or \"Cluely\") and our website (the \"Sit",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/terms/cancellation-policy",
+      "status": 200,
+      "final": "https://cluely.com/terms/cancellation-policy",
+      "bytes": 95940,
+      "title": "Cancellation Policy | Cluely",
+      "desc": "You may cancel your Cluely subscription at any time through your account settings.  Monthly Subscriptions If you cancel a monthly subscription, the cancellation",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/affiliate",
+      "status": 200,
+      "final": "https://cluely.com/affiliate",
+      "bytes": 51371,
+      "title": "",
+      "desc": "",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/terms/refund-policy",
+      "status": 200,
+      "final": "https://cluely.com/terms/refund-policy",
+      "bytes": 93864,
+      "title": "Refund Policy | Cluely",
+      "desc": "We offer a 24-hour refund policy for our software subscription ONLY in the condition that you are able to show video evidence that it is not working on your com",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/start",
+      "status": 200,
+      "final": "https://cluely.com/start",
+      "bytes": 36992,
+      "title": "Get started | Cluely",
+      "desc": "",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "final": "https://cluely.com/blog",
+      "bytes": 134317,
+      "title": "Blog | Cluely",
+      "desc": "Read our blog for the latest news and insights on Cluely.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/download",
+      "status": 200,
+      "final": "https://cluely.com/download",
+      "bytes": 93214,
+      "title": "Download Cluely for Mac & Windows | Free AI Meeting Assistant",
+      "desc": "Download Cluely free for macOS and Windows. Get live meeting notes, real-time transcription, and instant AI answers during every call \u2014 set up in under a minute",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/ai-notetaker-guide",
+      "status": 200,
+      "final": "https://cluely.com/blog/ai-notetaker-guide",
+      "bytes": 138310,
+      "title": "AI Notetaker That Helps During the Call | Cluely",
+      "desc": "Most AI notetakers hand you a transcript after the meeting. Cluely takes notes automatically and suggests answers while you're still in the conversation \u2014 with ",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/cluely-vs-granola",
+      "status": 200,
+      "final": "https://cluely.com/blog/cluely-vs-granola",
+      "bytes": 156773,
+      "title": "Cluely vs Granola (2026) \u2014 Live AI Help vs AI Notepad",
+      "desc": "Granola is an AI notepad that polishes your notes after the meeting. Cluely answers questions while you're still in it \u2014 with screen context and no bot. Full co",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/cluely-vs-otter",
+      "status": 200,
+      "final": "https://cluely.com/blog/cluely-vs-otter",
+      "bytes": 165883,
+      "title": "Cluely vs Otter.ai (2026) \u2014 Live AI Help vs Meeting Bot",
+      "desc": "Otter's bot joins your meeting and transcribes it. Cluely captures audio on-device and gives you answers while you're still on the call. Full comparison: featur",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/meeting-bots-surveillance",
+      "status": 200,
+      "final": "https://cluely.com/blog/meeting-bots-surveillance",
+      "bytes": 123966,
+      "title": "Why Meeting Bots Feel Like Surveillance",
+      "desc": "The difference between a tool that helps and a tool that spies is often just how it shows up. A bot with a name and camera slot feels like a stranger entering t",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/otter-ai-alternatives",
+      "status": 200,
+      "final": "https://cluely.com/blog/otter-ai-alternatives",
+      "bytes": 140893,
+      "title": "Best Otter.ai Alternatives (2026): Cluely, Granola & More",
+      "desc": "Looking for an Otter.ai alternative without the meeting bot, minute caps, or after-the-fact transcripts? Honest 2026 comparison of Cluely, Granola, Fathom, and ",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/people-search-live",
+      "status": 200,
+      "final": "https://cluely.com/blog/people-search-live",
+      "bytes": 123871,
+      "title": "People Search & Memory: AI Meeting Prep Before Every Call | Cluely",
+      "desc": "Cluely preps you before every call \u2014 pulling attendees from your calendar, running deep people search, and surfacing your past conversations in one snapshot.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/blog/virality",
+      "status": 200,
+      "final": "https://cluely.com/blog/virality",
+      "bytes": 140596,
+      "title": "The Cluely Thesis on Virality and Hype, by Roy Lee",
+      "desc": "150k followers and hundreds of millions of views in six months. Roy Lee's complete thesis on virality, hype cycles, and growing companies through attention.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/careers",
+      "status": 200,
+      "final": "https://cluely.com/careers",
+      "bytes": 105631,
+      "title": "Careers | Cluely",
+      "desc": "Join Cluely to build to new interaction layer of artificial intelligence. Cluely is a live meeting notetaker and AI that helps people win during calls \u2014 from st",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/manifesto",
+      "status": 200,
+      "final": "https://cluely.com/manifesto",
+      "bytes": 88326,
+      "title": "Manifesto | Cluely",
+      "desc": "Why we built Cluely \u2014 our stance on \"cheating on everything\" and the principles guiding our meeting AI to help you win in meetings, sales, and beyond.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "final": "https://cluely.com/terms",
+      "bytes": 193560,
+      "title": "Terms of Service | Cluely",
+      "desc": "This Customer Terms of Service is entered into by and between Cluely, Inc. (\"Cluely\") and the entity or person placing an order for or accessing any Services (\"",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "final": "https://cluely.com/",
+      "bytes": 229572,
+      "title": "Cluely | Undetectable AI Notetaker & Meeting Assistant",
+      "desc": "Undetectable AI notetaker and meeting assistant with live notes and instant answers during calls. Unlike Otter or Granola, Cluely helps you during meetings, not",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "final": "https://cluely.com/pricing",
+      "bytes": 127797,
+      "title": "Cluely Pricing \u2014 Free Plan & Pro from $11.99/mo",
+      "desc": "Start free with Cluely's AI meeting assistant. Upgrade to Pro for unlimited meetings, unlimited AI responses, and real-time help on every call \u2014 from $11.99/mo ",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/undetectability",
+      "status": 200,
+      "final": "https://cluely.com/undetectability",
+      "bytes": 119964,
+      "title": "Test Undetectability - Cluely",
+      "desc": "Test browser undetectability with our interactive browser events logger. See how Cluely remains truly undetectable.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/press",
+      "status": 200,
+      "final": "https://cluely.com/press",
+      "bytes": 125474,
+      "title": "Press | Cluely",
+      "desc": "News, articles, and interviews about Cluely. Browse press coverage, company facts, approved logos, media assets, and our press contact.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/mobile",
+      "status": 200,
+      "final": "https://cluely.com/mobile",
+      "bytes": 160074,
+      "title": "Cluely Mobile | Send the AI Meeting Assistant to Your Desktop",
+      "desc": "On your phone? Text or email yourself a download link and get Cluely on your Mac or Windows computer \u2014 live AI notes and answers for every meeting.",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    },
+    {
+      "path": "/marketing-disclosure",
+      "status": 200,
+      "final": "https://cluely.com/marketing-disclosure",
+      "bytes": 102863,
+      "title": "Marketing Disclosure | Cluely",
+      "desc": "Important Legal Disclaimers This disclosure applies exclusively to marketing content specifically linked to and annotated with this disclosure and is not a blan",
+      "fw": [
+        "next"
+      ],
+      "generator": null
+    }
+  ],
+  "internal_links": {
+    "/": "/investment-disclaimer",
+    "/mobile": "/investment-disclaimer",
+    "/blog": "/investment-disclaimer",
+    "/cdn-cgi/l/email-protection": "/investment-disclaimer",
+    "/terms": "/investment-disclaimer",
+    "/privacy-policy": "/investment-disclaimer",
+    "/terms/refund-policy": "/investment-disclaimer",
+    "/terms/cancellation-policy": "/investment-disclaimer",
+    "/marketing-disclosure": "/investment-disclaimer",
+    "/investment-disclaimer": "/investment-disclaimer",
+    "/download": "/investment-disclaimer",
+    "/pricing": "/investment-disclaimer",
+    "/undetectability": "/investment-disclaimer",
+    "/careers": "/investment-disclaimer",
+    "/manifesto": "/investment-disclaimer",
+    "/press": "/investment-disclaimer",
+    "/blog/cluely-vs-otter": "/investment-disclaimer",
+    "/blog/cluely-vs-granola": "/investment-disclaimer",
+    "/blog/otter-ai-alternatives": "/investment-disclaimer",
+    "/blog/ai-notetaker-guide": "/investment-disclaimer",
+    "/blog/meeting-bots-surveillance": "/blog",
+    "/blog/virality": "/blog",
+    "/blog/people-search-live": "/blog"
+  },
+  "external_links": {
+    "https://apps.apple.com/app/apple-store/id6755442775": "/investment-disclaimer",
+    "https://cluelyhq.notion.site/bugbounty": "/investment-disclaimer",
+    "https://support.cluely.com/en/": "/investment-disclaimer",
+    "https://cluely.trust.pagerduty.com/posts/dashboard/": "/investment-disclaimer",
+    "https://x.com/cluely": "/investment-disclaimer",
+    "https://discord.gg/cluely": "/investment-disclaimer",
+    "https://www.instagram.com/cluely/": "/investment-disclaimer",
+    "https://github.com/cluely": "/investment-disclaimer",
+    "https://stripe.com/us/privacy": "/privacy-policy",
+    "https://www.aboutcookies.org/": "/privacy-policy",
+    "https://trust.delve.co/cluely": "/privacy-policy",
+    "http://www.allaboutdnt.com": "/privacy-policy",
+    "https://api.v2.cluely.com/desktop-download/win/latest.exe": "/download",
+    "https://api.v2.cluely.com/desktop-download/mac/latest.dmg": "/pricing",
+    "https://fortune.com/article/cluely-ai-cheating-columbia-student-seed-funding": "/press",
+    "https://techcrunch.com/2025/07/03/cluelys-arr-doubled-in-a-week-to-7m-founder-roy-lee-says-but-rivals-are-coming/": "/press",
+    "https://techcrunch.com/2025/06/20/cluely-a-startup-that-helps-cheat-on-everything-raises-15m-from-a16z/": "/press",
+    "https://techcrunch.com/video/how-do-you-define-cheating-in-the-age-of-ai": "/press",
+    "https://businessinsider.com/cluely-ai-cheat-job-interviews-columbia-chungin-roy-lee-2025-4": "/press",
+    "https://thetimes.com/us/news-today/article/the-ai-tool-to-help-you-cheat-on-everything-bm2z5n95g": "/press",
+    "https://techradar.com/computing/artificial-intelligence/this-cheating-app-teaches-all-the-wrong-lessons-about-ai-but-some-of-you-still-might-use-it": "/press",
+    "https://morningbrew.com/stories/2025/04/24/an-ai-app-for-cheating-just-dropped": "/press",
+    "https://thehustle.co/news/turns-out-cheating-with-ai-kinda-sucks": "/press",
+    "https://hindustantimes.com/trending/suspended-from-columbia-student-raises-5-million-for-ai-cheating-tool-the-world-will-say-101745401820881.html": "/press",
+    "https://tech.yahoo.com/articles/ai-tool-helps-cheat-job-140507548.html": "/press",
+    "https://404media.co/the-man-who-wants-ai-to-help-you-cheat-on-everything": "/press",
+    "https://eweek.com/news/cluely-ai-cheating-app": "/press",
+    "https://auherald.com/news/technology/cluely-sparks-controversy-with-ai-cheating-claims-and-hardware-expansion-plans/71946": "/press",
+    "https://opentools.ai/news/ai-arms-race-cluelys-cheating-app-faces-off-against-detection-startups": "/press",
+    "https://ai.plainenglish.io/cluely-the-ai-startup-helping-you-cheat-on-everything-and-it-just-raised-5-3-million-e65d88c19ac4": "/press",
+    "https://entechonline.com/columbia-students-launch-controversial-ai-cheating-tool-raising-ethical-concerns": "/press",
+    "https://coinstats.app/news/75f3a45e15f16c7e949ba0349a7a3d77017b84bd7d5b2ac68deb8d7b0e0a9a85_Startups-Battle-the-Undetectable-Cluely-AI-Cheating-App": "/press",
+    "https://opentools.ai/news/cluely-app-the-ai-tool-stirring-up-virtual-cheating-controversy": "/press",
+    "https://cybernewscentre.com/columbia-student-ai-cheating-tool": "/press",
+    "https://allaboutai.com/ai-how-to/use-cluely-ai-to-cheat-detection-tools": "/press",
+    "https://ainvest.com/news/cluely-ai-tool-sparks-cheating-controversy-raises-5-3m-2504": "/press",
+    "https://tbsnews.net/tech/expelled-columbia-cheating-funded-millions-scaling-it-1125671": "/press",
+    "https://teknotum.net/2025/04/cluely-ai-app-will-let-you-cheat-on-anything": "/press",
+    "https://us.znews.zzztech.com.tw/post/68114c1ec5c439dc1d03b55e": "/press",
+    "https://newsbreak.com/news/3980444843527-week-in-review-cluely-helps-you-cheat-on-everything": "/press",
+    "https://aimresearch.co/ai-startups/cluely-helped-you-cheat-truely-knows-you-did": "/press",
+    "https://founderverse.weglobalstudios.com/news/1211419": "/press"
+  }
+}
