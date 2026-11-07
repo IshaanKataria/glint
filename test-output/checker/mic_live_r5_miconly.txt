@@ -1,0 +1,51 @@
+
+===== run 1/1 =====
+   452 ms calling session.start()
+   835 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261107-035957-yz4h","startedAt":1793984397517,"source":"mic","message":"Loading transcription model..."}}
+   835 ms recording live for 10 s...
+  4836 ms say -a 74 "testing the glint microphone" (session t=4.38s)
+ 10942 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261107-035957-yz4h","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+   375 status   recording source=mic "Loading transcription model..."
+  6286 status   recording source=mic
+ 10272 segment  me [4.89-7.21s] id=mw57zob1-me-0001 "Testing the glint microphone."
+ 10382 status   stopping source=mic "Finishing transcript..."
+ 10459 status   idle "Stopped"
+ 10460 status   summarizing source=mic "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":4082,"loadMs":6250}
+sources: [{"kind":"mic","speaker":"me","bytes":322962,"running":false}]  systemAudio: off: GLINT_SYSTEM_AUDIO=0  echoReference: -
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false,"echoFilter":true}
+chunk me t=0.29s dur=7.02s worker=2802ms latency=2803ms chars=29 | peak=-25.9 rms=-44.3 maxFrame=-33.1 floor=-75.7 thr=-57.6 voiced=2.4s
+chunk me t=7.31s dur=3.07s worker=61ms latency=63ms chars=0 | peak=-27.4 rms=-52.7 maxFrame=-37.3 floor=-75.9 thr=-57.9 voiced=0.63s
+
+transcript: Testing the glint microphone.
+mic chunks overlapping the speech (session t=4.38s): t=0.29s transcribed
+
+me segments: 1 ["Testing the glint microphone."]  WER vs phrase 0%
+them segments: 0 []  WER vs phrase 100%
+
+--- checks (live) ---
+PASS  mic chunk(s) during the speech were not gated as silence
+PASS  a me segment was produced from the mic
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=false)
+[glint:whisper] worker spawned pid=4082 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=4083: glint-system-tap-f6ce4f8707 --mic
+[glint:audio] mic helper: {"event":"started","mode":"mic","inputSampleRate":48000,"inputChannels":1}
+[glint:audio] session 20261107-035957-yz4h recording (source mic, timeOffset 0s)
+[glint:whisper] [whisper_worker] model small/int8 loaded in 6250 ms
+[glint:whisper] worker ready: model=small loadMs=6250
+[glint:audio] chunk me/mic t=0.29s dur=7.02s queued: peak=-25.9dBFS rms=-44.3 maxFrame=-33.1 floor=-75.7 voicedThr=-57.6 voiced=2.4s
+[glint:audio] segment me [4.89-7.21s] worker=2802ms latency=2803ms: Testing the glint microphone.
+[glint:audio] mic helper: {"nonZeroSamples":154599,"paddedSeconds":0,"seconds":10.0925625,"event":"stopped","reason":"stdin-closed"}
+[glint:audio] mic source exited code=0 signal=null bytes=322962
+[glint:audio] chunk me/mic t=7.31s dur=3.07s queued: peak=-27.4dBFS rms=-52.7 maxFrame=-37.3 floor=-75.9 voicedThr=-57.9 voiced=0.63s
+[glint:audio] chunk me/mic t=7.31s dur=3.07s -> no speech found by WhisperX
+[glint:audio] session 20261107-035957-yz4h stopped: 1 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

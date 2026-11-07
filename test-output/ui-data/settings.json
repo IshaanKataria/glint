@@ -1,0 +1,6 @@
+{
+  "hideFromScreenShare": false,
+  "attachScreenshotByDefault": false,
+  "answerModel": "deepseek-v4-pro",
+  "liveModel": "deepseek-flash"
+}

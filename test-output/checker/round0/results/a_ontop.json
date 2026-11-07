@@ -1,0 +1,28 @@
+{
+  "id": "a_ontop",
+  "at": "2026-11-06T08:11:30.377Z",
+  "status": "PASS",
+  "threshold": "alwaysOnTop true at level screen-saver AND capture with protection off shows overlay pixels over another app window covering the same area",
+  "measured": {
+    "alwaysOnTop": true,
+    "level": "screen-saver",
+    "contentProtectionDuringOffShot": false,
+    "magentaFractionInBarRect_protectionOff": 0.0020973154362416107,
+    "magentaFractionInBarRect_protectionOn": 1,
+    "magentaFractionControlArea": 1,
+    "ocrOfBarCrop": "へ\tAsk\t+\tShow/Hide",
+    "controlColourAsCaptured": [
+      234,
+      51,
+      247
+    ],
+    "controlWindowFocused": false,
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/a_ontop_protection_off.png",
+    "test-output/checker/a_ontop_bar_crop_protection_off.png",
+    "test-output/checker/a_ontop_bar_crop_protection_on.png",
+    "test-output/checker/a_hotkey_ontop.log"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "screens_call_try4",
+  "at": "2026-11-06T16:56:36.034Z",
+  "note": "not a gate; protection OFF; D-C9",
+  "measured": {
+    "try": "4",
+    "attempts": [
+      {
+        "attempt": 1,
+        "sessionId": "20261107-035616-uarh",
+        "overlayBar": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 265,
+            "y": 0,
+            "width": 940,
+            "height": 529
+          },
+          "ratio": 0.4,
+          "pre": {
+            "segs": 0,
+            "idle": true,
+            "actions": 0
+          },
+          "post": {
+            "segs": 0,
+            "idle": true
+          }
+        },
+        "liveSuggestions": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 317,
+            "y": 38,
+            "width": 836,
+            "height": 470
+          },
+          "ratio": 0.45,
+          "pre": {
+            "ins": 0,
+            "idle": true,
+            "actions": [
+              "💬\nSuggest follow-up questions"
+            ],
+            "panelBottom": 225.2421875
+          },
+          "post": {
+            "ins": 0,
+            "msAfterSeg": 281,
+            "idle": true,
+            "actions": 1
+          },
+          "panelFits": true
+        },
+        "firstInsightsMsAfterSegment": 3135,
+        "insightEvents": [
+          {
+            "at": 1793984176257,
+            "real": false,
+            "summaryChars": 0,
+            "actions": 0,
+            "msAfterFirstSeg": -12409
+          },
+          {
+            "at": 1793984191801,
+            "real": true,
+            "summaryChars": 128,
+            "actions": 1,
+            "msAfterFirstSeg": 3135
+          }
+        ]
+      }
+    ],
+    "overlayBarOk": true,
+    "liveSuggestionsOk": true,
+    "overlay-bar": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/overlay-bar.png",
+    "live-suggestions": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/live-suggestions.png"
+  }
+}

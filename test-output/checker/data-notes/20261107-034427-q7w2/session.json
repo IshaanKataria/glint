@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "id": "20261107-034427-q7w2",
+  "title": "Globex Partnership: German Reseller Interface",
+  "status": "saved",
+  "startedAt": 1793983467327,
+  "durationSec": 9,
+  "durationMs": 9094,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034427-q7w2",
+      "id": "mw57fqkf-them-0001",
+      "speaker": "them",
+      "text": "Partner sync with Globex. They want to resell our product in Germany and need a German interface by the second quarter.",
+      "tStart": 0.03,
+      "tEnd": 6.46
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983467327,
+      "endedAt": 1793983476421
+    }
+  ],
+  "endedAt": 1793983476421,
+  "summaryMarkdown": "Partner sync with Globex about reselling the product in Germany, requiring a German interface by the second quarter.\n\n### Globex Reseller Partnership\n- Globex wants to resell the product in Germany.\n- They need a German interface by the second quarter.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034427-q7w2/notes.md"
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "id": "20261107-034531-x7dy",
+  "title": "Mobile App Retro: Crash Rate and Offline Mode",
+  "status": "saved",
+  "startedAt": 1793983531984,
+  "durationSec": 13,
+  "durationMs": 13167,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034531-x7dy",
+      "id": "mw57h4gg-them-0001",
+      "speaker": "them",
+      "text": "Mobile App Retro. The crash rate fell to 0.3% off to the last upper date.",
+      "tStart": 0.03,
+      "tEnd": 5.48
+    },
+    {
+      "sessionId": "20261107-034531-x7dy",
+      "id": "mw57h4gg-them-0002",
+      "speaker": "them",
+      "text": "Next sprint we focus on offline mode.",
+      "tStart": 5.82,
+      "tEnd": 8.13
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983531984,
+      "endedAt": 1793983545151
+    }
+  ],
+  "endedAt": 1793983545151,
+  "summaryMarkdown": "A mobile app retrospective covered the crash rate dropping to 0.3% and the next sprint's focus on offline mode.\n\n### Crash Rate\n- Crash rate fell to 0.3% as of the last update.\n\n### Next Sprint Focus\n- Next sprint will focus on offline mode.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034531-x7dy/notes.md"
+}

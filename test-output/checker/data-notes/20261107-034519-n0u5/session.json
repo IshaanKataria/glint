@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "id": "20261107-034519-n0u5",
+  "title": "Board Deck Prep: Revenue Chart and Hiring Plan",
+  "status": "saved",
+  "startedAt": 1793983519897,
+  "durationSec": 9,
+  "durationMs": 9068,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034519-n0u5",
+      "id": "mw57gv4p-them-0001",
+      "speaker": "them",
+      "text": "Board prep the deck needs the revenue chart and the hiring plan. Draft due to the CEO on Monday.",
+      "tStart": 0.03,
+      "tEnd": 5.42
+    }
+  ],
+  "actionItems": [
+    "Prepare the board deck draft with revenue chart and hiring plan by Monday (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983519897,
+      "endedAt": 1793983528965
+    }
+  ],
+  "endedAt": 1793983528965,
+  "summaryMarkdown": "Them requested board deck preparation including a revenue chart and hiring plan, with a draft due to the CEO on Monday.\n\n### Board Deck Requirements\n- Deck needs the revenue chart\n- Deck needs the hiring plan\n- Draft due to the CEO on Monday",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034519-n0u5/notes.md"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "e_live_suggestions",
+  "at": "2026-11-06T16:41:26.407Z",
+  "status": "PASS",
+  "threshold": "within 60 s of the last segment, overlay DOM shows non-empty Live Insights summary and >=1 action item derived from the clip",
+  "measured": {
+    "secondsAfterLastSegment": 3.29,
+    "summaryText": "Security review\n\nSecurity review completed last week; final report is ready\n\nDatabase migration\n\nTheir team of 12 engineers can start the migration on Monday\nThey asked for the signed contract to be sent to their legal team by Friday\n\nMobile app\n\nThey asked for the delivery date for the mobile app (not yet answered)",
+    "actionsInDom": [
+      "❓\nWhat is the delivery date for the mobile app?",
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "actionsFromInsights": [
+      "❓\nWhat is the delivery date for the mobile app?",
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "actionsDerivedFromClip": [
+      "❓\nWhat is the delivery date for the mobile app?",
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "insightsEvents": 3,
+    "model": "deepseek-flash",
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/deg_session.log",
+    "test-output/checker/e_live_insights_overlay.png"
+  ]
+}

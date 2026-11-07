@@ -1,0 +1,30 @@
+{
+  "id": "c_screenshot_ask",
+  "at": "2026-11-06T07:22:13.336Z",
+  "status": "PASS",
+  "threshold": "real window shows a random per-run code; OCR text contains it; answer contains it; usedScreenshot true",
+  "measured": {
+    "secret": "QUARTZ 100-285",
+    "question": "What is the access code shown in the window on my screen? Reply with just the code.",
+    "answer": "QUARTZ 100-285",
+    "model": "deepseek-v4-pro",
+    "usedScreenshot": true,
+    "ocrChars": 1669,
+    "stages": [
+      "capturing",
+      "ocr",
+      "thinking",
+      "streaming"
+    ],
+    "ocrContainsSecret": true,
+    "tesseractContainsSecret": true,
+    "answerContainsSecret": true,
+    "shotNoteVisible": true,
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/bc_ask.log",
+    "test-output/checker/c_app_screenshot_kept.png",
+    "test-output/checker/c_screenshot_ask_overlay.png"
+  ]
+}

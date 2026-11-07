@@ -1,0 +1,32 @@
+{
+  "id": "g_notes",
+  "at": "2026-11-06T16:41:26.407Z",
+  "status": "PASS",
+  "threshold": "after stop, session.json and notes.md exist with non-empty transcript, summary and >=1 action item; dashboard history list shows the session title",
+  "measured": {
+    "sessionId": "20261107-034103-xgwr",
+    "sessionJson": true,
+    "notesMd": true,
+    "title": "Security Review and Database Migration",
+    "transcriptSegments": 3,
+    "summaryChars": 404,
+    "actionItems": [
+      "Send the signed contract to their legal team by Friday (Me)",
+      "Provide the delivery date for the mobile app (Me)"
+    ],
+    "notesHasSections": [
+      true,
+      true,
+      true
+    ],
+    "historyListShowsTitle": true,
+    "finalState": "saved",
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/deg_session.log",
+    "test-output/checker/g_dashboard_history.png",
+    "test-output/checker/g_session.json.copy.json",
+    "test-output/checker/g_notes.md.copy.md"
+  ]
+}

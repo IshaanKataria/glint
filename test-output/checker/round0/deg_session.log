@@ -1,0 +1,94 @@
+# deg_session.log  2026-11-06T07:24:04.639Z
+clip /Users/katana/experiments/cluely-clone/test-output/checker/clip_deg.wav | spoken text: Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready. Our team of twelve engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday? And what is the delivery date for the mobile app?
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-deg)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: ON
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:whisper] worker spawned pid=3119 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+  [glint out] [glint:audio] file source spawned pid=3120: ffmpeg -hide_banner -loglevel error -nostdin -i /Users/katana/experiments/cluely-clone/test-output/checker/clip_deg.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261106-182408-08bb -> /Users/katana/experiments/cluely-clone/test-output/checker/data-deg/20261106-182408-08bb
+  [glint out] [glint:audio] session 20261106-182408-08bb recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=529160
+  [glint out] [glint:whisper] [whisper_worker] model small/int8 loaded in 15885 ms
+  [glint out] [glint:whisper] worker ready: model=small loadMs=15885
+  [glint out] [glint:audio] segment them [0.03-6.66s] worker=3323ms latency=19211ms: Good morning everyone, and thanks for joining. We finished the security review l
+  [glint out] [glint:audio] segment them [6.69-14.13s] worker=3052ms latency=22260ms: Our team of 12 engineers can start the database migration on Monday. Could you s
+  [glint out] [glint:ai] insights #1 for 20261106-182408-08bb: 1 segments, 1 actions, 1599 ms, model=deepseek-flash
+  [glint out] [glint:ai] insights #2 for 20261106-182408-08bb: 2 segments, 3 actions, 1338 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [14.19-16.54s] worker=5061ms latency=27316ms: And what is the delivery date for the mobile app?
+  [glint out] [glint:audio] file source finished: 16.54s of audio, 3 segment(s); autoStop=false
+statuses ["starting/file (Loading transcription model...)","recording/file (Loading transcription model...)","recording/file","recording/file (Audio file finished; session stays open until you stop it)"]
+segments ["them [0.03-6.66] Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready.","them [6.69-14.13] Our team of 12 engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday?","them [14.19-16.54] And what is the delivery date for the mobile app?"]
+fileDone {"sessionId":"20261106-182408-08bb","audioSec":16.54,"segments":3,"autoStop":false,"at":1793949875487} first segment after 19383 ms
+(d) WER {"wer":0,"edits":0,"refWords":54,"ref":"good morning everyone and thanks for joining we finished the security review last week and the final report is ready our team of twelve engineers can start the database migration on monday could you send the signed contract to our legal team by friday and what is the delivery date for the mobile app","hyp":"good morning everyone and thanks for joining we finished the security review last week and the final report is ready our team of twelve engineers can start the database migration on monday could you send the signed contract to our legal team by friday and what is the delivery date for the mobile app"}
+(e) insights events 3 last: {"sessionId":"20261106-182408-08bb","summaryMarkdown":"**Security review**\n- Security review was completed last week\n- Final report is now ready\n\n**Database migration**\n- Their team of 12 engineers can start the database migration on Monday\n- They asked for the signed contract to be sent to their legal team by Friday","actionItems":[{"id":"ins_25f6dd76c2","kind":"question","text":"Can you send the signed contract to their legal team by Friday?"},{"id":"ins_e7372050a3","kind":"actionItem","text":"Send signed contract to their legal team by Friday"},{"id":"ins_f11a79a6e3","kind":"followUp","text":"Suggest follow-up questions about the database migration"}],"updatedAt":1793949874714,"model":"deepseek-flash","at":1793949874717}
+(e) DOM {"panelVisible":true,"summaryIdle":false,"summaryText":"Security review\n\nSecurity review was completed last week\nFinal report is now ready\n\nDatabase migration\n\nTheir team of 12 engineers can start the database migration on Monday\nThey asked for the signed contract to be sent to their legal team by Friday","actions":["❓\nCan you send the signed contract to their legal team by Friday?","📝\nSend signed contract to their legal team by Friday","💬\nSuggest follow-up questions about the database migration"],"real":["❓\nCan you send the signed contract to their legal team by Friday?","📝\nSend signed contract to their legal team by Friday","💬\nSuggest follow-up questions about the database migration"],"at":1793949875597}
+  [glint out] [glint:audio] session 20261106-182408-08bb stopped: 3 segment(s)
+  [glint out] [glint:sessions] summary for 20261106-182408-08bb: model=deepseek-v4-pro 4312 ms, title="Security Review and Database Migration Kickoff", 2 action items, tokens=482/181
+(g) final status {"state":"saved","sessionId":"20261106-182408-08bb","startedAt":1793949848074,"source":"file","message":"Saved \"Security Review and Database Migration Kickoff\"","at":1793949880035}
+(g) session.json keys ["version","id","title","status","startedAt","durationSec","durationMs","source","transcript","actionItems","usage","runs","endedAt","summaryMarkdown","summaryModel","notesPath"] | title: Security Review and Database Migration Kickoff | segments 3 | summary chars 554 | actionItems ["Send the signed contract to the vendor's legal team by Friday (Me)","Provide the delivery date for the mobile app (Me)"]
+(g) notes.md head:
+# Security Review and Database Migration Kickoff
+
+Fri, Nov 6, 2026, 6:24 PM · 0:28 · 0 AI uses
+
+## Summary
+
+The security review is complete and the final report is ready. The vendor's team of 12 engineers can start the database migration on Monday, pending a signed contract, and the mobile app delivery date is still to be confirmed.
+
+**Security Review**
+- Final report completed last week
+- Review is finished and ready for distribution
+
+**Database Migration**
+- Vendor team of 12 engineers available to start on Monday
+- Requires signed contract sent to vendor's legal team by Friday
+
+**Mobile App**
+- Delivery date not yet provided; question raised by vendor
+
+## Action items
+
+- [ ] Send the signed contract to the vendor's legal team by Friday (Me)
+- [ ] Provide the delivery date for the mobile app (Me)
+
+## Transcript
+
+**[0:00] Them:** Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready.
+
+**[0:06] Them:** Our team of 12 engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday?
+
+**[0:14] Them:** And what is the delivery date for the mobile app?
+
+(g) history list text: Today
+Security Review and Database Migration Kickoff
+0:28
+6:24 PM | note pane head: Friday, Nov 6 · 6:24 PM
+Security Review and Database Migration Kickoff
+Fri, Nov 6
+0:28
+Summary
+Transcript
+Usage
+Copy full summary
+Action Items
+Send the signed contract to the vendor's legal team by Friday (Me)
+Provide the delivery date for the mobile app (Me)
+
+The security review is complete and the final report is ready. The vendor's team of 12 engineers can start the database migration on Monday
+  [glint out] [glint:audio] quit: stopping capture and the WhisperX worker
+  [glint out] [glint:whisper] [whisper_worker] stdin closed or shutdown; exiting
+  [glint err] Debugger ending on ws://127.0.0.1:63033/8c3abe99-cd36-40a9-baec-b0244b5ee051
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging

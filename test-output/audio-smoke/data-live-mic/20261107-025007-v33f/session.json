@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "id": "20261107-025007-v33f",
+  "title": "Microphone Test",
+  "status": "saved",
+  "startedAt": 1793980207702,
+  "durationSec": 23,
+  "durationMs": 23327,
+  "source": "mic",
+  "transcript": [
+    {
+      "sessionId": "20261107-025007-v33f",
+      "id": "mw55hvfa-me-0001",
+      "speaker": "me",
+      "text": "testing the brief microphone.",
+      "tStart": 6.1,
+      "tEnd": 7.9
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793980207702,
+      "endedAt": 1793980231029
+    }
+  ],
+  "endedAt": 1793980231029,
+  "summaryMarkdown": "The user tested the microphone to ensure it was working.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/audio-smoke/data-live-mic/20261107-025007-v33f/notes.md"
+}

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "id": "20261107-025934-fok9",
+  "title": "Pilot Results and Security Review for Support Rollout",
+  "status": "saved",
+  "startedAt": 1793980774297,
+  "durationSec": 31,
+  "durationMs": 31021,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-025934-fok9",
+      "id": "mw55u0m1-them-0001",
+      "speaker": "them",
+      "text": "Hi Priya, thanks for making time today. We looked at the pilot results and the support team cut response times by about a third.",
+      "tStart": 0.03,
+      "tEnd": 7.28
+    },
+    {
+      "sessionId": "20261107-025934-fok9",
+      "id": "mw55u0m1-them-0002",
+      "speaker": "them",
+      "text": "The main concern from your side was data retention. Can you tell me how long call recordings are kept?",
+      "tStart": 7.31,
+      "tEnd": 12.9
+    },
+    {
+      "sessionId": "20261107-025934-fok9",
+      "id": "mw55u0m1-them-0003",
+      "speaker": "them",
+      "text": "and who on your team needs to approve the security questionnaire, we would like to roll out to 40 agents next month.",
+      "tStart": 12.93,
+      "tEnd": 19.22
+    }
+  ],
+  "actionItems": [
+    "Confirm how long call recordings are kept (Me)",
+    "Identify who approves the security questionnaire (Me)"
+  ],
+  "usage": [
+    {
+      "requestId": "61b1696b-ce35-4361-8ee2-3e158c9489ea",
+      "kind": "assist",
+      "question": "Assist",
+      "answer": "Them asked two things: **how long call recordings are kept**, and **who approves the security questionnaire**.\n\nI can't see those answers on your screen — it shows a coding brief (glint-goal.txt), not meeting notes or a data-retention policy. Check your notes, CRM, or the pilot agreement for the retention period (often 30/90/365 days) and the security owner (typically InfoSec, Legal, or a compliance lead).\n\n**Suggested reply if you know the answers:**\n- \"Recordings are kept for [X days] and then auto-deleted.\"\n- \"The security questionnaire goes through [Name/Role] — I'll get it to them today so we can hit the 40-agent rollout next month.\"\n\nIf you don't know, say: \"Let me confirm both and get back to you by [date].\"",
+      "usedScreenshot": true,
+      "ocrChars": 2602,
+      "model": "deepseek-v4-pro",
+      "at": 1793980803384
+    }
+  ],
+  "runs": [
+    {
+      "startedAt": 1793980774297,
+      "endedAt": 1793980805318
+    }
+  ],
+  "endedAt": 1793980805318,
+  "summaryMarkdown": "The support team's pilot reduced response times by about a third. The main remaining concern is data retention, and the rollout to 40 agents is planned for next month pending security approval.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-screens/20261107-025934-fok9/notes.md"
+}

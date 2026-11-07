@@ -1,0 +1,35 @@
+{
+  "id": "screens_ask_answer_try1",
+  "at": "2026-11-06T08:12:36.794Z",
+  "note": "not a gate; protection OFF; real Assist answer",
+  "measured": {
+    "try": "1",
+    "meta": {
+      "requestId": "23de7728-9cff-487b-a548-508911d6de08",
+      "kind": "assist",
+      "question": "Assist",
+      "usedScreenshot": true,
+      "ocrChars": 572,
+      "model": "deepseek-v4-pro",
+      "startedAt": 1793952742143,
+      "finishedAt": 1793952753436,
+      "usage": {
+        "promptTokens": 714,
+        "completionTokens": 143
+      }
+    },
+    "answerHead": "The most useful thing: **don't ship 2.4 on Thursday — wait for the fix.**\n\n- The token-expiry bug means every customer hits an infinite spinner after 60 minutes. That's a visible, guaranteed failure, not an edge case.\n- The fix is small and well-scoped: refresh token before each retry, cap at 5 retries with exponential backoff.\n- Shipping Thursday means the first customers hit the bug within an ho",
+    "dom": {
+      "pill": "Assist",
+      "shotNote": true,
+      "scrollTop": 0
+    },
+    "rect": {
+      "x": 419,
+      "y": 38,
+      "width": 632,
+      "height": 473
+    },
+    "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/ask-answer.png"
+  }
+}

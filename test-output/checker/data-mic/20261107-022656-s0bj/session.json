@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "id": "20261107-022656-s0bj",
+  "title": "Unintelligible Audio",
+  "status": "saved",
+  "startedAt": 1793978816483,
+  "durationSec": 46,
+  "durationMs": 45713,
+  "source": "mic+system",
+  "transcript": [
+    {
+      "sessionId": "20261107-022656-s0bj",
+      "id": "mw54o1yb-them-0001",
+      "speaker": "them",
+      "text": "Oh no.",
+      "tStart": 2,
+      "tEnd": 5.61
+    },
+    {
+      "sessionId": "20261107-022656-s0bj",
+      "id": "mw54o1yb-them-0002",
+      "speaker": "them",
+      "text": "th th",
+      "tStart": 7.33,
+      "tEnd": 7.47
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793978816483,
+      "endedAt": 1793978862196
+    }
+  ],
+  "endedAt": 1793978862196,
+  "summaryMarkdown": "The conversation contains only unintelligible audio with no discernible content.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-mic/20261107-022656-s0bj/notes.md"
+}

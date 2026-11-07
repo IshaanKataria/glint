@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "id": "20261107-024851-g41v",
+  "title": "Microphone Testing",
+  "status": "saved",
+  "startedAt": 1793980131173,
+  "durationSec": 37,
+  "durationMs": 36881,
+  "source": "mic+system",
+  "transcript": [
+    {
+      "sessionId": "20261107-024851-g41v",
+      "id": "mw55g8dh-them-0001",
+      "speaker": "them",
+      "text": "Testing the Glint microphone.",
+      "tStart": 19.66,
+      "tEnd": 21.49
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793980131173,
+      "endedAt": 1793980168054
+    }
+  ],
+  "endedAt": 1793980168054,
+  "summaryMarkdown": "The conversation involved testing the Glint microphone to ensure it was functioning properly.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/audio-smoke/data-live/20261107-024851-g41v/notes.md"
+}

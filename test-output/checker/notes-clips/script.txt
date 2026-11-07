@@ -1,0 +1,62 @@
+## short1 (7.8 s)
+Daniel: Quick standup. The login bug is fixed and deployed. Next, I'll review the payment retry pull request this afternoon.
+
+## short2 (8.4 s)
+Samantha: Design review for the onboarding screens. We agreed to cut the setup steps from five to three.
+Daniel: Priya will update the mockups by Thursday.
+
+## short3 (8.5 s)
+Samantha: Hiring sync. We have three final round candidates for the backend role. Interviews are on Tuesday and Wednesday, and we will decide by Friday.
+
+## short4 (7.9 s)
+Daniel: Marketing check-in. The webinar has two hundred and forty registrations.
+Samantha: Can we send the reminder email on Monday morning?
+
+## short5 (8.2 s)
+Samantha: Customer call with Acme. They want single sign-on with Okta before their renewal in March.
+Daniel: I promised them a timeline by next week.
+
+## short6 (9.9 s)
+Daniel: Budget review. Cloud costs rose twelve percent last month, mostly from storage. Let's move old logs to cold storage and review again in two weeks.
+
+## short7 (8.6 s)
+Samantha: Release planning for version two point four. The token refresh fix goes in first, then the new export feature. Code freeze is next Thursday.
+
+## short8 (10.6 s)
+Daniel: Support escalation review. Three enterprise tickets breached the four hour response target this week.
+Samantha: We will add a second on-call engineer for weekends starting Saturday.
+
+## short9 (6.8 s)
+Samantha: Partner sync with Globex. They want to resell our product in Germany and need a German interface by the second quarter.
+
+## short10 (8.4 s)
+Daniel: Security office hours. The penetration test found two medium issues in the admin panel.
+Samantha: Both fixes ship in Thursday's release.
+
+## short11 (9.0 s)
+Samantha: Data team check-in. The new churn dashboard is live, and monthly churn is down to two point one percent.
+Daniel: Great, please share it with sales.
+
+## short12 (7.3 s)
+Daniel: Office move planning. We move to the fifth floor on December twelfth. Everyone should pack their desks by the tenth.
+
+## short13 (5.8 s)
+Samantha: Board prep. The deck needs the revenue chart and the hiring plan. Draft due to the CEO on Monday.
+
+## short14 (8.6 s)
+Daniel: Mobile app retro. The crash rate fell to zero point three percent after the last update.
+Samantha: Next sprint we focus on offline mode.
+
+## long (84.6 s)
+Samantha: Thanks for joining, Tom. Let's go through the pilot results, the pricing, and the rollout plan.
+Daniel: Sure. The pilot ran for six weeks with forty agents. Average handle time dropped from nine minutes to six and a half minutes.
+Samantha: That's great. What about customer satisfaction?
+Daniel: Satisfaction went from eighty one percent to eighty eight percent. The biggest gain was on billing questions.
+Samantha: Our finance team asked about pricing. What would two hundred seats cost per year?
+Daniel: List price is thirty dollars per seat per month. For two hundred seats on an annual contract we can do twenty four dollars, so about fifty seven thousand six hundred dollars a year.
+Samantha: OK. Security is the other topic. Our security team needs the SOC 2 report and a data processing agreement before legal will sign.
+Daniel: I can send the SOC 2 Type Two report today, and our legal team will share the data processing agreement by Wednesday.
+Samantha: Great. For the rollout, we'd like to start with the billing team in December, then add the support team in January.
+Daniel: That works. We'll schedule two training sessions for the billing team in the first week of December.
+Samantha: So the next steps are: you send the SOC 2 report and the agreement, I get finance approval for the annual contract by next Friday, and we book the training dates.
+Daniel: Agreed. I'll also send a summary email with the pilot numbers this afternoon.

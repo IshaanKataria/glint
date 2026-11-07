@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "20261107-022809-v6uy",
+  "title": "Session Nov 7, 2:28 AM",
+  "status": "summarizing",
+  "startedAt": 1793978889169,
+  "durationSec": 21,
+  "durationMs": 20702,
+  "source": "mic+system",
+  "transcript": [
+    {
+      "sessionId": "20261107-022809-v6uy",
+      "id": "mw54pm1d-them-0001",
+      "speaker": "them",
+      "text": "Testing the bleeding microphone.",
+      "tStart": 4.44,
+      "tEnd": 5.42
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793978889169,
+      "endedAt": 1793978909871
+    }
+  ],
+  "endedAt": 1793978909871
+}

@@ -1,0 +1,52 @@
+
+===== run 1/1 =====
+   618 ms calling session.start()
+  1066 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261107-025727-ex73","startedAt":1793980647671,"source":"mic","message":"Loading transcription model..."}}
+  1066 ms recording live for 10 s...
+  5068 ms say -a 74 "testing the glint microphone" (session t=4.45s)
+ 11098 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261107-025727-ex73","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+   439 status   recording source=mic "Loading transcription model..."
+  4730 status   recording source=mic "Microphone is delivering pure silence (all-zero samples): turn on the app that launched Glint in System Settings > Privacy & Security > Microphone"
+ 10445 status   stopping source=mic "Finishing transcript..."
+ 10467 status   idle "Stopped"
+ 10469 status   summarizing source=mic "Writing notes..."
+ 10470 status   error source=mic "Saved without summary: nothing was transcribed"
+
+--- audio:getStats ---
+worker: {"state":"loading","model":"small","restarts":0,"pid":79288}
+sources: [{"kind":"mic","speaker":"me","bytes":322962,"running":false}]  systemAudio: off: GLINT_SYSTEM_AUDIO=0  echoReference: -
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false,"echoFilter":true}
+chunk me t=0.35s dur=4.14s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-90.3 thr=-62.7 voiced=0s
+chunk me t=4.49s dur=4.14s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-90.3 thr=-62.7 voiced=0s
+chunk me t=8.63s dur=1.81s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-90.3 thr=-62.7 voiced=0s
+
+transcript: (none)
+mic chunks overlapping the speech (session t=4.45s): t=0.35s skipped:silence, t=4.49s skipped:silence
+
+me segments: 0 []  WER vs phrase 100%
+them segments: 0 []  WER vs phrase 100%
+
+--- checks (live) ---
+FAIL  mic chunk(s) during the speech were not gated as silence
+FAIL  a me segment was produced from the mic
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=false)
+[glint:whisper] worker spawned pid=79288 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=79289: glint-system-tap-f6ce4f8707 --mic
+[glint:audio] mic helper: {"inputChannels":1,"mode":"mic","event":"started","inputSampleRate":48000}
+[glint:audio] session 20261107-025727-ex73 recording (source mic, timeOffset 0s)
+[glint:audio] Microphone is delivering pure silence (all-zero samples): turn on the app that launched Glint in System Settings > Privacy & Security > Microphone
+[glint:audio] chunk me/mic t=0.35s dur=4.14s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-90.3 voicedThr=-62.7 voiced=0s
+[glint:audio] chunk me/mic t=4.49s dur=4.14s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-90.3 voicedThr=-62.7 voiced=0s
+[glint:audio] mic helper: {"nonZeroSamples":0,"seconds":10.0925625,"paddedSeconds":0,"reason":"stdin-closed","event":"stopped"}
+[glint:audio] mic source exited code=0 signal=null bytes=322962
+[glint:audio] chunk me/mic t=8.63s dur=1.81s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-90.3 voicedThr=-62.7 voiced=0s
+[glint:audio] session 20261107-025727-ex73 stopped: 0 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] model small/int8 loaded in 12010 ms
+[glint:whisper] worker ready: model=small loadMs=12010
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

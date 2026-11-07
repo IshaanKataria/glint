@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "id": "20261107-034452-u3dd",
+  "title": "Data Team Check-In: Churn Dashboard Live",
+  "status": "saved",
+  "startedAt": 1793983492708,
+  "durationSec": 11,
+  "durationMs": 11076,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034452-u3dd",
+      "id": "mw57ga5g-them-0001",
+      "speaker": "them",
+      "text": "data team check-in, the new churn dashboard is live, and monthly churn is down to 2.1%.",
+      "tStart": 0.03,
+      "tEnd": 5.88
+    },
+    {
+      "sessionId": "20261107-034452-u3dd",
+      "id": "mw57ga5g-them-0002",
+      "speaker": "them",
+      "text": "Great. Please share it with sales.",
+      "tStart": 5.91,
+      "tEnd": 8.63
+    }
+  ],
+  "actionItems": [
+    "Share the churn dashboard with sales (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983492708,
+      "endedAt": 1793983503784
+    }
+  ],
+  "endedAt": 1793983503784,
+  "summaryMarkdown": "The data team reported that the new churn dashboard is live and monthly churn is down to 2.1%. They were asked to share it with sales.\n\n### Churn Dashboard Update\n- New churn dashboard is live\n- Monthly churn is down to 2.1%",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034452-u3dd/notes.md"
+}

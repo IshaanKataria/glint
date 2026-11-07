@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "id": "20261107-034357-dbu2",
+  "title": "Version 2.4 Release Planning",
+  "status": "saved",
+  "startedAt": 1793983437116,
+  "durationSec": 11,
+  "durationMs": 11074,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034357-dbu2",
+      "id": "mw57f398-them-0001",
+      "speaker": "them",
+      "text": "Release planning for version 2.4. The token refresh fix goes in first.",
+      "tStart": 0.03,
+      "tEnd": 4.68
+    },
+    {
+      "sessionId": "20261107-034357-dbu2",
+      "id": "mw57f398-them-0002",
+      "speaker": "them",
+      "text": "Then the new export feature. Code freezes next Thursday.",
+      "tStart": 4.71,
+      "tEnd": 8.27
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983437116,
+      "endedAt": 1793983448190
+    }
+  ],
+  "endedAt": 1793983448190,
+  "summaryMarkdown": "The team discussed release planning for version 2.4, prioritizing the token refresh fix and the new export feature, with a code freeze next Thursday.\n\n### Release Priorities\n- Token refresh fix goes in first\n- New export feature is next\n- Code freezes next Thursday",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034357-dbu2/notes.md"
+}

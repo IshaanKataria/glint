@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "id": "20261107-025527-bwyz",
+  "title": "Security Review and Database Migration Planning",
+  "status": "saved",
+  "startedAt": 1793980527810,
+  "durationSec": 30,
+  "durationMs": 30343,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-025527-bwyz",
+      "id": "mw55oqf6-them-0001",
+      "speaker": "them",
+      "text": "Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready.",
+      "tStart": 0.03,
+      "tEnd": 6.66
+    },
+    {
+      "sessionId": "20261107-025527-bwyz",
+      "id": "mw55oqf6-them-0002",
+      "speaker": "them",
+      "text": "Our team of 12 engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday?",
+      "tStart": 6.69,
+      "tEnd": 14.13
+    },
+    {
+      "sessionId": "20261107-025527-bwyz",
+      "id": "mw55oqf6-them-0003",
+      "speaker": "them",
+      "text": "And what is the delivery date for the mobile app?",
+      "tStart": 14.19,
+      "tEnd": 16.54
+    }
+  ],
+  "actionItems": [
+    "Send the signed contract to the legal team by Friday (Me)",
+    "Provide the delivery date for the mobile app (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793980527810,
+      "endedAt": 1793980558153
+    }
+  ],
+  "endedAt": 1793980558153,
+  "summaryMarkdown": "The security review is complete and the final report is ready. The team of 12 engineers can start the database migration on Monday, pending receipt of the signed contract by Friday. The delivery date for the mobile app is still to be determined.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-deg/20261107-025527-bwyz/notes.md"
+}

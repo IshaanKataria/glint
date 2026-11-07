@@ -1,0 +1,2 @@
+file '/Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short2/0.wav'
+file '/Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short2/1.wav'

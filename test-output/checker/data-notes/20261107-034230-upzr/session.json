@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "id": "20261107-034230-upzr",
+  "title": "Login Bug Fix and Payment Retry Review",
+  "status": "saved",
+  "startedAt": 1793983350248,
+  "durationSec": 12,
+  "durationMs": 12184,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034230-upzr",
+      "id": "mw57d888-them-0001",
+      "speaker": "them",
+      "text": "Quick stand up, the login bug is fixed and deployed. Next, I'll review the payment retry call request this afternoon.",
+      "tStart": 0.03,
+      "tEnd": 7.47
+    }
+  ],
+  "actionItems": [
+    "Review the payment retry call request this afternoon (Them)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983350248,
+      "endedAt": 1793983362432
+    }
+  ],
+  "endedAt": 1793983362432,
+  "summaryMarkdown": "A quick stand-up where the speaker reported that the login bug is fixed and deployed, and announced plans to review the payment retry call request this afternoon.\n\n### Login Bug Status\n- Login bug is fixed and deployed.\n\n### Payment Retry Review\n- Speaker will review the payment retry call request this afternoon.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034230-upzr/notes.md"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "screens_call_try1",
+  "at": "2026-11-06T16:53:45.740Z",
+  "note": "not a gate; protection OFF; D-C9",
+  "measured": {
+    "try": "1",
+    "attempts": [
+      {
+        "attempt": 1,
+        "sessionId": "20261107-035253-q1nh",
+        "overlayBar": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 265,
+            "y": 0,
+            "width": 940,
+            "height": 529
+          },
+          "ratio": 0.4,
+          "pre": {
+            "segs": 0,
+            "idle": true,
+            "actions": 0
+          },
+          "post": {
+            "segs": 0,
+            "idle": true
+          }
+        },
+        "liveSuggestions": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 317,
+            "y": 38,
+            "width": 836,
+            "height": 470
+          },
+          "ratio": 0.45,
+          "pre": {
+            "ins": 1,
+            "idle": true,
+            "actions": [
+              "💬\nSuggest follow-up questions"
+            ],
+            "panelBottom": 225.2421875
+          },
+          "post": {
+            "ins": 1,
+            "msAfterSeg": 320
+          },
+          "panelFits": true
+        },
+        "firstInsightsMsAfterSegment": -13132
+      },
+      {
+        "attempt": 2,
+        "sessionId": "20261107-035310-p4wy",
+        "liveSuggestions": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 317,
+            "y": 38,
+            "width": 836,
+            "height": 470
+          },
+          "ratio": 0.45,
+          "pre": {
+            "ins": 1,
+            "idle": true,
+            "actions": [
+              "💬\nSuggest follow-up questions"
+            ],
+            "panelBottom": 225.2421875
+          },
+          "post": {
+            "ins": 1,
+            "msAfterSeg": 323
+          },
+          "panelFits": true
+        },
+        "firstInsightsMsAfterSegment": -13525
+      },
+      {
+        "attempt": 3,
+        "sessionId": "20261107-035326-o103",
+        "liveSuggestions": {
+          "bar": {
+            "x": 546.9140625,
+            "y": 54,
+            "width": 376.1640625,
+            "height": 38
+          },
+          "region": {
+            "x": 317,
+            "y": 38,
+            "width": 836,
+            "height": 470
+          },
+          "ratio": 0.45,
+          "pre": {
+            "ins": 1,
+            "idle": true,
+            "actions": [
+              "💬\nSuggest follow-up questions"
+            ],
+            "panelBottom": 225.2421875
+          },
+          "post": {
+            "ins": 1,
+            "msAfterSeg": 342
+          },
+          "panelFits": true
+        },
+        "firstInsightsMsAfterSegment": -14442
+      }
+    ],
+    "overlayBarOk": true,
+    "liveSuggestionsOk": false,
+    "overlay-bar": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/overlay-bar.png",
+    "live-suggestions": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/live-suggestions.png"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "20261107-025655-lezg",
+  "title": "Session Nov 7, 2:56 AM",
+  "status": "summarizing",
+  "startedAt": 1793980615072,
+  "durationSec": 18,
+  "durationMs": 18171,
+  "source": "mic+system",
+  "transcript": [
+    {
+      "sessionId": "20261107-025655-lezg",
+      "id": "mw55qlr4-them-0002",
+      "speaker": "them",
+      "text": "Testing the Glint microphone.",
+      "tStart": 6.74,
+      "tEnd": 8.41
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793980615072,
+      "endedAt": 1793980633243
+    }
+  ],
+  "endedAt": 1793980633243
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "id": "20261107-025750-k0ct",
+  "title": "Empty session",
+  "status": "summary_failed",
+  "startedAt": 1793980670508,
+  "durationSec": 12,
+  "durationMs": 12093,
+  "source": "mic",
+  "transcript": [],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793980670508,
+      "endedAt": 1793980682601
+    }
+  ],
+  "endedAt": 1793980682601,
+  "summaryError": "nothing was transcribed",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-mic-only2/20261107-025750-k0ct/notes.md"
+}

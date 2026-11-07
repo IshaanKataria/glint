@@ -1,0 +1,3 @@
+{"event":"trace","stage":"create-tap"}
+{"stage":"output-uid","event":"trace"}
+{"stage":"create-aggregate","event":"trace"}

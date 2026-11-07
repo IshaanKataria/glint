@@ -1,0 +1,21 @@
+[00:00] Here's how to get started with Cluey. To
+[00:01] ask about anything on your screen, press
+[00:04] command and
+[00:08] enter. To show or hide at any time,
+[00:11] press command and
+[00:13] backslash. To let clearly hear your
+[00:15] voice and record your screen, press the
+[00:17] microphone
+[00:19] icon. It will start listening to your
+[00:21] microphone and computer audio. Let's
+[00:23] test it out.
+[00:25] What are some tips for a demo
+[00:27] video? To ask any follow-up questions,
+[00:30] press command and enter again to
+[00:35] reprompt. Use the command and down arrow
+[00:37] to scroll down. To type in chat, press
+[00:40] command, shift, and
+[00:45] enter. And to clear all previous
+[00:47] messages, press command and R. And
+[00:50] that's clearly you're all ready to get
+[00:52] started.

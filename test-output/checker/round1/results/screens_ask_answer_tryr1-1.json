@@ -1,0 +1,35 @@
+{
+  "id": "screens_ask_answer_tryr1-1",
+  "at": "2026-11-06T16:00:44.993Z",
+  "note": "not a gate; protection OFF; real Assist answer",
+  "measured": {
+    "try": "r1-1",
+    "meta": {
+      "requestId": "a43c6dc0-1c45-4260-b83d-03c22c4e5c16",
+      "kind": "assist",
+      "question": "Assist",
+      "usedScreenshot": true,
+      "ocrChars": 570,
+      "model": "deepseek-v4-pro",
+      "startedAt": 1793980831927,
+      "finishedAt": 1793980842437,
+      "usage": {
+        "promptTokens": 716,
+        "completionTokens": 224
+      }
+    },
+    "answerHead": "The most useful thing: **the retry logic is the real blocker, and the proposed fix is sound — but it needs a decision on scope.**\n\n**Key points:**\n- The bug is a UX issue: after token expiry (~60 min), users see an infinite spinner because `sync_worker` retries forever.\n- The proposed fix (refresh token before retry + cap at 5 with exponential backoff) is the right approach — it's a standard patte",
+    "dom": {
+      "pill": "Assist",
+      "shotNote": true,
+      "scrollTop": 0
+    },
+    "rect": {
+      "x": 411,
+      "y": 38,
+      "width": 648,
+      "height": 482
+    },
+    "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/ask-answer.png"
+  }
+}

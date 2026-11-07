@@ -1,0 +1,14 @@
+{
+  "id": "screens",
+  "at": "2026-11-06T07:34:01.292Z",
+  "note": "not a gate; captured with Hide from screen share OFF",
+  "measured": {
+    "overlay-bar": {
+      "state": {
+        "idle": true,
+        "segs": 0,
+        "ins": 1
+      }
+    }
+  }
+}

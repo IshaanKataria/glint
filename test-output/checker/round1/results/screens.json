@@ -1,0 +1,47 @@
+{
+  "id": "screens",
+  "at": "2026-11-06T16:00:24.154Z",
+  "note": "not a gate; captured with Hide from screen share OFF",
+  "measured": {
+    "overlay-bar": {
+      "state": {
+        "idle": true,
+        "segs": 0,
+        "ins": 1
+      },
+      "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/overlay-bar.png"
+    },
+    "live-suggestions": {
+      "panelText": "Live Insights\nShow Transcript\n\nPilot results\n\nCall between Priya (Me) and Them\nThem reviewed pilot results: support team cut response times by about a third\n\nData retention concern\n\nPriya's main concern was data retention\nThem asked how long call recordings are kept\nActions\n❓\nHow long are call recordings kept?\n💬\nDefine data retention\n💬\nSuggest follow-up questions about data retention\nClick to ask Glint",
+      "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/live-suggestions.png"
+    },
+    "ask-answer": {
+      "meta": {
+        "requestId": "61b1696b-ce35-4361-8ee2-3e158c9489ea",
+        "kind": "assist",
+        "question": "Assist",
+        "usedScreenshot": true,
+        "ocrChars": 2602,
+        "model": "deepseek-v4-pro",
+        "sessionId": "20261107-025934-fok9",
+        "startedAt": 1793980796797,
+        "finishedAt": 1793980803384,
+        "usage": {
+          "promptTokens": 1372,
+          "completionTokens": 176
+        }
+      },
+      "answerHead": "Them asked two things: **how long call recordings are kept**, and **who approves the security questionnaire**.\n\nI can't see those answers on your screen — it shows a coding brief (glint-goal.txt), not meeting notes or a data-retention policy. Check your notes, CRM, or the pilot agreement for the retention period (often 30/90/365 days) and the security owner (typically InfoSec, Legal, or a complian",
+      "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/ask-answer.png"
+    },
+    "notes-history": {
+      "list": "Today\nPilot Results and Security Review for Support Rollout\n0:31\n1 use\n2:59 AM\nSecurity Review and Database Migration Planning\n0:30\n2:55 AM",
+      "capture": "region 1251x900 pt: wallpaper + overlay bar + 1200x800 dashboard",
+      "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/notes-history.png"
+    },
+    "settings": {
+      "keybinds": "General\nShow or hide Glint\n⌘\n\\\nAsk Glint about your screen or audio\n⌘\n↵\nClear the current conversation\n⌘\nR\nStart or stop a Glint session\n⌘\n⇧\n\\\nWindow\nToggle click-through (mouse passes through the overlay)\n⌘\n⌥\n\\\nMove the window up\n⌘\n↑\nMove the window down\n⌘\n↓\nMove the window left\n⌘\n←\nMove the window right\n⌘\n→\nScroll\nScroll the response up\n⌘\n⇧\n↑\nScroll the response down\n⌘\n⇧\n↓",
+      "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/settings.png"
+    }
+  }
+}

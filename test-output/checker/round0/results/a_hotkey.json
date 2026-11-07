@@ -1,0 +1,29 @@
+{
+  "id": "a_hotkey",
+  "at": "2026-11-06T08:11:30.366Z",
+  "status": "PASS",
+  "threshold": "real OS ⌘\\ press (osascript) toggles overlay visibility both ways; BLOCKED if Accessibility denies key posting",
+  "measured": {
+    "routes": [
+      {
+        "route": "CGEvent",
+        "press1": {
+          "ok": true,
+          "postEventAccess": true
+        },
+        "press2": {
+          "ok": true,
+          "postEventAccess": true
+        },
+        "before": true,
+        "after1": false,
+        "after2": true,
+        "flippedBothWays": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/a_hotkey_ontop.log"
+  ]
+}

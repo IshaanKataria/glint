@@ -1,0 +1,77 @@
+[00:00] Cluely AI has stirred up a lot of controversy for supposedly helping people cheat in exams,
+[00:05] coding interviews, and even sales calls. But is it really this game-changing assistant…
+[00:11] or just another overhyped meeting notetaker? In this video, we’re going to test Cluely AI
+[00:17] in detail to see how it actually performs when it matters most.
+[00:21] You will find the links to all the exclusive discounts in the description below.
+[00:26] Start by downloading its desktop app on Mac or Windows and logging in.
+[00:32] As soon as you do that, you’ll notice a small Cluely widget appear at the top of
+[00:36] your screen - that’s your main control center. When you register for the first time, Cluely
+[00:42] automatically launches a short built-in tutorial that walks you through what every button does.
+[00:47] It’s clean, minimal, and honestly quite intuitive - even if you’ve
+[00:52] never used a productivity assistant before. Now let’s start using Cluely in a real scenario.
+[00:58] Once your app is ready, click the “Start Cluely” button - that’s how
+[01:02] you tell Cluely to start recording and analyzing everything that’s being said in your meeting.
+[01:08] It’s important to note that Cluely doesn’t record video - it only
+[01:12] listens to audio and screen activity, so your conversations stay focused and lightweight.
+[01:18] During your meeting, you can actually talk to Cluely in real time.
+[01:22] For example, if you zone out or miss something important, just press Ctrl + Enter,
+[01:27] Cluely will automatically assist you and provide you with the recent information.
+[01:32] Or you can type:
+[01:33] “What did I miss just now?” Cluely instantly processes
+[01:36] the conversation and gives you a clear, concise response - right inside the widget.
+[01:42] Since Cluely is a standalone desktop app, it runs smoothly across all major platforms - Zoom,
+[01:49] Google Meet, Microsoft Teams, or even phone call recordings.
+[01:53] Let’s go through its main features one by one.
+[01:56] First, there’s Show Transcript.
+[01:58] Just click “Transcript,” and Cluely instantly displays
+[02:02] everything that’s being said - live, in real time.
+[02:05] It’s clean, well-formatted, and makes it super easy to scroll back and catch key
+[02:10] moments you might’ve missed. Next is Generate Summary.
+[02:14] At any point, you can ask Cluely to summarize your entire conversation or just the last few minutes.
+[02:21] It delivers a quick, structured overview - perfect for meetings
+[02:26] that run too long or when you need instant notes right after a call.
+[02:30] Then comes Ask Questions. For example you can ask it for
+[02:34] a quick recap or even for follow-up questions regarding the meeting.
+[02:39] You can literally type any context-based question about what’s happening on
+[02:43] your screen or what’s being discussed. And here’s something advanced users will love:
+[02:48] You can also create a knowledge base by uploading your company or product information.
+[02:54] That way, during calls, Cluely can reference your own materials - making it incredibly useful for
+[03:00] sales teams, customer support, or even training sessions where accurate information matters.
+[03:06] Now let’s talk about something Cluely is known for - Invisibility Mode.
+[03:11] To access it, click at your account at the top of your Cluely dashboard and select settings.
+[03:16] This takes you straight into the Settings panel. Here, you’ll find an option labeled “Detectable”
+[03:22] or “Undetectable.” Simply toggle between
+[03:25] the two depending on your needs. You can also toggle it using control
+[03:29] plus slash on Windows and command plus slash on Mac as a shortcut.
+[03:35] When “Undetectable” mode is turned on, Cluely runs completely in the background.
+[03:40] Meeting participants won’t see that it’s active, and it won’t
+[03:43] appear in your recordings or shared screens. But this feature isn’t reliable, doesn’t work
+[03:49] for all platforms and it’s better you don’t use it in important meetings like coding interviews.
+[03:55] Once your meeting wraps up, it’s time to review your results.
+[03:59] Start by clicking the “Record” button again - that stops the active session.
+[04:03] Then head over to the Home icon on the sidebar, where you’ll find a list of all your recent
+[04:08] meetings neatly organized. Open any session,
+[04:12] and you’ll see everything Cluely captured: The full transcript,Your AI-generated notes,
+[04:18] And any questions you asked during the meeting. From here, you can take things further.
+[04:23] Ask Cluely to write a follow-up email, re-generate a summary, or even copy the transcript manually if
+[04:29] you’d like to store it elsewhere. Coming to privacy and security:
+[04:34] Cluely claims it doesn’t sell and train on your data. But independent tests have exposed that it
+[04:40] suffers from serious security vulnerabilities. Now, let’s quickly go over Cluely AI’s pricing:
+[04:46] Starting with the Free Plan - this one gives you limited access,
+[04:50] allowing up to five Pro responses per day which is good enough if
+[04:54] you just want to test Cluely or use it occasionally for short meetings.
+[04:58] Next is the Pro Plan, priced at 20 dollars per month.
+[05:02] This version removes all restrictions, giving you unlimited responses both during and after meetings
+[05:08] - perfect if you rely on Cluely for regular work calls, interviews, or client sessions.
+[05:14] Now, before you rush to install Cluely, let’s talk about a few important drawbacks you should know.
+[05:21] First, Cluely doesn’t currently support direct integrations with tools like Slack, Notion,
+[05:26] or CRM platforms, so if you want to organize your meeting notes elsewhere, you’ll need
+[05:32] to export them manually or use merge dot dev. Then there are the ethical and legal concerns.
+[05:38] Because Cluely can operate in a hidden or overlay mode, it raises valid issues around consent,
+[05:45] misrepresentation, and fairness - especially if someone uses it in
+[05:49] exams or interviews without disclosing it. Performance-wise, response times can lag
+[05:55] during back-to-back questions, especially in live interviews where speed matters.
+[06:00] And there’s no multi-speaker labeling - Cluely only recognizes either your microphone or your
+[06:05] computer audio, not both at once. Its suggested actions can also
+[06:10] feel generic or off-context at times. So if you’re looking for something more useful
+[06:15] and secured, you might want to check out Fathom AI notetaker, which we tested in this video here:

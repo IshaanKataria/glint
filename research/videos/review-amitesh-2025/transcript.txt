@@ -1,0 +1,164 @@
+[00:00] Was wäre, wenn dein KI-Assistent dir
+[00:01] Was wäre, wenn dein KI-Assistent dir tatsächlich helfen könnte, während
+[00:03] tatsächlich helfen könnte, während
+[00:03] tatsächlich helfen könnte, während das Gespräch läuft? Nicht erst fünf
+[00:04] das Gespräch läuft? Nicht erst fünf
+[00:04] das Gespräch läuft? Nicht erst fünf Minuten später. Das ist die Idee
+[00:07] Minuten später. Das ist die Idee
+[00:07] Minuten später. Das ist die Idee hinter Cluey AI. Es hört deinem
+[00:09] hinter Cluey AI. Es hört deinem
+[00:09] hinter Cluey AI. Es hört deinem Gespräch zu, versteht den Kontext,
+[00:11] Gespräch zu, versteht den Kontext,
+[00:11] Gespräch zu, versteht den Kontext, macht Notizen und liefert dir
+[00:13] macht Notizen und liefert dir
+[00:13] macht Notizen und liefert dir Echtzeit-Antworten. Aber ist es
+[00:16] Echtzeit-Antworten. Aber ist es
+[00:16] Echtzeit-Antworten. Aber ist es wirklich nützlich oder nur ein
+[00:17] wirklich nützlich oder nur ein
+[00:17] wirklich nützlich oder nur ein weiteres Tool über WebEx und Slack?
+[00:19] weiteres Tool über WebEx und Slack?
+[00:20] weiteres Tool über WebEx und Slack? Der Einstieg ist unkompliziert. Lade
+[00:23] Der Einstieg ist unkompliziert. Lade
+[00:23] Der Einstieg ist unkompliziert. Lade Cluey herunter, melde dich an und gib
+[00:24] Cluey herunter, melde dich an und gib
+[00:24] Cluey herunter, melde dich an und gib ihm Zugriff auf dein Mikrofon sowie die
+[00:26] ihm Zugriff auf dein Mikrofon sowie die
+[00:26] ihm Zugriff auf dein Mikrofon sowie die nötigen Informationen für das
+[00:28] nötigen Informationen für das
+[00:28] nötigen Informationen für das Gespräch. Sobald du in einem Meeting
+[00:30] Gespräch. Sobald du in einem Meeting
+[00:30] Gespräch. Sobald du in einem Meeting bist, hört Cluey zu und erstellt ein
+[00:32] bist, hört Cluey zu und erstellt ein
+[00:32] bist, hört Cluey zu und erstellt ein Live-Transkript. Wenn du Hilfe brauchst
+[00:35] Live-Transkript. Wenn du Hilfe brauchst , kannst du eine Frage stellen und
+[00:36] , kannst du eine Frage stellen und
+[00:36] , kannst du eine Frage stellen und erhältst eine KI-generierte Antwort,
+[00:38] erhältst eine KI-generierte Antwort,
+[00:38] erhältst eine KI-generierte Antwort, ohne das Meeting zu verlassen. Du
+[00:40] ohne das Meeting zu verlassen. Du
+[00:40] ohne das Meeting zu verlassen. Du kannst auch individuelle Anweisungen
+[00:41] kannst auch individuelle Anweisungen
+[00:41] kannst auch individuelle Anweisungen anpassen und Dateien hochladen, damit
+[00:43] anpassen und Dateien hochladen, damit
+[00:43] anpassen und Dateien hochladen, damit die KI zusätzlichen Kontext hat. Das
+[00:46] die KI zusätzlichen Kontext hat. Das
+[00:46] die KI zusätzlichen Kontext hat. Das erste herausragende Feature ist die
+[00:47] erste herausragende Feature ist die
+[00:47] erste herausragende Feature ist die KI-Unterstützung in Echtzeit. Statt
+[00:50] KI-Unterstützung in Echtzeit. Statt
+[00:50] KI-Unterstützung in Echtzeit. Statt bis zum Ende eines Meetings zu warten,
+[00:51] bis zum Ende eines Meetings zu warten,
+[00:52] bis zum Ende eines Meetings zu warten, kannst du Cluey fragen: „Wie soll ich
+[00:53] kannst du Cluey fragen: „Wie soll ich
+[00:53] kannst du Cluey fragen: „Wie soll ich darauf reagieren?“ und erhältst eine
+[00:56] darauf reagieren?“ und erhältst eine
+[00:56] darauf reagieren?“ und erhältst eine kontextbezogene Antwort, während das
+[00:58] kontextbezogene Antwort, während das
+[00:58] kontextbezogene Antwort, während das Gespräch noch läuft. Dann gibt es
+[01:01] Gespräch noch läuft. Dann gibt es
+[01:01] Gespräch noch läuft. Dann gibt es noch die KI-Meeting-Notizen. Cluey
+[01:03] noch die KI-Meeting-Notizen. Cluey
+[01:03] noch die KI-Meeting-Notizen. Cluey erfasst das Gespräch automatisch und
+[01:05] erfasst das Gespräch automatisch und
+[01:05] erfasst das Gespräch automatisch und verwandelt es in strukturierte Notizen,
+[01:07] verwandelt es in strukturierte Notizen,
+[01:07] verwandelt es in strukturierte Notizen, die du anschließend durchgehen kannst.
+[01:09] die du anschließend durchgehen kannst.
+[01:10] Es unterstützt auch Fragen zu
+[01:11] Es unterstützt auch Fragen zu vergangenen Meetings, sodass du die KI
+[01:13] vergangenen Meetings, sodass du die KI
+[01:13] vergangenen Meetings, sodass du die KI nach Informationen aus früheren
+[01:15] nach Informationen aus früheren
+[01:15] nach Informationen aus früheren Gesprächen fragen kannst. Ein weiteres
+[01:17] Gesprächen fragen kannst. Ein weiteres
+[01:17] Gesprächen fragen kannst. Ein weiteres interessantes Feature ist die
+[01:18] interessantes Feature ist die
+[01:18] interessantes Feature ist die Bildschirmfreigabe-Technologie. Cluey
+[01:21] Bildschirmfreigabe-Technologie. Cluey
+[01:21] Bildschirmfreigabe-Technologie. Cluey gibt an, dass das Overlay für
+[01:22] gibt an, dass das Overlay für
+[01:22] gibt an, dass das Overlay für Bildschirmfreigabe-Software unsichtbar
+[01:24] Bildschirmfreigabe-Software unsichtbar
+[01:24] Bildschirmfreigabe-Software unsichtbar bleibt, während es für dich sichtbar
+[01:26] bleibt, während es für dich sichtbar
+[01:26] bleibt, während es für dich sichtbar ist. Das ist technisch beeindruckend,
+[01:29] ist. Das ist technisch beeindruckend,
+[01:29] ist. Das ist technisch beeindruckend, aber ich wäre vorsichtig mit dem
+[01:31] aber ich wäre vorsichtig mit dem
+[01:31] aber ich wäre vorsichtig mit dem Einsatz versteckter KI-Assistenten in
+[01:32] Einsatz versteckter KI-Assistenten in
+[01:32] Einsatz versteckter KI-Assistenten in Vorstellungsgesprächen, Prüfungen
+[01:34] Vorstellungsgesprächen, Prüfungen
+[01:34] Vorstellungsgesprächen, Prüfungen oder Situationen, in denen externe
+[01:36] oder Situationen, in denen externe
+[01:36] oder Situationen, in denen externe Hilfe nicht erlaubt ist. Der
+[01:38] Hilfe nicht erlaubt ist. Der
+[01:38] Hilfe nicht erlaubt ist. Der Starter-Plan ist kostenlos, aber
+[01:39] Starter-Plan ist kostenlos, aber
+[01:39] Starter-Plan ist kostenlos, aber KI-Antworten und Meeting-Notizen sind
+[01:41] KI-Antworten und Meeting-Notizen sind
+[01:41] KI-Antworten und Meeting-Notizen sind begrenzt. Der Pro-Plan kostet 19,99 $
+[01:44] begrenzt. Der Pro-Plan kostet 19,99 $
+[01:44] begrenzt. Der Pro-Plan kostet 19,99 $ pro Monat und bietet unbegrenzte
+[01:46] pro Monat und bietet unbegrenzte
+[01:46] pro Monat und bietet unbegrenzte KI-Antworten, unbegrenzte
+[01:48] KI-Antworten, unbegrenzte
+[01:48] KI-Antworten, unbegrenzte Meeting-Notizen und Zugriff auf die
+[01:50] Meeting-Notizen und Zugriff auf die
+[01:50] Meeting-Notizen und Zugriff auf die neuesten KI-Modelle. Es gibt auch einen
+[01:53] neuesten KI-Modelle. Es gibt auch einen
+[01:53] neuesten KI-Modelle. Es gibt auch einen Pro-Plus-Plan mit „Undetectability“
+[01:56] Pro-Plus-Plan mit „Undetectability“
+[01:56] Pro-Plus-Plan mit „Undetectability“ für 149,99 $ pro Monat, der die
+[01:58] für 149,99 $ pro Monat, der die
+[01:58] für 149,99 $ pro Monat, der die Funktion zur versteckten
+[02:00] Funktion zur versteckten
+[02:00] Funktion zur versteckten Bildschirmfreigabe enthält. Das
+[02:02] Bildschirmfreigabe enthält. Das
+[02:02] Bildschirmfreigabe enthält. Das größte Problem ist die
+[02:03] größte Problem ist die
+[02:03] größte Problem ist die Zuverlässigkeit. Unabhängige
+[02:05] Zuverlässigkeit. Unabhängige
+[02:06] Zuverlässigkeit. Unabhängige Bewertungen berichten von Situationen,
+[02:08] Bewertungen berichten von Situationen,
+[02:08] Bewertungen berichten von Situationen, in denen Antworten langsam, allgemein
+[02:10] in denen Antworten langsam, allgemein
+[02:10] in denen Antworten langsam, allgemein oder ungenau waren. Du solltest daher
+[02:12] oder ungenau waren. Du solltest daher
+[02:12] oder ungenau waren. Du solltest daher nicht blind auf jede Antwort vertrauen,
+[02:14] nicht blind auf jede Antwort vertrauen,
+[02:14] nicht blind auf jede Antwort vertrauen, die Cluey dir in einem wichtigen
+[02:15] die Cluey dir in einem wichtigen
+[02:15] die Cluey dir in einem wichtigen Gespräch gibt. Lohnt sich Cluey AI
+[02:19] Gespräch gibt. Lohnt sich Cluey AI
+[02:19] Gespräch gibt. Lohnt sich Cluey AI also? Für Meetings, Notizen und
+[02:21] also? Für Meetings, Notizen und
+[02:21] also? Für Meetings, Notizen und Echtzeit-Unterstützung ist es
+[02:23] Echtzeit-Unterstützung ist es
+[02:23] Echtzeit-Unterstützung ist es definitiv interessant. Aber bei
+[02:26] definitiv interessant. Aber bei
+[02:26] definitiv interessant. Aber bei wichtigen Anlässen solltest du die
+[02:28] wichtigen Anlässen solltest du die
+[02:28] wichtigen Anlässen solltest du die Antworten der KI immer prüfen und die
+[02:30] Antworten der KI immer prüfen und die
+[02:30] Antworten der KI immer prüfen und die Regeln deiner Umgebung befolgen. Meine
+[02:32] Regeln deiner Umgebung befolgen. Meine
+[02:32] Regeln deiner Umgebung befolgen. Meine persönliche Meinung: Cluey ist derzeit
+[02:34] persönliche Meinung: Cluey ist derzeit
+[02:34] persönliche Meinung: Cluey ist derzeit einer der interessanteren
+[02:36] einer der interessanteren
+[02:36] einer der interessanteren Echtzeit-KI-Assistenten, aber der Wert
+[02:38] Echtzeit-KI-Assistenten, aber der Wert
+[02:38] Echtzeit-KI-Assistenten, aber der Wert hängt stark davon ab, ob du während
+[02:40] hängt stark davon ab, ob du während
+[02:40] hängt stark davon ab, ob du während eines Gesprächs wirklich
+[02:41] eines Gesprächs wirklich
+[02:41] eines Gesprächs wirklich KI-Unterstützung benötigst. Wenn dir
+[02:43] KI-Unterstützung benötigst. Wenn dir
+[02:43] KI-Unterstützung benötigst. Wenn dir diese Bewertung gefallen hat, lass ein
+[02:45] diese Bewertung gefallen hat, lass ein
+[02:45] diese Bewertung gefallen hat, lass ein Like da, abonniere den Kanal und
+[02:47] Like da, abonniere den Kanal und
+[02:47] Like da, abonniere den Kanal und aktiviere die Glocke für weitere
+[02:49] aktiviere die Glocke für weitere
+[02:49] aktiviere die Glocke für weitere KI-Tool-Reviews.

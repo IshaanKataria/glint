@@ -1,0 +1,21 @@
+{
+  "id": "b_typed_ask",
+  "at": "2026-11-06T15:55:25.000Z",
+  "status": "PASS",
+  "threshold": "non-empty answer from deepseek-v4-pro, received as streamed chunks, factually right for a checkable question",
+  "measured": {
+    "question": "What is 78 multiplied by 48? Reply with just the number.",
+    "expected": 3744,
+    "answer": "3744",
+    "model": "deepseek-v4-pro",
+    "streamedChunks": 2,
+    "firstChunkMs": 3203,
+    "totalMs": 3380,
+    "domShowsAnswer": true,
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/bc_ask.log",
+    "test-output/checker/b_typed_ask_overlay.png"
+  ]
+}

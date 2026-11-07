@@ -1,0 +1,75 @@
+
+===== run 1/1 =====
+  4079 ms calling session.start()
+ 18355 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261107-024851-g41v","startedAt":1793980131173,"source":"mic+system","message":"Loading transcription model..."}}
+ 18355 ms recording live for 12 s...
+ 22359 ms say -a 74 "testing the glint microphone" (session t=18.28s)
+ 41025 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261107-024851-g41v","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+ 12443 status   starting source=mic+system
+ 14255 status   recording source=mic+system "Loading transcription model..."
+ 16889 status   recording source=mic+system "System audio is delivering pure silence (all-zero samples): turn on the app that launched Glint in System Settings > Privacy & Security > Screen & System Audio Recording > System Audio Recording Only"
+ 26307 status   stopping source=mic+system "Finishing transcript..."
+ 36877 segment  them [19.66-21.49s] id=mw55g8dh-them-0001 "Testing the Glint microphone."
+ 36878 status   idle "Stopped"
+ 36879 status   summarizing source=mic+system "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":76518,"loadMs":29110}
+sources: [{"kind":"mic","speaker":"me","bytes":389860,"running":false},{"kind":"system","speaker":"them","bytes":439320,"running":false},{"kind":"echoRef","speaker":"them","bytes":218784,"running":false}]  systemAudio: on  echoReference: on: built-in speakers
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false,"echoFilter":true}
+chunk them t=12.57s dur=4.14s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-90.3 thr=-62.7 voiced=0s
+chunk me t=14.15s dur=4.14s SKIPPED (silence) | peak=-51.8 rms=-75.3 maxFrame=-63.1 floor=-89.5 thr=-62.7 voiced=0s
+chunk them t=16.71s dur=4.78s worker=6289ms latency=15204ms chars=29 | peak=-3.1 rms=-20.8 maxFrame=-12.1 floor=-50.3 thr=-32.2 voiced=1.44s
+chunk me t=18.29s dur=4.14s SKIPPED (echo) | peak=-38.6 rms=-64.6 maxFrame=-47.5 floor=-90.3 thr=-62.7 voiced=0.38s | echo: user=0s explainedBySpeakers=0.38s speakerVoiced=1.66s coupling=-47.8dB
+chunk them t=21.49s dur=4.14s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-50.3 thr=-32.2 voiced=0s
+chunk me t=22.43s dur=3.9s SKIPPED (silence) | peak=-51.1 rms=-81.4 maxFrame=-60.8 floor=-90.3 thr=-62.7 voiced=0.02s
+chunk them t=25.63s dur=0.67s SKIPPED (silence) | peak=-120 rms=-120 maxFrame=-120 floor=-50.3 thr=-32.2 voiced=0s
+
+transcript: Testing the Glint microphone.
+mic chunks overlapping the speech (session t=18.28s): t=14.15s skipped:silence, t=18.29s skipped:echo
+
+me segments: 0 []  WER vs phrase 100%
+them segments: 1 ["Testing the Glint microphone."]  WER vs phrase 0%
+
+--- checks (live) ---
+PASS  mic chunk(s) during the speech were not gated as silence
+PASS  the speakers' audio came out as them
+PASS  no me segment duplicates the system audio (echo flagged)
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=76518 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] compiled system tap helper in 8774 ms -> /Users/katana/Library/Application Support/Glint/bin/glint-system-tap-f6ce4f8707
+[glint:audio] mic source spawned pid=76539: glint-system-tap-f6ce4f8707 --mic
+[glint:audio] system source spawned pid=76540: glint-system-tap-f6ce4f8707
+[glint:audio] system tap: {"aggregateSampleRate":48000,"outputDevice":"CC-22-FE-30-54-D2:output","inputChannels":2,"event":"started","inputSampleRate":48000}
+[glint:audio] system audio capture running (speaker them)
+[glint:audio] echoRef source spawned pid=76573: glint-system-tap-f6ce4f8707 --device builtin-speaker
+[glint:audio] system tap: {"inputSampleRate":48000,"aggregateSampleRate":48000,"event":"started","inputChannels":2,"outputDevice":"BuiltInSpeakerDevice"}
+[glint:audio] echo reference on: built-in speakers
+[glint:audio] mic helper: {"event":"started","mode":"mic","inputChannels":1,"inputSampleRate":48000}
+[glint:audio] session 20261107-024851-g41v recording (source mic+system, timeOffset 0s)
+[glint:audio] System audio is delivering pure silence (all-zero samples): turn on the app that launched Glint in System Settings > Privacy & Security > Screen & System Audio Recording > System Audio Recording Only
+[glint:audio] chunk them/system t=12.57s dur=4.14s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-90.3 voicedThr=-62.7 voiced=0s
+[glint:audio] chunk me/mic t=14.15s dur=4.14s SKIPPED (silence): peak=-51.8dBFS rms=-75.3 maxFrame=-63.1 floor=-89.5 voicedThr=-62.7 voiced=0s
+[glint:audio] chunk them/system t=16.71s dur=4.78s queued: peak=-3.1dBFS rms=-20.8 maxFrame=-12.1 floor=-50.3 voicedThr=-32.2 voiced=1.44s
+[glint:audio] chunk me/mic t=18.29s dur=4.14s queued: peak=-38.6dBFS rms=-64.6 maxFrame=-47.5 floor=-90.3 voicedThr=-62.7 voiced=0.38s
+[glint:audio] chunk me/mic t=18.29s dur=4.14s echo check: micVoiced=0.38s explainedBySpeakers=0.38s user=0s speakerVoiced=1.66s coupling=-47.8dB learned=-dB -> ECHO of the speakers, not transcribed as me
+[glint:audio] chunk them/system t=21.49s dur=4.14s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-50.3 voicedThr=-32.2 voiced=0s
+[glint:audio] system tap: {"event":"stopped","seconds":6.8369999999999997,"paddedSeconds":0,"reason":"signal","nonZeroSamples":26657}
+[glint:audio] echoRef source exited code=0 signal=null bytes=218784
+[glint:audio] system tap: {"reason":"signal","nonZeroSamples":26656,"event":"stopped","seconds":13.72875,"paddedSeconds":0.28912500000000002}
+[glint:audio] mic helper: {"reason":"stdin-closed","event":"stopped","seconds":12.183125,"paddedSeconds":0,"nonZeroSamples":101093}
+[glint:audio] mic source exited code=0 signal=null bytes=389860
+[glint:audio] system source exited code=0 signal=null bytes=439320
+[glint:audio] chunk me/mic t=22.43s dur=3.9s SKIPPED (silence): peak=-51.1dBFS rms=-81.4 maxFrame=-60.8 floor=-90.3 voicedThr=-62.7 voiced=0.02s
+[glint:audio] chunk them/system t=25.63s dur=0.67s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-50.3 voicedThr=-32.2 voiced=0s
+[glint:whisper] [whisper_worker] model small/int8 loaded in 29110 ms
+[glint:whisper] worker ready: model=small loadMs=29110
+[glint:audio] segment them [19.66-21.49s] worker=6289ms latency=15204ms: Testing the Glint microphone.
+[glint:audio] session 20261107-024851-g41v stopped: 1 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

@@ -1,0 +1,53 @@
+
+===== run 1/1 =====
+   316 ms calling session.start()
+  3984 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261106-180349-vwet","startedAt":1793948629449,"source":"mic+system","message":"Loading transcription model..."}}
+  3984 ms recording live for 16 s...
+ 20041 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261106-180349-vwet","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+  3442 status   starting source=mic+system
+  3663 status   recording source=mic+system "Loading transcription model..."
+  4338 status   recording source=mic+system
+  8458 status   recording source=mic+system "Microphone is delivering pure silence (all-zero samples): macOS permission is probably missing"
+ 13656 segment  them [3.77-8.85s] id=mw4mp1hl-them-0001 "Thanks for joining the call. We reviewed the proposal and the team likes the integration plan."
+ 17171 segment  them [8.88-14.45s] id=mw4mp1hl-them-0002 "What would the pricing be for 200 seats? And can you deliver the first version by the end of March?"
+ 19672 status   stopping source=mic+system "Finishing transcript..."
+ 19713 status   idle "Stopped"
+ 19717 status   summarizing source=mic+system "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":89863,"loadMs":4319}
+sources: [{"kind":"mic","speaker":"me","bytes":426666,"running":false},{"kind":"system","speaker":"them","bytes":519498,"running":false}]  systemAudio: on
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk me t=3.65s dur=4.14s SKIPPED (silence)
+chunk them t=3.43s dur=5.42s worker=2205ms latency=2208ms chars=94
+chunk me t=7.79s dur=4.14s SKIPPED (silence)
+chunk them t=8.85s dur=5.6s worker=2550ms latency=2552ms chars=99
+chunk me t=11.93s dur=4.14s SKIPPED (silence)
+chunk them t=14.45s dur=4.14s SKIPPED (silence)
+chunk me t=16.07s dur=0.91s SKIPPED (silence)
+chunk them t=18.59s dur=1.07s SKIPPED (silence)
+
+transcript: Thanks for joining the call. We reviewed the proposal and the team likes the integration plan. What would the pricing be for 200 seats? And can you deliver the first version by the end of March?
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=89863 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=89864: ffmpeg -hide_banner -loglevel error -nostdin -f avfoundation -i :default -ac 1 -ar 16000 -f s16le -
+[glint:audio] system source spawned pid=89865: glint-system-tap-32da87325a
+[glint:audio] system tap: {"inputChannels":2,"event":"started","outputDevice":"BuiltInSpeakerDevice","inputSampleRate":48000}
+[glint:audio] system audio capture running (speaker them)
+[glint:audio] session 20261106-180349-vwet recording (source mic+system, timeOffset 0s)
+[glint:whisper] [whisper_worker] model small/int8 loaded in 4319 ms
+[glint:whisper] worker ready: model=small loadMs=4319
+[glint:audio] Microphone is delivering pure silence (all-zero samples): macOS permission is probably missing
+[glint:audio] segment them [3.77-8.85s] worker=2205ms latency=2208ms: Thanks for joining the call. We reviewed the proposal and the team likes the int
+[glint:audio] segment them [8.88-14.45s] worker=2550ms latency=2552ms: What would the pricing be for 200 seats? And can you deliver the first version b
+[glint:audio] mic source exited code=255 signal=null bytes=426666
+[glint:audio] system tap: {"reason":"signal","seconds":16.234312500000001,"nonZeroSamples":168131,"event":"stopped"}
+[glint:audio] system source exited code=0 signal=null bytes=519498
+[glint:audio] session 20261106-180349-vwet stopped: 2 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

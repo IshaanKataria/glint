@@ -1,0 +1,103 @@
+{
+  "id": "screens_notes_history_tryr3-1",
+  "at": "2026-11-06T16:33:33.353Z",
+  "note": "not a gate; protection OFF; 8 real sessions",
+  "measured": {
+    "try": "r3-1",
+    "sessions": [
+      {
+        "clip": "short1",
+        "audioSec": 7.8,
+        "id": "20261107-033006-onfp",
+        "state": "saved",
+        "title": "Login Bug Fix and Payment Retry Review",
+        "durationMs": 12110,
+        "segments": 1,
+        "actionItems": 1,
+        "summaryChars": 305
+      },
+      {
+        "clip": "short2",
+        "audioSec": 8.4,
+        "id": "20261107-033021-khjm",
+        "state": "saved",
+        "title": "Onboarding Screens Design Review",
+        "durationMs": 11103,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 198
+      },
+      {
+        "clip": "short3",
+        "audioSec": 8.5,
+        "id": "20261107-033034-y38c",
+        "state": "saved",
+        "title": "Back-End Role Final Round Interviews",
+        "durationMs": 14114,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 332
+      },
+      {
+        "clip": "short4",
+        "audioSec": 7.9,
+        "id": "20261107-033051-oisu",
+        "state": "saved",
+        "title": "Marketing Check-In: Webinar Registrations and Reminder Email",
+        "durationMs": 11089,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 235
+      },
+      {
+        "clip": "short5",
+        "audioSec": 8.2,
+        "id": "20261107-033104-1xhd",
+        "state": "saved",
+        "title": "Acme SSO Request Before March Renewal",
+        "durationMs": 10143,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 237
+      },
+      {
+        "clip": "short6",
+        "audioSec": 9.9,
+        "id": "20261107-033117-dl63",
+        "state": "saved",
+        "title": "Cloud Cost Budget Review",
+        "durationMs": 14193,
+        "segments": 2,
+        "actionItems": 2,
+        "summaryChars": 324
+      },
+      {
+        "clip": "short7",
+        "audioSec": 8.6,
+        "id": "20261107-033134-449b",
+        "state": "saved",
+        "title": "Version 2.4 Release Planning",
+        "durationMs": 12161,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 284
+      },
+      {
+        "clip": "long",
+        "audioSec": 84.6,
+        "id": "20261107-033150-x84n",
+        "state": "saved",
+        "title": "Pilot Results, Pricing, and Rollout Plan",
+        "durationMs": 89158,
+        "segments": 14,
+        "actionItems": 5,
+        "summaryChars": 910
+      }
+    ],
+    "dashboardContentProtection": false,
+    "overlayContentProtection": false,
+    "listText": "Today\nPilot Results, Pricing, and Rollout Plan\n1:29\n3:31 AM\nVersion 2.4 Release Planning\n0:12\n3:31 AM\nCloud Cost Budget Review\n0:14\n3:31 AM\nAcme SSO Request Before March Renewal\n0:10\n3:31 AM\nMarketing Check-In: Webinar Registrations and Reminder Email\n0:11\n3:30 AM\nBack-End Role Final Round Interviews\n0:14\n3:30 AM\nOnboarding Screens Design Review\n0:11\n3:30 AM\nLogin Bug Fix and Payment Retry Review\n0:12\n3:30 AM",
+    "noteHead": "Pilot Results, Pricing, and Rollout Plan\nSat, Nov 7 · 3:31 AM\n1:29\nSummary\nTranscript\nUsage\nCopy full summary\nAction Items\nSend SOC 2 Type 2 report today (Tom)\nShare data processing agreement by Wednesday (Legal team)\nGet finance approval for annual contract by next Friday (Customer)\nBook training dates for billing team (Tom)\nSend summary email with pilot numbers this afternoon (Tom)\nOverview\n\nTom and the customer reviewed pilot results, discussed pricing for 200 seats, and outlined a rollout plan starting with the billing team in December.\n\nPilot Results\nPilot ran for six weeks with 40 agents",
+    "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/notes-history.png"
+  }
+}

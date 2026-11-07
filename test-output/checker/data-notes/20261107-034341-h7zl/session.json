@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "id": "20261107-034341-h7zl",
+  "title": "Cloud Cost Budget Review",
+  "status": "saved",
+  "startedAt": 1793983421007,
+  "durationSec": 13,
+  "durationMs": 13086,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034341-h7zl",
+      "id": "mw57eqtr-them-0001",
+      "speaker": "them",
+      "text": "Budget review Cloud costs rose 12% last month, mostly from storage.",
+      "tStart": 0.03,
+      "tEnd": 5.7
+    },
+    {
+      "sessionId": "20261107-034341-h7zl",
+      "id": "mw57eqtr-them-0002",
+      "speaker": "them",
+      "text": "Let's move old logs to cold storage and review again in 2 weeks.",
+      "tStart": 5.73,
+      "tEnd": 9.51
+    }
+  ],
+  "actionItems": [
+    "Move old logs to cold storage (Them)",
+    "Review cloud costs again in 2 weeks (Them)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983421007,
+      "endedAt": 1793983434093
+    }
+  ],
+  "endedAt": 1793983434093,
+  "summaryMarkdown": "The team reviewed cloud costs, noting a 12% increase last month driven by storage, and agreed to move old logs to cold storage with a follow-up review in two weeks.\n\n### Cloud Costs\n- Cloud costs rose 12% last month\n- Increase was mostly from storage\n\n### Cost Reduction Plan\n- Move old logs to cold storage\n- Review again in 2 weeks",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034341-h7zl/notes.md"
+}

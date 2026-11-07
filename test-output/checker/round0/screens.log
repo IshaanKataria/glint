@@ -1,0 +1,39 @@
+# screens.log  2026-11-06T07:31:47.975Z
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=realtime, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-screens)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: OFF
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+protection at start (expected false): false
+  [glint out] [glint:whisper] worker spawned pid=7308 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+overlay moved to {"x":132,"y":494,"width":572,"height":66}
+  [glint out] [glint:whisper] [whisper_worker] model small/int8 loaded in 31785 ms
+  [glint out] [glint:whisper] worker ready: model=small loadMs=31785
+  [glint out] [glint:audio] file source spawned pid=7565: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/clip_screens.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261106-183226-rx32 -> /Users/katana/experiments/cluely-clone/test-output/checker/data-screens/20261106-183226-rx32
+  [glint out] [glint:audio] session 20261106-183226-rx32 recording (source file, timeOffset 0s)
+overlay-bar captured; state {"idle":true,"segs":0,"ins":1}
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=615116
+  [glint out] [glint:audio] segment them [0.03-7.28s] worker=42814ms latency=42817ms: Hi Priya, thanks for making time today. We looked at the pilot results and the s
+  [glint out] [glint:ai] insights #1 for 20261106-183226-rx32: 1 segments, 0 actions, 2377 ms, model=deepseek-flash
+  [glint out] [glint:whisper] chunk c2 timed out; restarting worker
+  [glint out] [glint:whisper] worker exited code=null signal=SIGKILL after 108319 ms; stderr tail: 2026-11-06 18:32:25 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote... | Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint ../../.cache/watch/whisperx-venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin` | [whisper_worker] model small/int8 loaded in 31785 ms | 
+  [glint out] [glint:whisper] restarting worker (restart #1)
+  [glint out] [glint:whisper] worker spawned pid=7954 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+  [glint out] [glint:audio] quit: stopping capture and the WhisperX worker
+  [glint err] Debugger ending on ws://127.0.0.1:63822/3581725e-aa6a-4cfa-9f5f-75726dcdfd3b
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging
+  [glint out] [glint:audio] chunk /var/folders/0r/5c01bgh90fj92p4hhv5r2h3w0000gn/T/glint-audio/20261106-183226-rx32-mw4npucu/file-0002.wav failed: worker shut down
+  [glint out] [glint:audio] chunk /var/folders/0r/5c01bgh90fj92p4hhv5r2h3w0000gn/T/glint-audio/20261106-183226-rx32-mw4npucu/file-0003.wav failed: worker shut down
+  [glint out] [glint:audio] session 20261106-183226-rx32 stopped: 1 segment(s)

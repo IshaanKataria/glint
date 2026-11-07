@@ -1,0 +1,36 @@
+[00:00] Hey, what's up, man? How can I help?
+[00:02] Hey, uh, my router's been flashing red
+[00:05] since this morning. Um, I tried
+[00:06] restarting it, but it just hasn't been
+[00:08] working. Uh, okay. Um, I guess did it
+[00:11] start flashing after a power outage or
+[00:13] any recent changes to your settings? Uh,
+[00:16] no change to settings, but but there
+[00:17] there was a short outage earlier. Um,
+[00:20] okay. Uh, well, the reason for this is
+[00:22] probably that the power outage caused a
+[00:23] config issue. Um, can you press the
+[00:25] middle button with a lightning bolt on
+[00:27] the top of the router?
+[00:29] Um, wait, where where is that button?
+[00:32] Uh, yeah. So, um, the lightning bolt
+[00:34] button is going to be at top of the
+[00:36] router. There's three buttons. On the
+[00:37] left, there's one with the house. On the
+[00:38] middle, there's one with the lightning
+[00:39] bolt. And on the right with there's one,
+[00:40] the gear. You can press the middle
+[00:41] button with the lightning bolt.
+[00:44] Okay. Okay.
+[00:46] Okay. What's happening now? Um, okay.
+[00:49] It's blinking blue now. Uh, what does
+[00:52] that mean? Uh, yeah. So, when the light
+[00:54] is blinking blue, that means that the
+[00:55] router is reconnecting. It should turn
+[00:57] green in about a minute. And that means
+[00:58] you're back online.
+[01:00] Okay. Give me a second. All right. Okay.
+[01:04] All right. Perfect. Okay. It just turned
+[01:05] green. Okay. Awesome. Thanks. Uh if you
+[01:06] ever have any questions, feel free to
+[01:08] reach out. All right. Thank you.

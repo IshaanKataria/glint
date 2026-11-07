@@ -1,0 +1,41 @@
+/* DEV-ONLY: fake video-call backdrop for scripts/ui_shots.mjs visual comparisons. Loaded only by
+   lib/fixtures.ts mountScene() in GLINT_TEST fixture mode. Never part of the real overlay. */
+html.fixture-scene { background: #0c0d10; height: 100%; }
+html.fixture-scene body { background: transparent; height: 100%; }
+.fx-scene { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.fx-tile {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 62px;
+  bottom: -20px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.fx-wall { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, #efe6cf 0%, #e2d6b8 45%, #cdbf9c 100%); }
+.fx-plant {
+  position: absolute;
+  right: 3%;
+  top: 8%;
+  width: 22%;
+  height: 70%;
+  background:
+    radial-gradient(ellipse 18px 9px at 30% 20%, #5f7a3c 60%, transparent 62%),
+    radial-gradient(ellipse 20px 9px at 60% 32%, #6f8a46 60%, transparent 62%),
+    radial-gradient(ellipse 16px 8px at 40% 46%, #556f35 60%, transparent 62%),
+    radial-gradient(ellipse 22px 10px at 75% 52%, #6b8541 60%, transparent 62%),
+    radial-gradient(ellipse 18px 8px at 50% 64%, #5b7739 60%, transparent 62%),
+    radial-gradient(ellipse 20px 9px at 25% 74%, #6d8844 60%, transparent 62%);
+  filter: blur(0.6px);
+}
+.fx-person { position: absolute; left: 50%; bottom: 0; width: 440px; height: 92%; transform: translateX(-50%); }
+.fx-person i { position: absolute; left: 50%; transform: translateX(-50%); display: block; }
+.fx-hair { top: 6%; width: 230px; height: 230px; border-radius: 48% 48% 42% 42%; background: radial-gradient(circle at 50% 40%, #2a1d17, #16100c); }
+.fx-face { top: 17%; width: 182px; height: 230px; border-radius: 46% 46% 50% 50%; background: radial-gradient(ellipse at 50% 40%, #a8775a 0%, #8d5f45 60%, #6e4632 100%); }
+.fx-body { bottom: -8%; width: 440px; height: 34%; border-radius: 48% 48% 0 0; background: linear-gradient(180deg, #c9d2cc, #aeb9b2); }
+.fx-name { position: absolute; left: 14px; bottom: 34px; padding: 3px 9px; border-radius: 6px; background: rgba(0, 0, 0, 0.55); color: #fff; font: 500 12px/1.4 -apple-system, sans-serif; }
+.fx-self { position: absolute; right: 6%; bottom: 40px; width: 180px; height: 112px; border-radius: 10px; background: linear-gradient(160deg, #3a4150, #1d222b); border: 1px solid rgba(255, 255, 255, 0.1); }
+.fx-self .fx-name { bottom: 8px; left: 8px; }
+/* Light page backdrop, like the white help-center page behind research/screens/ask-answer.png. */
+html.scene-light { background: #ffffff; }
+html.scene-light .fx-scene { display: none; }

@@ -1,0 +1,45 @@
+
+===== run 1/1 =====
+  1119 ms calling session.start()
+  2096 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261107-022809-v6uy","startedAt":1793978889169,"source":"mic+system","message":"Loading transcription model..."}}
+  2097 ms recording live for 10 s...
+ 21883 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261107-022809-v6uy","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+   316 status   starting source=mic+system
+   964 status   recording source=mic+system "Loading transcription model..."
+ 10969 status   stopping source=mic+system "Finishing transcript..."
+ 20698 segment  them [4.44-5.42s] id=mw54pm1d-them-0001 "Testing the bleeding microphone."
+ 20698 status   idle "Stopped"
+ 20699 status   summarizing source=mic+system "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":69590,"loadMs":15959}
+sources: [{"kind":"mic","speaker":"me","bytes":320640,"running":false},{"kind":"system","speaker":"them","bytes":173108,"running":false}]  systemAudio: on
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk me t=0.94s dur=4.14s SKIPPED (silence)
+chunk me t=5.08s dur=4.14s SKIPPED (silence)
+chunk them t=0.31s dur=5.12s worker=4663ms latency=9964ms chars=32
+chunk me t=9.22s dur=1.74s SKIPPED (silence)
+chunk them t=5.43s dur=0.29s SKIPPED (silence)
+
+transcript: Testing the bleeding microphone.
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=69590 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=69591: ffmpeg -hide_banner -loglevel error -nostdin -f avfoundation -i :default -ac 1 -ar 16000 -f s16le -
+[glint:audio] system source spawned pid=69592: glint-system-tap-32da87325a
+[glint:audio] system tap: {"outputDevice":"CC-22-FE-30-54-D2:output","inputChannels":2,"inputSampleRate":48000,"event":"started"}
+[glint:audio] system audio capture running (speaker them)
+[glint:audio] session 20261107-022809-v6uy recording (source mic+system, timeOffset 0s)
+[glint:audio] system tap: {"seconds":5.4096250000000001,"event":"stopped","reason":"signal","nonZeroSamples":29700}
+[glint:audio] system source exited code=0 signal=null bytes=173108
+[glint:audio] mic source exited code=255 signal=null bytes=320640
+[glint:whisper] [whisper_worker] model small/int8 loaded in 15959 ms
+[glint:whisper] worker ready: model=small loadMs=15959
+[glint:audio] segment them [4.44-5.42s] worker=4663ms latency=9964ms: Testing the bleeding microphone.
+[glint:audio] session 20261107-022809-v6uy stopped: 1 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

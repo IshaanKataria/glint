@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "id": "20261107-034103-xgwr",
+  "title": "Security Review and Database Migration",
+  "status": "saved",
+  "startedAt": 1793983263986,
+  "durationSec": 18,
+  "durationMs": 18465,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034103-xgwr",
+      "id": "mw57bdo2-them-0001",
+      "speaker": "them",
+      "text": "Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready.",
+      "tStart": 0.03,
+      "tEnd": 6.66
+    },
+    {
+      "sessionId": "20261107-034103-xgwr",
+      "id": "mw57bdo2-them-0002",
+      "speaker": "them",
+      "text": "Our team of 12 engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday?",
+      "tStart": 6.69,
+      "tEnd": 14.13
+    },
+    {
+      "sessionId": "20261107-034103-xgwr",
+      "id": "mw57bdo2-them-0003",
+      "speaker": "them",
+      "text": "And what is the delivery date for the mobile app?",
+      "tStart": 14.19,
+      "tEnd": 16.54
+    }
+  ],
+  "actionItems": [
+    "Send the signed contract to their legal team by Friday (Me)",
+    "Provide the delivery date for the mobile app (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983263986,
+      "endedAt": 1793983282451
+    }
+  ],
+  "endedAt": 1793983282451,
+  "summaryMarkdown": "Them reported that the security review is complete and the final report is ready. They offered to start the database migration on Monday and asked the user to send the signed contract and provide the mobile app delivery date.\n\n### Security Review\n- Security review was finished last week.\n- Final report is ready.\n\n### Database Migration\n- Team of 12 engineers can start the database migration on Monday.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-deg/20261107-034103-xgwr/notes.md"
+}

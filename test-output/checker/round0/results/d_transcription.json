@@ -1,0 +1,23 @@
+{
+  "id": "d_transcription",
+  "at": "2026-11-06T07:24:41.233Z",
+  "status": "PASS",
+  "threshold": "say clip through the session pipeline (GLINT_AUDIO_FILE); WER <= 10% after normalisation (lowercase, no punctuation, numbers as words)",
+  "measured": {
+    "sessionId": "20261106-182408-08bb",
+    "reference": "Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready. Our team of twelve engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday? And what is the delivery date for the mobile app?",
+    "hypothesis": "Good morning everyone, and thanks for joining. We finished the security review last week and the final report is ready. Our team of 12 engineers can start the database migration on Monday. Could you send the signed contract to our legal team by Friday? And what is the delivery date for the mobile app?",
+    "normRef": "good morning everyone and thanks for joining we finished the security review last week and the final report is ready our team of twelve engineers can start the database migration on monday could you send the signed contract to our legal team by friday and what is the delivery date for the mobile app",
+    "normHyp": "good morning everyone and thanks for joining we finished the security review last week and the final report is ready our team of twelve engineers can start the database migration on monday could you send the signed contract to our legal team by friday and what is the delivery date for the mobile app",
+    "wer": 0,
+    "edits": 0,
+    "refWords": 54,
+    "segments": 3,
+    "source": "file",
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/deg_session.log",
+    "test-output/checker/clip_deg.wav"
+  ]
+}

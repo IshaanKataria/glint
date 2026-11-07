@@ -1,0 +1,223 @@
+
+Running 1 test using 1 worker
+
+clips ["short1 7.8s","short2 8.4s","short3 8.5s","short4 7.9s","short5 8.2s","short6 9.9s","short7 8.6s","long 84.6s"]
+  [glint out] [glint:main] Glint 0.1.0 electron 45.2.3 test=true dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-notes
+  [glint out] [glint:main] audio source override: none (microphone)
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=realtime, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-notes)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: OFF
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:whisper] worker spawned pid=92838 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+  [glint out] [glint:audio] file source spawned pid=92839: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short1.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033006-onfp -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033006-onfp
+  [glint out] [glint:audio] session 20261107-033006-onfp recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=7.48s queued: peak=-2.4dBFS rms=-19.8 maxFrame=-12.8 floor=-60.2 voicedThr=-42.1 voiced=6.1s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=249628
+  [glint out] [glint:audio] chunk them/file t=7.48s dur=0.32s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-60.2 voicedThr=-42.1 voiced=0s
+  [glint out] [glint:whisper] [whisper_worker] model small/int8 loaded in 8522 ms
+  [glint out] [glint:whisper] worker ready: model=small loadMs=8522
+  [glint out] [glint:audio] segment them [0.03-7.47s] worker=3211ms latency=4488ms: Quick stand up, the login bug is fixed and deployed. Next, I'll review the payme
+  [glint out] [glint:audio] file source finished: 7.8s of audio, 1 segment(s); autoStop=false
+  [glint out] [glint:audio] session 20261107-033006-onfp stopped: 1 segment(s)
+  [glint out] [glint:sessions] [20261107-033006-onfp] notes attempt 1: 2 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033006-onfp: model=deepseek-v4-pro 1969 ms, 1 attempt(s), 2 sections, title="Login Bug Fix and Payment Retry Review", 1 action items, tokens=595/149
+session {"clip":"short1","audioSec":7.8,"id":"20261107-033006-onfp","state":"saved","title":"Login Bug Fix and Payment Retry Review","durationMs":12110,"segments":1,"actionItems":1,"summaryChars":305}
+  [glint out] [glint:audio] file source spawned pid=92927: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short2.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033021-khjm -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033021-khjm
+  [glint out] [glint:audio] session 20261107-033021-khjm recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=5.32s queued: peak=-2.8dBFS rms=-15.9 maxFrame=-11.1 floor=-50.3 voicedThr=-32.2 voiced=4.26s
+  [glint out] [glint:audio] segment them [0.03-5.32s] worker=2802ms latency=2804ms: design review for the onboarding screens. We agreed to cut the setup steps from 
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=268672
+  [glint out] [glint:audio] chunk them/file t=5.32s dur=3.08s queued: peak=-0.7dBFS rms=-19.8 maxFrame=-13.7 floor=-50.3 voicedThr=-32.2 voiced=1.74s
+  [glint out] [glint:audio] segment them [5.35-8.02s] worker=2332ms latency=2334ms: Priya will update the mock-ups by Thursday.
+  [glint out] [glint:audio] file source finished: 8.4s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:ai] insights #1 for 20261107-033021-khjm: 1 segments, 0 actions, 961 ms, model=deepseek-flash
+  [glint out] [glint:audio] session 20261107-033021-khjm stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033021-khjm] notes attempt 1: 1 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033021-khjm: model=deepseek-v4-pro 1784 ms, 1 attempt(s), 1 sections, title="Onboarding Screens Design Review", 1 action items, tokens=607/112
+session {"clip":"short2","audioSec":8.4,"id":"20261107-033021-khjm","state":"saved","title":"Onboarding Screens Design Review","durationMs":11103,"segments":2,"actionItems":1,"summaryChars":198}
+  [glint out] [glint:audio] file source spawned pid=92950: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short3.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033034-y38c -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033034-y38c
+  [glint out] [glint:audio] session 20261107-033034-y38c recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=4.26s queued: peak=-1.9dBFS rms=-15.7 maxFrame=-11.4 floor=-50.3 voicedThr=-32.2 voiced=3.36s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=273228
+  [glint out] [glint:audio] chunk them/file t=4.26s dur=4.28s queued: peak=-2.1dBFS rms=-16 maxFrame=-11.4 floor=-50.3 voicedThr=-32.2 voiced=3.3s
+  [glint out] [glint:audio] segment them [0.03-4.26s] worker=3715ms latency=3717ms: Hiring sink. We have three final round candidates for the back-end role.
+  [glint out] [glint:audio] segment them [4.29-8.26s] worker=2641ms latency=5806ms: Interviews are on Tuesday and Wednesday, and we will decide by Friday.
+  [glint out] [glint:audio] file source finished: 8.54s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:audio] session 20261107-033034-y38c stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033034-y38c] notes attempt 1: 1 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033034-y38c: model=deepseek-v4-pro 2076 ms, 1 attempt(s), 1 sections, title="Back-End Role Final Round Interviews", 0 action items, tokens=605/116
+session {"clip":"short3","audioSec":8.5,"id":"20261107-033034-y38c","state":"saved","title":"Back-End Role Final Round Interviews","durationMs":14114,"segments":2,"actionItems":0,"summaryChars":332}
+  [glint out] [glint:audio] file source spawned pid=92983: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short4.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033051-oisu -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033051-oisu
+  [glint out] [glint:audio] session 20261107-033051-oisu recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=4.52s queued: peak=-2.5dBFS rms=-19.6 maxFrame=-13.6 floor=-50.3 voicedThr=-32.2 voiced=3.28s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=254020
+  [glint out] [glint:audio] chunk them/file t=4.52s dur=3.42s queued: peak=-2.6dBFS rms=-14.8 maxFrame=-11.1 floor=-50.3 voicedThr=-32.2 voiced=2.54s
+  [glint out] [glint:audio] segment them [0.03-4.52s] worker=3115ms latency=3116ms: Marketing check-in. The webinar has 240 registrations.
+  [glint out] [glint:audio] segment them [4.55-7.57s] worker=2543ms latency=2552ms: Can we send the reminder email on Monday morning?
+  [glint out] [glint:audio] file source finished: 7.94s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:ai] insights #1 for 20261107-033051-oisu: 1 segments, 0 actions, 924 ms, model=deepseek-flash
+  [glint out] [glint:audio] session 20261107-033051-oisu stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033051-oisu] notes attempt 1: 2 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033051-oisu: model=deepseek-v4-pro 1745 ms, 1 attempt(s), 2 sections, title="Marketing Check-In: Webinar Registrations and Reminder Email", 0 action items, tokens=598/121
+session {"clip":"short4","audioSec":7.9,"id":"20261107-033051-oisu","state":"saved","title":"Marketing Check-In: Webinar Registrations and Reminder Email","durationMs":11089,"segments":2,"actionItems":0,"summaryChars":235}
+  [glint out] [glint:audio] file source spawned pid=93007: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short5.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033104-1xhd -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033104-1xhd
+  [glint out] [glint:audio] session 20261107-033104-1xhd recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=5.06s queued: peak=-2.2dBFS rms=-15.2 maxFrame=-10.8 floor=-50.3 voicedThr=-32.2 voiced=4.22s
+  [glint out] [glint:audio] segment them [0.03-5.06s] worker=2567ms latency=2570ms: customer call with Acme. They want single sign-on with Octa before their renewal
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=263392
+  [glint out] [glint:audio] chunk them/file t=5.06s dur=3.17s queued: peak=-0.8dBFS rms=-20.7 maxFrame=-13.8 floor=-50.3 voicedThr=-32.2 voiced=1.82s
+  [glint out] [glint:audio] segment them [5.41-7.81s] worker=2242ms latency=2245ms: I promised them a timeline by next week.
+  [glint out] [glint:audio] file source finished: 8.23s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:audio] session 20261107-033104-1xhd stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033104-1xhd] notes attempt 1: 1 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033104-1xhd: model=deepseek-v4-pro 2195 ms, 1 attempt(s), 1 sections, title="Acme SSO Request Before March Renewal", 1 action items, tokens=605/121
+session {"clip":"short5","audioSec":8.2,"id":"20261107-033104-1xhd","state":"saved","title":"Acme SSO Request Before March Renewal","durationMs":10143,"segments":2,"actionItems":1,"summaryChars":237}
+  [glint out] [glint:audio] file source spawned pid=93036: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short6.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033117-dl63 -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033117-dl63
+  [glint out] [glint:audio] session 20261107-033117-dl63 recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=5.7s queued: peak=-1.5dBFS rms=-20.4 maxFrame=-13.1 floor=-54.2 voicedThr=-36.2 voiced=4.2s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=317266
+  [glint out] [glint:audio] chunk them/file t=5.7s dur=4.21s queued: peak=-3.4dBFS rms=-18.7 maxFrame=-13 floor=-53.6 voicedThr=-35.6 voiced=3.24s
+  [glint out] [glint:audio] segment them [0.03-5.7s] worker=3378ms latency=3381ms: Budget review Cloud costs rose 12% last month, mostly from storage.
+  [glint out] [glint:audio] segment them [5.73-9.51s] worker=2290ms latency=3873ms: Let's move old logs to cold storage and review again in 2 weeks.
+  [glint out] [glint:audio] file source finished: 9.91s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:ai] insights #1 for 20261107-033117-dl63: 1 segments, 0 actions, 1040 ms, model=deepseek-flash
+  [glint out] [glint:audio] session 20261107-033117-dl63 stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033117-dl63] notes attempt 1: 2 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033117-dl63: model=deepseek-v4-pro 2489 ms, 1 attempt(s), 2 sections, title="Cloud Cost Budget Review", 2 action items, tokens=607/170
+session {"clip":"short6","audioSec":9.9,"id":"20261107-033117-dl63","state":"saved","title":"Cloud Cost Budget Review","durationMs":14193,"segments":2,"actionItems":2,"summaryChars":324}
+  [glint out] [glint:audio] file source spawned pid=93065: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/short7.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033134-449b -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033134-449b
+  [glint out] [glint:audio] session 20261107-033134-449b recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=4.68s queued: peak=-2dBFS rms=-16.2 maxFrame=-11.2 floor=-52.8 voicedThr=-34.8 voiced=3.7s
+  [glint out] [glint:audio] segment them [0.03-4.68s] worker=2278ms latency=2281ms: Release planning for version 2.4. The token refresh fix goes in first.
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=275814
+  [glint out] [glint:audio] chunk them/file t=4.68s dur=3.94s queued: peak=-3dBFS rms=-17 maxFrame=-11.3 floor=-61.9 voicedThr=-43.8 voiced=2.86s
+  [glint out] [glint:ai] insights #1 for 20261107-033134-449b: 1 segments, 0 actions, 1036 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [4.71-8.27s] worker=2951ms latency=3019ms: Then the new export feature. Code freezes next Thursday.
+  [glint out] [glint:audio] file source finished: 8.62s of audio, 2 segment(s); autoStop=false
+  [glint out] [glint:audio] session 20261107-033134-449b stopped: 2 segment(s)
+  [glint out] [glint:sessions] [20261107-033134-449b] notes attempt 1: 2 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033134-449b: model=deepseek-v4-pro 2230 ms, 1 attempt(s), 2 sections, title="Version 2.4 Release Planning", 0 action items, tokens=605/132
+session {"clip":"short7","audioSec":8.6,"id":"20261107-033134-449b","state":"saved","title":"Version 2.4 Release Planning","durationMs":12161,"segments":2,"actionItems":0,"summaryChars":284}
+  [glint out] [glint:audio] file source spawned pid=93096: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/long.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-033150-x84n -> /Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-033150-x84n
+  [glint out] [glint:audio] session 20261107-033150-x84n recording (source file, timeOffset 0s)
+  [glint out] [glint:audio] chunk them/file t=0s dur=6.22s queued: peak=-2.1dBFS rms=-17.1 maxFrame=-11.8 floor=-81.7 voicedThr=-62.7 voiced=5.12s
+  [glint out] [glint:audio] segment them [0.03-6.22s] worker=3587ms latency=3601ms: Thanks for joining. Tom, let's go through the pilot results, the pricing, and th
+  [glint out] [glint:ai] insights #1 for 20261107-033150-x84n: 1 segments, 0 actions, 1249 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=6.22s dur=4.14s queued: peak=-2.5dBFS rms=-20.9 maxFrame=-13.6 floor=-50.3 voicedThr=-32.2 voiced=2.52s
+  [glint out] [glint:audio] chunk them/file t=10.36s dur=4.14s queued: peak=-2.4dBFS rms=-19.8 maxFrame=-13.8 floor=-50.3 voicedThr=-32.2 voiced=3.1s
+  [glint out] [glint:audio] segment them [6.25-10.27s] worker=3746ms latency=3749ms: Sure, the pilot ran for six weeks with 40 agents.
+  [glint out] [glint:audio] segment them [10.39-14.37s] worker=2302ms latency=5603ms: average handle time dropped from 9 minutes to 6 and a half minutes.
+  [glint out] [glint:ai] insights #2 for 20261107-033150-x84n: 2 segments, 1 actions, 797 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=14.5s dur=7.3s queued: peak=-2.5dBFS rms=-18.9 maxFrame=-11.2 floor=-50.3 voicedThr=-32.2 voiced=4.9s
+  [glint out] [glint:audio] segment them [14.53-21.8s] worker=2554ms latency=2556ms: That's great. What about customer satisfaction? Satisfaction went from 81% to 88
+  [glint out] [glint:ai] insights #3 for 20261107-033150-x84n: 3 segments, 2 actions, 1151 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=21.8s dur=7.48s queued: peak=-2.1dBFS rms=-17.3 maxFrame=-11 floor=-50.3 voicedThr=-32.2 voiced=5.42s
+  [glint out] [glint:ai] insights #4 for 20261107-033150-x84n: 4 segments, 3 actions, 1411 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [21.83-29.27s] worker=2707ms latency=2709ms: The biggest gain was on billing questions. Our finance team asked about pricing.
+  [glint out] [glint:ai] insights #5 for 20261107-033150-x84n: 5 segments, 3 actions, 1686 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=29.28s dur=7.42s queued: peak=-2.6dBFS rms=-19.5 maxFrame=-12.9 floor=-50.3 voicedThr=-32.2 voiced=5.12s
+  [glint out] [glint:audio] segment them [29.31-36.7s] worker=4813ms latency=4815ms: List price is $30 per seat per month. For 200 seats on an annual contract we can
+  [glint out] [glint:audio] chunk them/file t=36.7s dur=6.42s queued: peak=-2.5dBFS rms=-18.4 maxFrame=-11.9 floor=-50.3 voicedThr=-32.2 voiced=4.64s
+  [glint out] [glint:ai] insights #6 for 20261107-033150-x84n: 6 segments, 3 actions, 1416 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [36.73-43.12s] worker=2395ms latency=2396ms: So about $57,600 a year. Okay. Security is the other topic.
+  [glint out] [glint:audio] chunk them/file t=43.12s dur=5.94s queued: peak=-1.8dBFS rms=-15.4 maxFrame=-11.1 floor=-50.3 voicedThr=-32.2 voiced=5.14s
+  [glint out] [glint:ai] insights #7 for 20261107-033150-x84n: 7 segments, 3 actions, 1938 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [43.19-49.06s] worker=2760ms latency=2762ms: Our security team needs the SOC to report and a data processing agreement before
+  [glint out] [glint:ai] insights #8 for 20261107-033150-x84n: 8 segments, 5 actions, 2053 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=49.06s dur=7.38s queued: peak=-1dBFS rms=-19.1 maxFrame=-13.1 floor=-50.3 voicedThr=-32.2 voiced=5.9s
+  [glint out] [glint:audio] segment them [49.09-56.44s] worker=2835ms latency=2838ms: I can send the SOC-2 Type 2 report today, and our legal team will share the data
+  [glint out] [glint:audio] chunk them/file t=56.44s dur=6.72s queued: peak=-1.8dBFS rms=-16.1 maxFrame=-10.7 floor=-50.9 voicedThr=-32.8 voiced=5s
+  [glint out] [glint:ai] insights #9 for 20261107-033150-x84n: 9 segments, 5 actions, 2124 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [56.47-63.16s] worker=4090ms latency=4091ms: Great! For the rollout, we'd like to start with the billing team in December, th
+  [glint out] [glint:audio] chunk them/file t=63.16s dur=5.88s queued: peak=-2.7dBFS rms=-19.6 maxFrame=-13.3 floor=-50.3 voicedThr=-32.2 voiced=4.4s
+  [glint out] [glint:ai] insights #10 for 20261107-033150-x84n: 10 segments, 5 actions, 2374 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [63.19-69.04s] worker=4530ms latency=4532ms: That works. We'll schedule two training sessions for the billing team in the fir
+  [glint out] [glint:audio] chunk them/file t=69.04s dur=4.58s queued: peak=-2.9dBFS rms=-16.1 maxFrame=-10.8 floor=-50.3 voicedThr=-32.2 voiced=3.42s
+  [glint out] [glint:ai] insights #11 for 20261107-033150-x84n: 11 segments, 5 actions, 1979 ms, model=deepseek-flash
+  [glint out] [glint:audio] chunk them/file t=73.62s dur=5.58s queued: peak=-2.1dBFS rms=-15.8 maxFrame=-11.2 floor=-50.3 voicedThr=-32.2 voiced=4.32s
+  [glint out] [glint:audio] segment them [69.07-73.62s] worker=3750ms latency=3752ms: So the next steps are, you send the SOC to report and the agreement.
+  [glint out] [glint:audio] chunk them/file t=79.2s dur=5.06s queued: peak=-1dBFS rms=-18.9 maxFrame=-12.7 floor=-50.3 voicedThr=-32.2 voiced=3.86s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=2708298
+  [glint out] [glint:audio] chunk them/file t=84.26s dur=0.37s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-50.3 voicedThr=-32.2 voiced=0s
+  [glint out] [glint:ai] insights #12 for 20261107-033150-x84n: 12 segments, 5 actions, 1995 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [73.65-79.2s] worker=4593ms latency=6023ms: I get finance approval for the annual contract by next Friday, and we book the t
+  [glint out] [glint:audio] segment them [79.23-84.26s] worker=3307ms latency=4202ms: Agreed. I'll also send a summary email with the pilot numbers this afternoon.
+  [glint out] [glint:audio] file source finished: 84.63s of audio, 14 segment(s); autoStop=false
+  [glint out] [glint:ai] insights #13 for 20261107-033150-x84n: 13 segments, 5 actions, 2217 ms, model=deepseek-flash
+  [glint out] [glint:audio] session 20261107-033150-x84n stopped: 14 segment(s)
+  [glint out] [glint:sessions] [20261107-033150-x84n] notes attempt 1: 4 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-033150-x84n: model=deepseek-v4-pro 3791 ms, 1 attempt(s), 4 sections, title="Pilot Results, Pricing, and Rollout Plan", 5 action items, tokens=936/387
+session {"clip":"long","audioSec":84.6,"id":"20261107-033150-x84n","state":"saved","title":"Pilot Results, Pricing, and Rollout Plan","durationMs":89158,"segments":14,"actionItems":5,"summaryChars":910}
+dashboard state {"visible":true,"bounds":{"x":136,"y":94,"width":1200,"height":800},"alwaysOnTop":false,"alwaysOnTopLevel":null,"contentProtection":false,"ignoreMouseEvents":false,"focused":true} | overlay state {"visible":true,"bounds":{"x":441,"y":46,"width":588,"height":76},"alwaysOnTop":true,"alwaysOnTopLevel":"screen-saver","contentProtection":false,"ignoreMouseEvents":false,"focused":false}
+history list: Today
+Pilot Results, Pricing, and Rollout Plan
+1:29
+3:31 AM
+Version 2.4 Release Planning
+0:12
+3:31 AM
+Cloud Cost Budget Review
+0:14
+3:31 AM
+Acme SSO Request Before March Renewal
+0:10
+3:31 AM
+Marketing Check-In: Webinar Registrations and Reminder Email
+0:11
+3:30 AM
+Back-End Role Final Round Interviews
+0:14
+3:30 AM
+Onboarding Screens Design Review
+0:11
+3:30 AM
+Login Bug Fix and Payment Retry Review
+0:12
+3:30 AM
+note head: Pilot Results, Pricing, and Rollout Plan
+Sat, Nov 7 · 3:31 AM
+1:29
+Summary
+Transcript
+Usage
+Copy full summary
+Action Items
+Send SOC 2 Type 2 report today (Tom)
+Share data processing agreement by Wednesday (Legal team)
+Get finance approval for annual contract by next Friday (Customer)
+Book training dates for billing team (Tom)
+Send summary email with pilot numbers this afternoon (Tom)
+Overview
+
+Tom and the customer reviewed pilot results, discussed pricing for 200 seats, and outlined a rollout plan starting with the billing team in December.
+
+Pilot Results
+Pilot ran for six weeks with 40 agents
+compare -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/notes-history.png
+  [glint out] [glint:audio] quit: stopping capture and the WhisperX worker
+  [glint out] [glint:whisper] [whisper_worker] stdin closed or shutdown; exiting
+  [glint err] Debugger ending on ws://127.0.0.1:63854/58281475-ca60-4735-8b57-0371369b63e6
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging
+  ✓  1 tests/notes_screen.spec.mjs:63:1 › screens: notes-history from 8 real sessions (3.8m)
+
+  1 passed (3.8m)

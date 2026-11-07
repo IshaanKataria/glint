@@ -1,0 +1,74 @@
+[00:00] Hey, I'm Roy and I'm excited to
+[00:02] introduce Cluey, the AI desktop
+[00:03] assistant that sees what you see and
+[00:05] hears what you hear. Let's jump into a
+[00:06] call with my co-founder Neil to see
+[00:07] Cluey in action.
+[00:10] Clue shows up as a translucent window
+[00:12] that appears over all other applications
+[00:13] on your screen. I can either press
+[00:15] listen or record with Cluey while in a
+[00:17] meeting to have Cluey start picking up
+[00:18] my microphone and system audio. Hey
+[00:20] Neil, what's up? Hey Roy. Uh, as you can
+[00:23] see, there's a real-time notepad that
+[00:25] pops up that allows Cluey to uh suggest
+[00:27] questions for me to ask or to find
+[00:29] things that I might need to find. Neil,
+[00:31] you went on a pretty interesting date
+[00:32] last week. Can you tell me a little bit
+[00:33] more about that? I did. Yeah. Uh, it was
+[00:36] pretty fun. We went to Japan Town for
+[00:39] dinner. Um, I think it went pretty good,
+[00:41] but I talked way too much about prompt
+[00:42] engineering. Yeah, that's um pretty
+[00:45] cool. Uh, as you can see throughout the
+[00:46] conversation, Clue picked up that Neil
+[00:48] said Japan Town and prompt engineering
+[00:49] and offered to define both terms. Uh,
+[00:51] Clue can also suggest follow-up
+[00:53] questions for me so that I can keep the
+[00:55] conversation going every single time.
+[00:56] Um, what got you interested in prop
+[00:58] engineering and did you use any specific
+[00:59] techniques during your conversation in
+[01:01] Japan Town? Um, this works for
+[01:03] everything, too. Um, definitions,
+[01:04] questions, and and much much more.
+[01:07] That's pretty cool. Does it work for all
+[01:09] kinds of meetings? Uh, yeah. I mean, it
+[01:10] even works in person, too. Uh, a lot of
+[01:12] the magic happens in the dashboard. I'm
+[01:14] going to stop the recording. I'm going
+[01:15] to finish up. Draft a follow-up email to
+[01:17] send Neil based on the conversation that
+[01:18] we had. Um, I would send this along and
+[01:20] let's take a look at the dashboard. In
+[01:23] the dashboard, you'll see an AI
+[01:24] generated summary of every meeting I've
+[01:26] ever taken with Cluey. You can ask
+[01:28] anything here, like what are yesterday's
+[01:29] action items. You can also see the
+[01:31] latest meeting I was just in.
+[01:34] Here's the summary. Here you can see all
+[01:36] the times I used Cluey in the call. See
+[01:39] the entire summary as well as share the
+[01:42] summary. I can make this entire thing
+[01:44] public, get a link to copy it,
+[01:47] and share this link with anybody.
+[01:51] A ton of the magic behind Cluey also
+[01:53] happens in the personalized tab. Let's
+[01:54] ask Clue how it can do that.
+[01:57] [Music]
+[02:02] If you head over to the personalize tab,
+[02:04] you can share anything about yourself
+[02:05] that you want Chloe to know or use one
+[02:07] of our default templates to use it for
+[02:08] some of our most common use cases like
+[02:10] for school meetings, sales, recruiting,
+[02:13] or customer support.
+[02:15] AI is too smart to trap inside a
+[02:17] chatbot. We believe in the future there
+[02:18] will be a better way to interact with
+[02:20] AI. And at Clely, we're just getting
+[02:21] started.

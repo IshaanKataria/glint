@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "id": "ai-smoke-1793984620623",
+  "title": "Glint Evaluation for 40-Agent Support Team",
+  "status": "saved",
+  "startedAt": 1793984525623,
+  "durationSec": 106,
+  "durationMs": 106293,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-0",
+      "speaker": "them",
+      "text": "Thanks for joining. So we are evaluating Glint for our support team of about forty agents.",
+      "tStart": 0,
+      "tEnd": 8
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-1",
+      "speaker": "me",
+      "text": "Great to meet you, Priya. What tools are the agents using today?",
+      "tStart": 9,
+      "tEnd": 17
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-2",
+      "speaker": "them",
+      "text": "Mostly Zendesk, and we built an internal RAG pipeline on top of our knowledge base last year.",
+      "tStart": 18,
+      "tEnd": 26
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-3",
+      "speaker": "them",
+      "text": "Our biggest worry is SOC 2 compliance. Does your product store any call audio in the cloud?",
+      "tStart": 27,
+      "tEnd": 35
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-4",
+      "speaker": "me",
+      "text": "No, transcription runs locally with WhisperX, so audio never leaves the laptop.",
+      "tStart": 36,
+      "tEnd": 44
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-5",
+      "speaker": "them",
+      "text": "Okay. And what would pricing look like for forty seats on an annual plan?",
+      "tStart": 45,
+      "tEnd": 53
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-6",
+      "speaker": "me",
+      "text": "I will send over a quote by Friday with the annual discount included.",
+      "tStart": 54,
+      "tEnd": 62
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-7",
+      "speaker": "them",
+      "text": "Perfect. I also need to loop in Marcus from security before we sign anything.",
+      "tStart": 63,
+      "tEnd": 71
+    },
+    {
+      "sessionId": "ai-smoke-1793984620623",
+      "id": "seg-8",
+      "speaker": "me",
+      "text": "Sounds good. I can set up a thirty minute security review with Marcus next week.",
+      "tStart": 72,
+      "tEnd": 80
+    }
+  ],
+  "actionItems": [
+    "Send the quote for 40 seats on an annual plan with annual discount included by Friday (Me)",
+    "Set up a 30-minute security review with Marcus next week (Me)"
+  ],
+  "usage": [
+    {
+      "requestId": "bf984a3e-7a53-40f2-96d3-008920ba65f2",
+      "kind": "ask",
+      "question": "Does Glint store any call audio in the cloud?",
+      "answer": "**No, Glint does not store call audio in the cloud.** Transcription runs locally on the laptop using WhisperX, so audio never leaves the device.\n\n- **Local-only processing** — audio is transcribed on-device and discarded after transcription\n- **No cloud audio storage** — nothing gets uploaded, so there's no audio to be SOC 2-audited\n- **Transcription text** is the only artifact, and it stays under your control",
+      "usedScreenshot": false,
+      "ocrChars": 0,
+      "model": "deepseek-v4-pro",
+      "at": 1793984629655
+    },
+    {
+      "requestId": "b8d542eb-419f-4ee7-a767-2e41567fde4b",
+      "kind": "whatShouldISay",
+      "question": "What should I say?",
+      "answer": "> Great — I'll send over a few time slots for next week and you can pick what works for Marcus.\n\n**Or:**\n\n> Perfect. I'll follow up with some times, and I'll have the quote to you before Friday so you have both in hand.",
+      "usedScreenshot": false,
+      "ocrChars": 0,
+      "model": "deepseek-v4-pro",
+      "at": 1793984631887
+    }
+  ],
+  "runs": [
+    {
+      "startedAt": 1793984525623,
+      "endedAt": 1793984631916
+    }
+  ],
+  "endedAt": 1793984631916,
+  "summaryMarkdown": "Priya and the user discussed evaluating Glint for a 40-agent support team, covering current tools, SOC 2 compliance, pricing, and next steps including a security review with Marcus.\n\n### Current Tools\n- Support team has about 40 agents.\n- Agents currently use Zendesk.\n- An internal RAG pipeline was built on top of their knowledge base last year.\n\n### SOC 2 Compliance\n- Priya's biggest worry is SOC 2 compliance.\n- Glint does not store call audio in the cloud.\n- Transcription runs locally with WhisperX, so audio never leaves the laptop.\n\n### Pricing\n- Priya asked about pricing for 40 seats on an annual plan.\n- User will send a quote by Friday with the annual discount included.\n\n### Security Review\n- Priya needs to loop in Marcus from security before signing anything.\n- User offered to set up a 30-minute security review with Marcus next week.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/ai-smoke-data/ai-smoke-1793984620623/notes.md"
+}

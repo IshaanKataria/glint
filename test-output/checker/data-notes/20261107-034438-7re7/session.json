@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "id": "20261107-034438-7re7",
+  "title": "Security Office Hours: Pen Test Findings",
+  "status": "saved",
+  "startedAt": 1793983478439,
+  "durationSec": 11,
+  "durationMs": 11248,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034438-7re7",
+      "id": "mw57fz53-them-0001",
+      "speaker": "them",
+      "text": "Security Office hours, the penetration test found two medium issues in the admin panel.",
+      "tStart": 0.03,
+      "tEnd": 5.48
+    },
+    {
+      "sessionId": "20261107-034438-7re7",
+      "id": "mw57fz53-them-0002",
+      "speaker": "them",
+      "text": "Both fix a ship in Thursday's release.",
+      "tStart": 5.51,
+      "tEnd": 8.01
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983478439,
+      "endedAt": 1793983489687
+    }
+  ],
+  "endedAt": 1793983489687,
+  "summaryMarkdown": "Security office hours discussed penetration test results, which found two medium issues in the admin panel. Both fixes will ship in Thursday's release.\n\n### Penetration Test Results\n- Penetration test found two medium issues in the admin panel.\n- Both fixes will ship in Thursday's release.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034438-7re7/notes.md"
+}

@@ -1,0 +1,106 @@
+[
+ {
+  "name": "(a) answer streamed in >1 chunk",
+  "ok": true
+ },
+ {
+  "name": "(a) model is deepseek-v4-pro",
+  "ok": true
+ },
+ {
+  "name": "(a) answer contains 391",
+  "ok": true
+ },
+ {
+  "name": "(a) usedScreenshot false, ocrChars 0",
+  "ok": true
+ },
+ {
+  "name": "(a2) follow-up uses the thread (782)",
+  "ok": true
+ },
+ {
+  "name": "(a3) cancel -> ask:error CANCELLED",
+  "ok": true
+ },
+ {
+  "name": "(a3) ask:clear empties thread and emits ask:cleared",
+  "ok": true
+ },
+ {
+  "name": "(b) OCR text contains 4471",
+  "ok": true
+ },
+ {
+  "name": "(b) OCR text contains this run's marker 812220 (text came from the test window)",
+  "ok": true
+ },
+ {
+  "name": "(b) usedScreenshot true and ocrChars > 0",
+  "ok": true
+ },
+ {
+  "name": "(b) answer contains 4471",
+  "ok": true
+ },
+ {
+  "name": "(b) stages capturing > ocr > thinking > streaming",
+  "ok": true
+ },
+ {
+  "name": "(c) insights from deepseek-flash",
+  "ok": true
+ },
+ {
+  "name": "(c) summary has a bold heading and bullets",
+  "ok": true
+ },
+ {
+  "name": "(c) at least one detected question",
+  "ok": true
+ },
+ {
+  "name": "(c) insight click answered with the transcript",
+  "ok": true
+ },
+ {
+  "name": "(c) quick action answered, pill label",
+  "ok": true
+ },
+ {
+  "name": "(c) session.json has title, summary, action items",
+  "ok": true
+ },
+ {
+  "name": "(c) notes summary is sectioned: >= 2 \"### Heading\" + bullets, figures kept (40, Friday)",
+  "ok": true
+ },
+ {
+  "name": "(c) session.json has transcript[9], durationSec, 2 usage entries",
+  "ok": true
+ },
+ {
+  "name": "(c) notes.md has Summary, Action items, Transcript",
+  "ok": true
+ },
+ {
+  "name": "(d) history:list returns the session first",
+  "ok": true
+ },
+ {
+  "name": "(d) history:get returns segments + summary",
+  "ok": true
+ },
+ {
+  "name": "(d) history:copyTranscript",
+  "ok": true
+ },
+ {
+  "name": "(d) history:get unknown id -> NOT_FOUND",
+  "ok": true
+ },
+ {
+  "name": "key leak scan (3 files, 28 log lines)",
+  "ok": true
+ }
+]

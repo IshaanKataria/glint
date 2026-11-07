@@ -1,0 +1,129 @@
+# screens.log  2026-11-06T15:59:22.817Z
+  [glint out] [glint:main] audio source override: /Users/katana/experiments/cluely-clone/test-output/checker/clip_screens.wav
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=realtime, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-screens)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: OFF
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+protection at start (expected false): false
+  [glint out] [glint:whisper] worker spawned pid=80019 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+overlay moved to {"x":124,"y":494,"width":588,"height":76}
+  [glint out] [glint:whisper] [whisper_worker] model small/int8 loaded in 8272 ms
+  [glint out] [glint:whisper] worker ready: model=small loadMs=8272
+  [glint out] [glint:audio] file source spawned pid=80043: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/clip_screens.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-025934-fok9 -> /Users/katana/experiments/cluely-clone/test-output/checker/data-screens/20261107-025934-fok9
+  [glint out] [glint:audio] session 20261107-025934-fok9 recording (source file, timeOffset 0s)
+overlay-bar captured; state {"idle":true,"segs":0,"ins":1}
+  [glint out] [glint:audio] chunk them/file t=0s dur=7.28s queued: peak=-1.9dBFS rms=-16.2 maxFrame=-11.2 floor=-53.2 voicedThr=-35.1 voiced=5.86s
+  [glint out] [glint:audio] segment them [0.03-7.28s] worker=4334ms latency=4391ms: Hi Priya, thanks for making time today. We looked at the pilot results and the s
+  [glint out] [glint:audio] chunk them/file t=7.28s dur=5.62s queued: peak=-2.3dBFS rms=-15.3 maxFrame=-10.9 floor=-50.3 voicedThr=-32.2 voiced=4.88s
+  [glint out] [glint:ai] insights #1 for 20261107-025934-fok9: 1 segments, 0 actions, 945 ms, model=deepseek-flash
+  [glint out] [glint:audio] segment them [7.31-12.9s] worker=2515ms latency=2517ms: The main concern from your side was data retention. Can you tell me how long cal
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=615116
+  [glint out] [glint:audio] chunk them/file t=12.9s dur=6.32s queued: peak=-2.4dBFS rms=-15.6 maxFrame=-10.8 floor=-50.3 voicedThr=-32.2 voiced=5.2s
+  [glint out] [glint:ai] insights #2 for 20261107-025934-fok9: 2 segments, 3 actions, 1675 ms, model=deepseek-flash
+live-suggestions captured; panel text: Live Insights
+Show Transcript
+
+Pilot results
+
+Call between Priya (Me) and Them
+Them reviewed pilot results: support team cut response times by about a third
+
+Data retention concern
+
+Priya's main concern was data retention
+Them asked how long call recordings are kept
+Actions
+❓
+How long are call recordings kept?
+💬
+Define data retention
+💬
+Suggest follow-up questions about data retention
+Click to ask Glint
+  [glint out] [glint:audio] segment them [12.93-19.22s] worker=4884ms latency=4885ms: and who on your team needs to approve the security questionnaire, we would like 
+  [glint out] [glint:audio] file source finished: 19.22s of audio, 3 segment(s); autoStop=false
+  [glint out] [glint:ai] screen: display 1 2940x1912, capture 463 ms, vision OCR 1742 ms, 2602 chars
+  [glint out] [glint:ai] insights #3 for 20261107-025934-fok9: 3 segments, 4 actions, 1385 ms, model=deepseek-flash
+  [glint out] [glint:ai] ask assist done: model=deepseek-v4-pro 6587 ms, screen=true (2602 chars), transcript=387 chars, thread=1, tokens=1372/176
+ask overlay bounds {"x":14,"y":170,"width":588,"height":442} capture rect {"x":0,"y":150,"width":600,"height":482}
+ask-answer captured; meta {"requestId":"61b1696b-ce35-4361-8ee2-3e158c9489ea","kind":"assist","question":"Assist","usedScreenshot":true,"ocrChars":2602,"model":"deepseek-v4-pro","sessionId":"20261107-025934-fok9","startedAt":1793980796797,"finishedAt":1793980803384,"usage":{"promptTokens":1372,"completionTokens":176}} answer head: Them asked two things: **how long call recordings are kept**, and **who approves the security questionnaire**.
+
+I can't see those answers on your screen — it shows a coding brief (glint-goal.txt), not meeting notes or a data-retention policy. Check your notes, CRM, or the pilot agreement for the ret
+  [glint out] [glint:audio] session 20261107-025934-fok9 stopped: 3 segment(s)
+  [glint out] [glint:sessions] summary for 20261107-025934-fok9: model=deepseek-v4-pro 6687 ms, title="Pilot Results and Security Review for Support Rollout", 2 action items, tokens=519/93
+session saved {"state":"saved","sessionId":"20261107-025934-fok9","startedAt":1793980774297,"source":"file","message":"Saved \"Pilot Results and Security Review for Support Rollout\""}
+notes-history captured; list: Today
+Pilot Results and Security Review for Support Rollout
+0:31
+1 use
+2:59 AM
+Security Review and Database Migration Planning
+0:30
+2:55 AM
+  [glint out] [glint:hotkeys] unregistered Command+Return (askOrAssist)
+  [glint out] [glint:hotkeys] unregistered Command+R (clear)
+  [glint out] [glint:hotkeys] unregistered Command+Alt+\ (toggleClickThrough)
+  [glint out] [glint:hotkeys] unregistered Command+Up, Command+Down, Command+Left, Command+Right (moveWindow)
+  [glint out] [glint:hotkeys] unregistered Command+Shift+Up, Command+Shift+Down (scrollAnswer)
+settings captured; keybinds text: General
+Show or hide Glint
+⌘
+\
+Ask Glint about your screen or audio
+⌘
+↵
+Clear the current conversation
+⌘
+R
+Start or stop a Glint session
+⌘
+⇧
+\
+Window
+Toggle click-through (mouse passes through the overlay)
+⌘
+⌥
+\
+Move the window up
+⌘
+↑
+Move the window down
+⌘
+↓
+Move the window left
+⌘
+←
+Move the window right
+⌘
+→
+Scroll
+Scroll the response up
+⌘
+⇧
+↑
+Scroll the response down
+⌘
+⇧
+↓
+compare overlay-bar -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/overlay-bar.png
+compare ask-answer -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/ask-answer.png
+compare live-suggestions -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/live-suggestions.png
+compare notes-history -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/notes-history.png
+compare settings -> /Users/katana/experiments/cluely-clone/test-output/checker/compare/settings.png
+  [glint out] [glint:audio] quit: stopping capture and the WhisperX worker
+  [glint out] [glint:whisper] [whisper_worker] stdin closed or shutdown; exiting
+  [glint err] Debugger ending on ws://127.0.0.1:62185/2dc153b5-3e8d-4ee2-bcc9-b3b32f64c5ef
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging

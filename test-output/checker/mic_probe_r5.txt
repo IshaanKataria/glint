@@ -1,0 +1,22 @@
+2026-11-07 03:59:26.584 ffmpeg[3865:1695947] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+2026-11-07 03:59:26.810 ffmpeg[3865:1695947] WARNING: AVCaptureDeviceTypeExternal is deprecated for Continuity Cameras. Please use AVCaptureDeviceTypeContinuityCamera and add NSCameraUseContinuityCameraDeviceType to your Info.plist.
+Input #0, avfoundation, from ':default':
+  Duration: N/A, start: 38406.012833, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_f32le, 48000 Hz, mono, flt, 1536 kb/s, start 38406.012833
+[Parsed_volumedetect_0 @ 0x141816650] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_f32le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+size=N/A time=00:00:00.51 bitrate=N/A speed=1.01x elapsed=0:00:00.50    size=N/A time=00:00:01.01 bitrate=N/A speed=   1x elapsed=0:00:01.00    size=N/A time=00:00:01.52 bitrate=N/A speed=1.01x elapsed=0:00:01.51    size=N/A time=00:00:02.02 bitrate=N/A speed=   1x elapsed=0:00:02.01    size=N/A time=00:00:02.51 bitrate=N/A speed=0.997x elapsed=0:00:02.52    size=N/A time=00:00:03.02 bitrate=N/A speed=   1x elapsed=0:00:03.02    size=N/A time=00:00:03.53 bitrate=N/A speed=0.999x elapsed=0:00:03.53    [Parsed_volumedetect_0 @ 0x141e17760] n_samples: 169472
+[Parsed_volumedetect_0 @ 0x141e17760] mean_volume: -42.2 dB
+[Parsed_volumedetect_0 @ 0x141e17760] max_volume: -27.6 dB
+[Parsed_volumedetect_0 @ 0x141e17760] histogram_27db: 42
+[Parsed_volumedetect_0 @ 0x141e17760] histogram_28db: 260
+[out#0/null @ 0x141805200] video:0KiB audio:330KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:03.98 bitrate=N/A speed=0.995x elapsed=0:00:04.01    

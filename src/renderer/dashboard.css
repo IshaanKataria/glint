@@ -1,0 +1,345 @@
+/* Glint dashboard. Values and sources: DECISIONS.md D-U6 (history/note), D-U7 (settings). */
+@font-face {
+  font-family: 'Inter Glint';
+  src: url('fonts/InterVariable-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  color-scheme: light;
+  --font: 'Inter Glint', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --line: #ececee;
+  --line-2: #e3e3e6;
+  --ink: #111113;
+  --ink-2: #3b3b3f;
+  --body: #5b5b61;
+  --muted: #8d8d94;
+  --chip: #f0f0f2;
+  --blue: #3d8fe0;
+  --blue-ink: #2f7fd6;
+  --blue-soft: #e3effb;
+  --hover: #f2f2f3;
+  --sel: #ececee;
+  --kc: #f0f0f1;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  font: 14px/1.5 var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 2px solid rgba(61, 143, 224, 0.55); outline-offset: 2px; }
+[hidden] { display: none !important; }
+.ico { display: block; flex: none; }
+kbd { font: 500 11.5px/1 -apple-system, BlinkMacSystemFont, var(--font); }
+
+/* ---------- Title bar (drag region; hiddenInset traffic lights sit ~18px from the top) ---------- */
+/* Repair round 2 (D-U17..D-U19): measured from notes-history.png at its own scale (~1px per pt). */
+.titlebar {
+  height: 44px;
+  flex: none;
+  display: grid;
+  /* Search: ~512pt wide and centred on the window, like the reference. */
+  grid-template-columns: 1fr minmax(240px, 512px) 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 0 10px 0 78px;
+  -webkit-app-region: drag;
+  background: var(--bg);
+}
+.titlebar button, .titlebar input, .titlebar label, .titlebar form { -webkit-app-region: no-drag; }
+.tb-left { display: flex; align-items: center; gap: 6px; }
+/* Back arrow right after the traffic lights (reference). Disabled = nowhere to go back to. */
+.tb-icon { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 6px; color: #55555c; }
+.tb-icon:hover:not(:disabled) { background: var(--hover); color: #1f1f23; }
+.tb-icon:disabled { color: #c4c4ca; cursor: default; }
+.search {
+  height: 28px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 4px 0 10px;
+  border-radius: 8px;
+  background: #ececef;
+  color: #8a8a92;
+  cursor: text;
+}
+.search input { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; font: 12.5px var(--font); color: var(--ink); text-align: center; }
+.search input:focus { text-align: left; }
+.search input::placeholder { color: #8f8f97; }
+.search input::-webkit-search-cancel-button { display: none; }
+/* Small dark round ↗ submit button inside the field's right end (reference). */
+.search-go { flex: none; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; background: #2a2a2f; color: #fff; }
+.search-go:hover { background: #111113; }
+.tb-right { display: flex; justify-content: flex-end; align-items: center; gap: 8px; }
+.start-btn {
+  height: 26px;
+  padding: 0 11px;
+  border-radius: 7px;
+  background: #ddedf9;
+  color: #3f97e6;
+  font-weight: 500;
+  font-size: 12.5px;
+  white-space: nowrap;
+  flex: none;
+}
+.start-btn:hover { background: #d0e5f7; }
+.start-btn.live { background: #fde8e8; color: #d64545; }
+.avatar { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: #ececef; color: #55555c; }
+.avatar:hover { background: #e2e2e6; }
+
+/* ---------- Layout ---------- */
+.layout { flex: 1; min-height: 0; display: flex; border-top: 1px solid var(--line); }
+/* History sidebar. Fallback: a solid grey column. With html.glint-vibrancy (Shell's NSVisualEffect 'sidebar'
+   window) the column is see-through and only the title bar and note pane paint opaque backgrounds. */
+.history {
+  width: 34%;
+  min-width: 280px;
+  max-width: 420px;
+  flex: none;
+  overflow-y: auto;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  background: #b7b7bc;
+  padding: 10px 10px 40px 22px;
+}
+html.glint-vibrancy, html.glint-vibrancy body { background: transparent; }
+/* Tint over the material: round 2 rendered (191,191,192) at .26; solving for the reference's (181,181,186)
+   with the material at ~224 gives rgba(96,96,111,.34) (D-U21). */
+html.glint-vibrancy .history { background: rgba(96, 96, 111, 0.34); border-right-color: rgba(0, 0, 0, 0.1); }
+.layout.list-hidden .history { display: none; }
+/* Date headings flush left; session titles indented under them (reference: +12pt). */
+.day-h { font-size: 12px; font-weight: 600; color: #616168; padding: 18px 10px 2px 4px; }
+.day-h:first-child { padding-top: 8px; }
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 8px 6px 16px;
+  border-radius: 7px;
+  text-align: left;
+  min-height: 36px;
+}
+/* Plain text rows; only the selected row gets a faint wash. Hover darkens the title instead of filling. */
+.row.sel { background: rgba(0, 0, 0, 0.045); }
+.row:hover .row-title { color: #000; }
+.row-title { font-size: 14px; font-weight: 450; color: #2e2e33; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 0 1 auto; }
+.chip { flex: none; display: inline-flex; align-items: center; gap: 4px; height: 18px; padding: 0 6px; border-radius: 6px; font-size: 11px; font-weight: 450; font-variant-numeric: tabular-nums; }
+/* Duration as small grey text ("22:18"), not a chip. */
+.chip.dur { background: none; padding: 0 2px; height: auto; color: #66666d; font-size: 11px; }
+.chip.uses { background: rgba(59, 130, 246, 0.17); color: #2f6fbf; border-radius: 999px; padding: 0 7px; }
+.row-time { margin-left: auto; flex: none; font-size: 10.5px; color: rgba(0, 0, 0, 0.3); padding-left: 4px; font-variant-numeric: tabular-nums; }
+.list-empty { padding: 12px 4px; color: var(--muted); font-size: 13.5px; }
+
+/* ---------- Note: reads like a document ---------- */
+.note-pane { flex: 1; min-width: 0; position: relative; display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
+.note-scroll { flex: 1; min-height: 0; overflow-y: auto; }
+.pane-toggle {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  z-index: 5;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  color: #8a8a92;
+}
+.pane-toggle:hover { background: var(--hover); color: #4a4a50; }
+.note { max-width: 800px; min-height: 100%; padding: 34px 64px 120px 88px; }
+/* Title: reference cap height 21px at the shared scale vs 17px for Glint's old 24px => ~29px, medium weight. */
+.note h1.note-title { font-size: 29px; line-height: 1.2; font-weight: 500; letter-spacing: -0.022em; margin: 0 0 10px; color: #111113; }
+.meta-row { display: flex; gap: 6px; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+.meta-chip { display: inline-flex; align-items: center; gap: 5px; height: 21px; padding: 0 7px; border-radius: 6px; background: #efeff0; color: #4a4a50; font-size: 11.5px; }
+.meta-chip .ico { color: #66666d; }
+/* Tabs: plain text tabs on a hairline, so they read as document sections rather than an app control. */
+.tabs-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; border-bottom: 1px solid #ececee; }
+.seg { display: inline-flex; gap: 18px; }
+.seg button { height: 28px; padding: 0; margin-bottom: -1px; border-bottom: 1.5px solid transparent; font-size: 12.5px; color: #8d8d94; }
+.seg button:hover { color: #3b3b40; }
+.seg button.on { color: #18181b; font-weight: 500; border-bottom-color: #18181b; }
+.ghost-btn { display: inline-flex; align-items: center; gap: 5px; height: 24px; padding: 0 7px; border-radius: 6px; color: #6e6e76; font-size: 12px; font-weight: 450; }
+.ghost-btn:hover { background: #efeff1; color: #2a2a2f; }
+.ghost-btn .ico { color: #8a8a92; }
+/* "Action Items" styled like the reference's "Next Steps" (cap 15px => ~20px, medium). */
+.sec-h { font-size: 20px; font-weight: 500; letter-spacing: -0.012em; color: #111113; margin: 24px 0 8px; line-height: 1.3; }
+.bullets { margin: 0 0 8px; padding-left: 28px; }
+.bullets li { color: #4b4b53; font-size: 15px; line-height: 1.42; margin: 5px 0; padding-left: 0; }
+.bullets li::marker { color: #b9b9bf; }
+.md { color: #4b4b53; font-size: 15px; line-height: 1.45; }
+/* Summary topics styled like "Meeting Context" (cap 11px => ~15px, semibold). */
+.md h1, .md h2, .md h3, .md p.h { color: #111113; font-size: 15px; font-weight: 600; letter-spacing: -0.006em; margin: 24px 0 6px; line-height: 1.35; }
+.md h4 { color: #111113; font-size: 14.5px; font-weight: 600; margin: 16px 0 6px; }
+.md p { margin: 0 0 10px; }
+.md ul, .md ol { margin: 0 0 12px; padding-left: 28px; }
+.md li { margin: 5px 0; }
+.md li::marker { color: #b9b9bf; }
+.md strong { color: #26262a; font-weight: 600; }
+.md a { color: var(--blue-ink); }
+.md code { font: 13px ui-monospace, 'SF Mono', Menlo, monospace; background: #f0f0f2; padding: 1px 4px; border-radius: 4px; }
+.muted-p { color: var(--muted); font-size: 14px; margin-top: 18px; }
+
+.tr-line { margin: 0 0 16px; }
+.tr-line:first-child { margin-top: 20px; }
+.tr-who { font-size: 12.5px; color: #3ba0ea; font-weight: 450; }
+.tr-who.me { color: #8b5cf6; }
+.tr-t { font-size: 12.5px; color: #8d8d94; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.tr-text { font-size: 15px; color: #2a2a2f; margin-top: 2px; line-height: 1.45; }
+
+.use { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.use:first-child { padding-top: 20px; }
+.use-q { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 550; font-size: 14px; color: var(--ink); }
+.use-a { color: var(--body); font-size: 13.5px; margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.use-meta { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+.tag { display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0 7px; border-radius: 6px; font-size: 12px; font-weight: 500; background: var(--chip); color: #5b5b63; }
+.tag.blue { background: var(--blue-soft); color: #4a86cf; }
+
+/* Pinned to the bottom centre of the note pane, floating over the text (reference). */
+.note-float {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+}
+.float-btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(236, 236, 238, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #1f1f23;
+  font-size: 12.5px;
+  font-weight: 500;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12), 0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+.float-btn:hover { background: rgba(228, 228, 231, 0.95); }
+.float-btn .ico { fill: currentColor; }
+
+/* Empty / error states */
+.empty { height: 100%; min-height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; gap: 8px; }
+.empty .glint-mark { color: #6d5ce8; margin-bottom: 8px; }
+.empty h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.015em; }
+.empty p { margin: 0 0 14px; color: var(--muted); max-width: 380px; }
+.empty .start-btn { height: 36px; padding: 0 18px; }
+.empty .hint { font-size: 13px; color: #a0a0a7; margin-top: 4px; }
+.empty .hint kbd { background: var(--kc); border: 1px solid #e3e3e6; border-radius: 5px; padding: 2px 5px; margin: 0 1px; }
+.err { color: #b42318; background: #fef3f2; border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  background: #1f1f23;
+  color: #fff;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 9px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 30;
+}
+
+/* ---------- Settings sheet ---------- */
+.sheet-backdrop {
+  position: fixed;
+  inset: 44px 0 0 0;
+  background: rgba(18, 18, 22, 0.24);
+  display: grid;
+  place-items: center;
+  padding: 16px 0 24px;
+  z-index: 20;
+}
+.sheet {
+  width: min(880px, calc(100vw - 120px));
+  height: min(620px, calc(100vh - 110px));
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ececee;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.s-side { width: 240px; flex: none; background: #fafafa; border-right: 1px solid #efefef; padding: 14px 8px 14px 8px; display: flex; flex-direction: column; gap: 2px; }
+.s-close { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 7px; color: #55555c; margin: 0 0 16px 6px; }
+.s-close:hover { background: var(--hover); }
+.s-nav { display: flex; align-items: center; gap: 11px; height: 30px; padding: 0 10px; border-radius: 7px; font-size: 13.5px; color: #3e3e44; text-align: left; }
+.s-label { font-size: 12px; font-weight: 500; color: #8d8d94; padding: 14px 10px 4px; }
+.s-nav .ico { color: #55555c; }
+.s-nav:hover { background: #f2f2f3; }
+.s-nav.on { background: #eeeeee; color: #111; font-weight: 500; }
+.s-nav.on .ico { color: #111; }
+.s-spacer { flex: 1; }
+.s-pane { flex: 1; min-width: 0; overflow-y: auto; padding: 28px 18px 20px 26px; position: relative; }
+.s-title { font-size: 14px; font-weight: 600; margin: 4px 0 2px; color: #000; }
+.s-sub { font-size: 12px; color: #6e6e76; margin: 0 0 18px; }
+.kb-group { font-size: 13.5px; font-weight: 600; color: #111; margin: 16px 0 4px; }
+.kb-group:first-of-type { margin-top: 0; }
+.kb-row { display: flex; align-items: center; gap: 10px; height: 33px; padding: 0 10px; margin: 0 -10px; border-radius: 7px; }
+/* Shade the hovered row; while nothing is hovered, the first row shows the shade (as in settings.png). */
+.kb-row:hover,
+#keybinds:not(:has(.kb-row:hover)) > .kb-group:first-child + .kb-row { background: #f2f2f3; }
+.kb-row .ico { color: #3e3e44; }
+.kb-label { flex: 1; font-size: 13px; color: #1f1f23; }
+.kb-keys { display: flex; gap: 7px; }
+.kb-keys kbd { min-width: 22px; height: 22px; padding: 0 5px; display: inline-grid; place-items: center; border-radius: 6px; background: var(--kc); border: 1px solid #e4e4e7; color: #3b3b40; font-size: 11.5px; }
+.about-list { border-top: 1px solid #efeff1; }
+.about-row { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid #efeff1; font-size: 13px; color: #1f1f23; }
+.about-row > :last-child { color: #6e6e76; text-align: right; }
+.about-path { font: 12px ui-monospace, 'SF Mono', Menlo, monospace; word-break: break-all; user-select: text; }
+.kb-warn { font-size: 11.5px; color: #b45309; margin-left: 4px; }
+
+.protect-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #f4f4f5; border-radius: 12px; padding: 16px 20px 16px 14px; margin-bottom: 36px; }
+.protect-title { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+.protect-sub { font-size: 13.5px; color: #5b5b63; margin-top: 3px; padding-left: 0; }
+.s-h { font-size: 15px; font-weight: 600; margin: 0 0 2px 8px; }
+.s-pane .s-h + .s-sub { margin-left: 8px; margin-bottom: 18px; }
+.s-row { display: flex; align-items: center; gap: 16px; padding: 10px 8px; }
+.s-row-icon { width: 44px; height: 44px; border-radius: 9px; background: #f2f2f3; display: grid; place-items: center; color: #55555c; flex: none; }
+.s-row-text { flex: 1; min-width: 0; }
+.s-row-title { font-size: 15px; font-weight: 550; color: #111; }
+.s-row-sub { font-size: 13.5px; color: #5b5b63; }
+.s-about { position: absolute; right: 22px; bottom: 14px; font-size: 12px; color: #b4b4ba; }
+
+/* macOS-style switch */
+.toggle { position: relative; width: 40px; height: 24px; flex: none; cursor: pointer; }
+.toggle input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.toggle span { position: absolute; inset: 0; border-radius: 999px; background: #e1e1e5; border: 1px solid #d6d6db; transition: background 0.15s; }
+.toggle span::after { content: ''; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); transition: transform 0.15s; }
+.toggle input:checked + span { background: #3d8fe8; border-color: #3d8fe8; }
+.toggle input:checked + span::after { transform: translateX(16px); }
+.toggle input:focus-visible + span { outline: 2px solid rgba(61, 143, 224, 0.55); outline-offset: 2px; }
+.toggle input:disabled + span { opacity: 0.5; }
+
+/* F42: dashed outline around the dashboard while "Hide from screen share" is on (class set by the preload). */
+html.glint-protected body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  border: 1.5px dashed rgba(120, 120, 130, 0.45);
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 100;
+}

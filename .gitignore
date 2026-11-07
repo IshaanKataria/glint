@@ -4,3 +4,25 @@ node_modules/
 .venv/
 __pycache__/
 .env*
+data/
+dist/
+out/
+native/ocr/bin/
+
+# research: keep pages, screenshots, video frames and transcripts, not the videos themselves
+research/videos/**/*.mp4
+research/videos/**/*.webm
+
+# test-output: keep the proof REPORT.md links to, but not raw audio recordings,
+# compiled helpers, captures of the real desktop, or logs that read text off it
+!test-output/**/*.log
+test-output/**/*.s16le
+test-output/audio/sys.wav
+test-output/**/bin/
+test-output/ai-smoke-screen.png
+test-output/checker/a_ontop_protection_*.png
+test-output/checker/f_capture_protection_*.png
+test-output/checker/c_run1_dialog_covered.png
+test-output/checker/c_app_screenshot_kept.png
+test-output/**/f_protection.log
+test-output/**/f_protection.json

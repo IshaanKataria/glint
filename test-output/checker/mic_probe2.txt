@@ -1,0 +1,31 @@
+2026-11-07 02:26:37.717 ffmpeg[69070:1395098] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+Input #0, avfoundation, from ':default':
+  Duration: N/A, start: 32838.146000, bitrate: 768 kb/s
+  Stream #0:0: Audio: pcm_f32le, 24000 Hz, mono, flt, 768 kb/s, start 32838.146000
+[Parsed_volumedetect_0 @ 0x10ee13d20] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_f32le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+size=N/A time=00:00:00.52 bitrate=N/A speed=1.04x elapsed=0:00:00.50    size=N/A time=00:00:01.02 bitrate=N/A speed=1.02x elapsed=0:00:01.00    size=N/A time=00:00:01.52 bitrate=N/A speed=1.01x elapsed=0:00:01.50    size=N/A time=00:00:02.02 bitrate=N/A speed=1.01x elapsed=0:00:02.00    size=N/A time=00:00:02.52 bitrate=N/A speed=   1x elapsed=0:00:02.51    size=N/A time=00:00:03.02 bitrate=N/A speed=   1x elapsed=0:00:03.01    size=N/A time=00:00:03.52 bitrate=N/A speed=   1x elapsed=0:00:03.52    [Parsed_volumedetect_0 @ 0x11ee0f4c0] n_samples: 96480
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] mean_volume: -65.0 dB
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] max_volume: -36.7 dB
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_36db: 1
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_37db: 1
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_38db: 4
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_39db: 7
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_40db: 2
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_41db: 12
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_42db: 12
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_43db: 10
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_44db: 17
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_45db: 14
+[Parsed_volumedetect_0 @ 0x11ee0f4c0] histogram_46db: 39
+[out#0/null @ 0x10ee18f80] video:0KiB audio:188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:04.00 bitrate=N/A speed=0.995x elapsed=0:00:04.02    
+exit=0

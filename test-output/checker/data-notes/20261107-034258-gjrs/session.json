@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "id": "20261107-034258-gjrs",
+  "title": "Back-End Role Final Round Interviews",
+  "status": "saved",
+  "startedAt": 1793983378608,
+  "durationSec": 12,
+  "durationMs": 12076,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034258-gjrs",
+      "id": "mw57du40-them-0001",
+      "speaker": "them",
+      "text": "Hiring sink. We have three final round candidates for the back-end role.",
+      "tStart": 0.03,
+      "tEnd": 4.26
+    },
+    {
+      "sessionId": "20261107-034258-gjrs",
+      "id": "mw57du40-them-0002",
+      "speaker": "them",
+      "text": "Interviews are on Tuesday and Wednesday, and we will decide by Friday.",
+      "tStart": 4.29,
+      "tEnd": 8.26
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983378608,
+      "endedAt": 1793983390684
+    }
+  ],
+  "endedAt": 1793983390684,
+  "summaryMarkdown": "The speaker discussed three final round candidates for the back-end role, with interviews scheduled for Tuesday and Wednesday and a decision expected by Friday.\n\n### Final Round Candidates\n- There are three final round candidates for the back-end role.\n- Interviews are scheduled for Tuesday and Wednesday.\n- A decision will be made by Friday.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034258-gjrs/notes.md"
+}

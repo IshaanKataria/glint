@@ -1,0 +1,221 @@
+{
+  "id": "screens_notes_history_tryr4-1",
+  "at": "2026-11-06T16:47:31.300Z",
+  "note": "not a gate; protection OFF; 15 real sessions, 3 real asks in the long one",
+  "measured": {
+    "try": "r4-1",
+    "sessions": [
+      {
+        "clip": "short1",
+        "audioSec": 7.8,
+        "id": "20261107-034230-upzr",
+        "state": "saved",
+        "title": "Login Bug Fix and Payment Retry Review",
+        "durationMs": 12184,
+        "segments": 1,
+        "actionItems": 1,
+        "summaryChars": 314,
+        "uses": 0
+      },
+      {
+        "clip": "short2",
+        "audioSec": 8.4,
+        "id": "20261107-034245-1d6e",
+        "state": "saved",
+        "title": "Onboarding Design Review: Setup Steps Cut",
+        "durationMs": 10089,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 201,
+        "uses": 0
+      },
+      {
+        "clip": "short3",
+        "audioSec": 8.5,
+        "id": "20261107-034258-gjrs",
+        "state": "saved",
+        "title": "Back-End Role Final Round Interviews",
+        "durationMs": 12076,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 343,
+        "uses": 0
+      },
+      {
+        "clip": "short4",
+        "audioSec": 7.9,
+        "id": "20261107-034313-l0py",
+        "state": "saved",
+        "title": "Marketing Check-In: Webinar Registrations and Reminder",
+        "durationMs": 11183,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 248,
+        "uses": 0
+      },
+      {
+        "clip": "short5",
+        "audioSec": 8.2,
+        "id": "20261107-034327-3xuc",
+        "state": "saved",
+        "title": "Acme Renewal: SSO with Okta Timeline",
+        "durationMs": 10070,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 244,
+        "uses": 0
+      },
+      {
+        "clip": "short6",
+        "audioSec": 9.9,
+        "id": "20261107-034341-h7zl",
+        "state": "saved",
+        "title": "Cloud Cost Budget Review",
+        "durationMs": 13086,
+        "segments": 2,
+        "actionItems": 2,
+        "summaryChars": 333,
+        "uses": 0
+      },
+      {
+        "clip": "short7",
+        "audioSec": 8.6,
+        "id": "20261107-034357-dbu2",
+        "state": "saved",
+        "title": "Version 2.4 Release Planning",
+        "durationMs": 11074,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 265,
+        "uses": 0
+      },
+      {
+        "clip": "short8",
+        "audioSec": 10.6,
+        "id": "20261107-034411-hymh",
+        "state": "saved",
+        "title": "Support Escalation Review: Weekend On-Call",
+        "durationMs": 13093,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 308,
+        "uses": 0
+      },
+      {
+        "clip": "short9",
+        "audioSec": 6.8,
+        "id": "20261107-034427-q7w2",
+        "state": "saved",
+        "title": "Globex Partnership: German Reseller Interface",
+        "durationMs": 9094,
+        "segments": 1,
+        "actionItems": 0,
+        "summaryChars": 252,
+        "uses": 0
+      },
+      {
+        "clip": "short10",
+        "audioSec": 8.4,
+        "id": "20261107-034438-7re7",
+        "state": "saved",
+        "title": "Security Office Hours: Pen Test Findings",
+        "durationMs": 11248,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 290,
+        "uses": 0
+      },
+      {
+        "clip": "short11",
+        "audioSec": 9,
+        "id": "20261107-034452-u3dd",
+        "state": "saved",
+        "title": "Data Team Check-In: Churn Dashboard Live",
+        "durationMs": 11076,
+        "segments": 2,
+        "actionItems": 1,
+        "summaryChars": 224,
+        "uses": 0
+      },
+      {
+        "clip": "short12",
+        "audioSec": 7.3,
+        "id": "20261107-034506-aqyp",
+        "state": "saved",
+        "title": "Office Move Planning: Fifth Floor on December 12",
+        "durationMs": 10071,
+        "segments": 1,
+        "actionItems": 0,
+        "summaryChars": 254,
+        "uses": 0
+      },
+      {
+        "clip": "short13",
+        "audioSec": 5.8,
+        "id": "20261107-034519-n0u5",
+        "state": "saved",
+        "title": "Board Deck Prep: Revenue Chart and Hiring Plan",
+        "durationMs": 9068,
+        "segments": 1,
+        "actionItems": 1,
+        "summaryChars": 241,
+        "uses": 0
+      },
+      {
+        "clip": "short14",
+        "audioSec": 8.6,
+        "id": "20261107-034531-x7dy",
+        "state": "saved",
+        "title": "Mobile App Retro: Crash Rate and Offline Mode",
+        "durationMs": 13167,
+        "segments": 2,
+        "actionItems": 0,
+        "summaryChars": 241,
+        "uses": 0
+      },
+      {
+        "clip": "long",
+        "audioSec": 84.6,
+        "id": "20261107-034548-k6va",
+        "state": "saved",
+        "title": "Pilot Results, Pricing, and Rollout Plan",
+        "durationMs": 88630,
+        "segments": 14,
+        "actionItems": 5,
+        "summaryChars": 906,
+        "uses": 3,
+        "asks": [
+          {
+            "q": "How much did average handle time drop in the pilot?",
+            "atSec": 36.6,
+            "answer": "Average handle time dropped from **9 minutes to 6.5 minutes** — a reduction of **2.5 minutes** (about 28%).",
+            "model": "deepseek-v4-pro",
+            "sessionId": "20261107-034548-k6va",
+            "usedScreenshot": false
+          },
+          {
+            "q": "What price per seat did Tom offer for 200 seats on an annual contract?",
+            "atSec": 66.2,
+            "answer": "**$24 per seat per month** for 200 seats on an annual contract.",
+            "model": "deepseek-v4-pro",
+            "sessionId": "20261107-034548-k6va",
+            "usedScreenshot": false
+          },
+          {
+            "q": "What do we still need before legal will sign?",
+            "atSec": 88.6,
+            "answer": "**SOC-2 Type 2 report** and a **data processing agreement (DPA)**.\n\nTom said he can send the SOC-2 report today, and legal will share the DPA by Wednesday.",
+            "model": "deepseek-v4-pro",
+            "sessionId": "20261107-034548-k6va",
+            "usedScreenshot": false
+          }
+        ]
+      }
+    ],
+    "dashboardContentProtection": false,
+    "overlayContentProtection": false,
+    "listText": "Today\nPilot Results, Pricing, and Rollout Plan\n1:29\n3 uses\n3:45 AM\nMobile App Retro: Crash Rate and Offline Mode\n0:13\n3:45 AM\nBoard Deck Prep: Revenue Chart and Hiring Plan\n0:09\n3:45 AM\nOffice Move Planning: Fifth Floor on December 12\n0:10\n3:45 AM\nData Team Check-In: Churn Dashboard Live\n0:11\n3:44 AM\nSecurity Office Hours: Pen Test Findings\n0:11\n3:44 AM\nGlobex Partnership: German Reseller Interface\n0:09\n3:44 AM\nSupport Escalation Review: Weekend On-Call\n0:13\n3:44 AM\nVersion 2.4 Release Planning\n0:11\n3:43 AM\nCloud Cost Budget Review\n0:13\n3:43 AM\nAcme Renewal: SSO with Okta Timeline\n0:10\n3:43 AM\nMarketing Check-In: Webinar Registrations and Reminder\n0:11\n3:43 AM\nBack-End Role Final Round Interviews\n0:12\n3:42 AM\nOnboarding Design Review: Setup Steps Cut\n0:10\n3:42 AM\nLogin Bug Fix and Payment Retry Review\n0:12\n3:42 AM",
+    "noteHead": "Pilot Results, Pricing, and Rollout Plan\nSat, Nov 7 · 3:45 AM\n1:29\n3 uses\nSummary\nTranscript\nUsage\nCopy full summary\nAction Items\nSend SOC-2 Type 2 report today (Tom)\nShare data processing agreement by Wednesday (Legal team)\nGet finance approval for annual contract by next Friday (Me)\nBook training dates for billing team (Them)\nSend summary email with pilot numbers this afternoon (Tom)\nOverview\n\nTom and the user reviewed pilot results, discussed pricing for 200 seats, and agreed on a rollout plan starting with the billing team in December.\n\nPilot Results\nPilot ran for six weeks with 40 agents.",
+    "compare": "/Users/katana/experiments/cluely-clone/test-output/checker/compare/notes-history.png"
+  }
+}

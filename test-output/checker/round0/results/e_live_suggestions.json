@@ -1,0 +1,32 @@
+{
+  "id": "e_live_suggestions",
+  "at": "2026-11-06T07:24:41.233Z",
+  "status": "PASS",
+  "threshold": "within 60 s of the last segment, overlay DOM shows non-empty Live Insights summary and >=1 action item derived from the clip",
+  "measured": {
+    "secondsAfterLastSegment": 0.111,
+    "summaryText": "Security review\n\nSecurity review was completed last week\nFinal report is now ready\n\nDatabase migration\n\nTheir team of 12 engineers can start the database migration on Monday\nThey asked for the signed contract to be sent to their legal team by Friday",
+    "actionsInDom": [
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "actionsFromInsights": [
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "actionsDerivedFromClip": [
+      "❓\nCan you send the signed contract to their legal team by Friday?",
+      "📝\nSend signed contract to their legal team by Friday",
+      "💬\nSuggest follow-up questions about the database migration"
+    ],
+    "insightsEvents": 3,
+    "model": "deepseek-flash",
+    "status": "PASS"
+  },
+  "evidence": [
+    "test-output/checker/deg_session.log",
+    "test-output/checker/e_live_insights_overlay.png"
+  ]
+}

@@ -1,0 +1,68 @@
+> glint@0.1.0 smoke
+> node scripts/build.mjs && node scripts/smoke.mjs
+getWindowState(overlay): {"ok":true,"value":{"visible":true,"bounds":{"x":395,"y":46,"width":680,"height":156},"alwaysOnTop":true,"alwaysOnTopLevel":"screen-saver","contentProtection":true,"ignoreMouseEvents":false,"focused":false}}
+keybind toggleOverlay      Command+\                                                              scope=always       registered=true
+keybind askOrAssist        Command+Return                                                         scope=whileVisible registered=true
+keybind clear              Command+R                                                              scope=whileVisible registered=true
+keybind toggleSession      Command+Shift+\                                                        scope=always       registered=true
+keybind toggleClickThrough Command+Alt+\                                                          scope=whileVisible registered=true
+keybind moveWindow         Command+Up, Command+Down, Command+Left, Command+Right                  scope=whileVisible registered=true
+keybind scrollAnswer       Command+Shift+Up, Command+Shift+Down                                   scope=whileVisible registered=true
+after toggle: visible = false | registered: toggleOverlay=true askOrAssist=false clear=false toggleSession=true toggleClickThrough=false moveWindow=false scrollAnswer=false
+move right: 395 -> 435
+ask stub: {"ok":false,"error":{"code":"NOT_IMPLEMENTED","message":"Ask (AI module) is not implemented yet"}}
+getWindowState(dashboard): {"ok":true,"value":{"visible":true,"bounds":{"x":185,"y":42,"width":1100,"height":760},"alwaysOnTop":false,"alwaysOnTopLevel":null,"contentProtection":true,"ignoreMouseEvents":false,"focused":true}}
+--- main-process log lines ---
+[glint:main] Glint 0.1.0 electron 45.2.3 test=true dataDir=/Users/katana/experiments/cluely-clone/test-output/smoke-data
+[glint:main] audio source override: none (microphone)
+[glint:main] DeepSeek key: fish
+[glint:ai] stub registered (not implemented)
+[glint:audio] stub registered (not implemented)
+[glint:sessions] stub registered (not implemented)
+[glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+[glint:main] hide from screen share default: ON
+[glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] unregistered Command+Return (askOrAssist)
+[glint:hotkeys] unregistered Command+R (clear)
+[glint:hotkeys] unregistered Command+Alt+\ (toggleClickThrough)
+[glint:hotkeys] unregistered Command+Up, Command+Down, Command+Left, Command+Right (moveWindow)
+[glint:hotkeys] unregistered Command+Shift+Up, Command+Shift+Down (scrollAnswer)
+[glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[glint:overlay] click-through mode on
+[glint:overlay] click-through mode off
+--- checks ---
+PASS  overlay visible
+PASS  alwaysOnTop  (screen-saver)
+PASS  alwaysOnTopLevel screen-saver
+PASS  contentProtection
+PASS  windowKind overlay
+PASS  html.glint-protected class
+PASS  all hotkeys registered while visible
+PASS  toggle hides overlay
+PASS  whileVisible keys unregistered when hidden
+PASS  always keys stay registered when hidden
+PASS  toggle shows overlay again
+PASS  ⌘→ moves overlay
+PASS  click-through sets ignoreMouseEvents
+PASS  dashboard visible
+PASS  dashboard contentProtection
+PASS  dashboard windowKind
+PASS  main __glintTest agrees
+17/17 passed

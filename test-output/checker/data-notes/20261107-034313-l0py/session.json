@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "id": "20261107-034313-l0py",
+  "title": "Marketing Check-In: Webinar Registrations and Reminder",
+  "status": "saved",
+  "startedAt": 1793983393708,
+  "durationSec": 11,
+  "durationMs": 11183,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034313-l0py",
+      "id": "mw57e5rg-them-0001",
+      "speaker": "them",
+      "text": "Marketing check-in. The webinar has 240 registrations.",
+      "tStart": 0.03,
+      "tEnd": 4.52
+    },
+    {
+      "sessionId": "20261107-034313-l0py",
+      "id": "mw57e5rg-them-0002",
+      "speaker": "them",
+      "text": "Can we send the reminder email on Monday morning?",
+      "tStart": 4.55,
+      "tEnd": 7.57
+    }
+  ],
+  "actionItems": [
+    "Send the reminder email on Monday morning (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983393708,
+      "endedAt": 1793983404891
+    }
+  ],
+  "endedAt": 1793983404891,
+  "summaryMarkdown": "A marketing check-in covered webinar registration numbers and a request to send a reminder email.\n\n### Webinar Registrations\n- The webinar has 240 registrations.\n\n### Reminder Email\n- A request was made to send the reminder email on Monday morning.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034313-l0py/notes.md"
+}

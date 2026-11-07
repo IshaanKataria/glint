@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- Glint overlay: hotkey bar, status strip, Live Insights panel, Ask panel. Owner: UI agent. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:" />
+  <title>Glint</title>
+  <link rel="stylesheet" href="overlay.css" />
+</head>
+<body>
+  <div id="root">
+    <!-- Hotkey bar (research/screens/overlay-bar.png): listen, Ask ⌘↵, Show/Hide ⌘\, ⋮ -->
+    <div id="bar" class="bar" role="toolbar" aria-label="Glint">
+      <div class="bar-listen">
+        <button id="listen" class="bb listen" type="button" title="Start listening (⌘⇧\)">
+          <span class="wave" data-icon="AudioLines"></span><span class="chev" data-icon="ChevronUp"></span>
+        </button>
+        <button id="stop" class="stop" type="button" title="Stop session (⌘⇧\)" hidden><span class="stop-sq"></span></button>
+      </div>
+      <button id="ask-btn" class="bb" type="button" title="Ask Glint">
+        <span>Ask</span><kbd class="kc">⌘</kbd><kbd class="kc">↵</kbd>
+      </button>
+      <button id="hide-btn" class="bb" type="button" title="Hide Glint">
+        <span>Show/Hide</span><kbd class="kc">⌘</kbd><kbd class="kc">\</kbd>
+      </button>
+      <button id="handle" class="bb handle" type="button" title="Drag to move · click for menu" data-icon="EllipsisVertical"></button>
+    </div>
+
+    <!-- Slim status strip under the bar: Analyzing screen..., Thinking..., listening, errors -->
+    <div id="status" class="status" role="status" hidden>
+      <span class="status-spin" id="status-spin"></span><span id="status-text"></span>
+    </div>
+
+    <!-- Live Insights (research/screens/live-suggestions.png) -->
+    <section id="insights" class="panel insights" hidden aria-label="Live Insights">
+      <header class="ins-head">
+        <span class="ins-title">Live Insights</span>
+        <span class="ins-tools">
+          <button id="ins-transcript" class="ins-tool" type="button"><span id="ins-transcript-label">Show Transcript</span><span data-icon="AudioLines"></span></button>
+          <button id="ins-min" class="ins-tool icon-only" type="button" title="Minimise" data-icon="Minus"></button>
+        </span>
+      </header>
+      <div id="ins-scroll" class="ins-scroll">
+        <div id="ins-summary" class="ins-summary md"></div>
+        <div id="ins-actions-wrap" class="ins-actions-wrap" hidden>
+          <h3 class="ins-h">Actions</h3>
+          <ul id="ins-actions" class="ins-actions"></ul>
+        </div>
+        <div id="ins-transcript-view" class="ins-transcript" hidden></div>
+      </div>
+      <footer id="ins-foot" class="ins-foot">Click to ask Glint</footer>
+    </section>
+
+    <!-- Ask panel (research/screens/ask-answer.png) -->
+    <section id="askp" class="panel askp" hidden aria-label="Ask Glint">
+      <button id="ask-close" class="ask-close" type="button" title="Clear (⌘R)" data-icon="X"></button>
+      <div id="ask-scroll" class="ask-scroll">
+        <div class="q-row"><div id="q-bubble" class="q-bubble"></div></div>
+        <div id="shot-note" class="shot-note" hidden><span>Sent with screenshot</span><span data-icon="Image"></span></div>
+        <div id="ask-wait" class="ask-wait" hidden><span class="dots"><i></i><i></i><i></i></span></div>
+        <div id="answer" class="answer md"></div>
+        <div id="ask-error" class="ask-error" hidden></div>
+      </div>
+      <button id="to-bottom" class="to-bottom" type="button" title="Scroll to bottom" data-icon="ArrowDown" hidden></button>
+      <div class="chips" id="chips">
+        <button class="chip" type="button" data-quick="assist"><span data-icon="Sparkles"></span>Assist</button>
+        <span class="sep">•</span>
+        <button class="chip" type="button" data-quick="whatShouldISay"><span data-icon="WandSparkles"></span>What should I say?</button>
+        <span class="sep">•</span>
+        <button class="chip" type="button" data-quick="followUps"><span data-icon="MessageSquareText"></span>Follow-up questions</button>
+        <span class="sep">•</span>
+        <button class="chip" type="button" data-quick="recap"><span data-icon="RotateCw"></span>Recap</button>
+      </div>
+      <form id="composer" class="composer" autocomplete="off">
+        <label class="field">
+          <input id="input" type="text" placeholder=" " spellcheck="false" aria-label="Ask about your screen or conversation" />
+          <span class="ph" aria-hidden="true">Ask about your screen or conversation, or <kbd class="kc-o">⌘</kbd><kbd class="kc-o">↵</kbd> for Assist</span>
+        </label>
+        <button id="send" class="send" type="submit" title="Send (↵)"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 3.2 21.2 11.1a1 1 0 0 1 0 1.8L3.5 20.8a.8.8 0 0 1-1.1-1l2.9-7.8-2.9-7.8a.8.8 0 0 1 1.1-1Z" fill="currentColor"/><path d="M5.3 12h7" stroke="#16368c" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+      </form>
+    </section>
+  </div>
+  <script src="overlay.js"></script>
+</body>
+</html>

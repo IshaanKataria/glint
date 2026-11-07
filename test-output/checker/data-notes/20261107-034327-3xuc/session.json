@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "id": "20261107-034327-3xuc",
+  "title": "Acme Renewal: SSO with Okta Timeline",
+  "status": "saved",
+  "startedAt": 1793983407913,
+  "durationSec": 10,
+  "durationMs": 10070,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034327-3xuc",
+      "id": "mw57egq1-them-0001",
+      "speaker": "them",
+      "text": "customer call with Acme. They want single sign-on with Octa before their renewal in March.",
+      "tStart": 0.03,
+      "tEnd": 5.06
+    },
+    {
+      "sessionId": "20261107-034327-3xuc",
+      "id": "mw57egq1-them-0002",
+      "speaker": "them",
+      "text": "I promised them a timeline by next week.",
+      "tStart": 5.41,
+      "tEnd": 7.81
+    }
+  ],
+  "actionItems": [
+    "Provide a timeline for the SSO implementation by next week (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983407913,
+      "endedAt": 1793983417983
+    }
+  ],
+  "endedAt": 1793983417983,
+  "summaryMarkdown": "A customer call with Acme covered their request for single sign-on with Okta before their March renewal. The user promised to provide a timeline by next week.\n\n### SSO Request\n- Acme wants single sign-on with Okta before their renewal in March.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034327-3xuc/notes.md"
+}

@@ -1,0 +1,1 @@
+echo unit: 5/5 PASS (DEFAULT_ECHO {"windowSec":0.6,"doubleTalkMarginDb":12,"minUserSec":0.3})

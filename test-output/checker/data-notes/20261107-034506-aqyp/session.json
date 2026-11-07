@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "id": "20261107-034506-aqyp",
+  "title": "Office Move Planning: Fifth Floor on December 12",
+  "status": "saved",
+  "startedAt": 1793983506806,
+  "durationSec": 10,
+  "durationMs": 10071,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034506-aqyp",
+      "id": "mw57gl12-them-0001",
+      "speaker": "them",
+      "text": "office move planning. We move to the fifth floor on December 12. Everyone should pack their desks by the 10th.",
+      "tStart": 0.03,
+      "tEnd": 6.92
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983506806,
+      "endedAt": 1793983516877
+    }
+  ],
+  "endedAt": 1793983516877,
+  "summaryMarkdown": "Them discussed office move planning, announcing the move to the fifth floor on December 12 and instructing everyone to pack their desks by the 10th.\n\n### Move Details\n- Move to the fifth floor on December 12\n- Everyone should pack their desks by the 10th",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034506-aqyp/notes.md"
+}

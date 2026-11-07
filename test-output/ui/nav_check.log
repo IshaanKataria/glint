@@ -1,0 +1,13 @@
+PASS  back disabled at start
+PASS  clicking another row changes the note  "Northwind pilot rollout and pricing" -> "Hiring sync: support lead role"
+PASS  back enabled after moving
+PASS  tab switched to Transcript
+PASS  back #1 returns to Summary on the same note
+PASS  back #2 returns to the first note  "Northwind pilot rollout and pricing"
+PASS  back disabled again
+PASS  back enabled while Settings is open
+PASS  back closes Settings
+PASS  ⌘K focuses search
+PASS  Enter opens the first match  "Budget planning"
+PASS  ↗ button opens the first match  "Q4 roadmap review"
+PASS  ⌘[ goes back  "Budget planning"

@@ -1,0 +1,234 @@
+
+# watch: video report
+
+- **Source:** https://www.youtube.com/watch?v=qHg3_4bU1Dw
+- **Local media:** `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/download/run-pvw4priy/video.mp4`
+- **Title:** Introducing Cluely, the Cheat On Everything App
+- **Uploader:** Cluely
+- **Duration:** 02:25 (145.3s)
+- **Resolution:** 1280x720 (av1)
+- **Detail:** balanced
+- **Frames:** 57 selected from 60 candidates (uniform fallback, 3 near-duplicates dropped, full range, budget 60, cap 100)
+- **Frame size:** max 1024px wide, max 1998px tall
+- **Transcript:** 147 segments (via captions (en, automatic, original))
+
+## Frames
+
+Frames live at: `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames`
+
+**Read each frame path below with the Read tool to view the image.** Frames are in chronological order; `t=MM:SS` is the absolute timestamp in the source video.
+
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0001.jpg` (t=00:00, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0002.jpg` (t=00:02, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0003.jpg` (t=00:05, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0004.jpg` (t=00:07, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0005.jpg` (t=00:10, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0006.jpg` (t=00:12, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0007.jpg` (t=00:15, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0008.jpg` (t=00:17, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0009.jpg` (t=00:19, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0010.jpg` (t=00:22, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0011.jpg` (t=00:24, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0012.jpg` (t=00:27, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0013.jpg` (t=00:29, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0014.jpg` (t=00:31, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0015.jpg` (t=00:34, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0016.jpg` (t=00:36, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0018.jpg` (t=00:41, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0019.jpg` (t=00:44, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0020.jpg` (t=00:46, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0021.jpg` (t=00:48, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0022.jpg` (t=00:51, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0023.jpg` (t=00:53, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0024.jpg` (t=00:56, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0025.jpg` (t=00:58, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0026.jpg` (t=01:01, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0027.jpg` (t=01:03, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0028.jpg` (t=01:05, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0029.jpg` (t=01:08, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0031.jpg` (t=01:13, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0032.jpg` (t=01:15, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0033.jpg` (t=01:17, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0034.jpg` (t=01:20, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0035.jpg` (t=01:22, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0036.jpg` (t=01:25, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0037.jpg` (t=01:27, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0038.jpg` (t=01:30, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0039.jpg` (t=01:32, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0040.jpg` (t=01:34, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0041.jpg` (t=01:37, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0042.jpg` (t=01:39, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0044.jpg` (t=01:44, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0045.jpg` (t=01:47, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0046.jpg` (t=01:49, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0047.jpg` (t=01:51, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0048.jpg` (t=01:54, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0049.jpg` (t=01:56, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0050.jpg` (t=01:59, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0051.jpg` (t=02:01, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0052.jpg` (t=02:03, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0053.jpg` (t=02:06, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0054.jpg` (t=02:08, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0055.jpg` (t=02:11, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0056.jpg` (t=02:13, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0057.jpg` (t=02:16, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0058.jpg` (t=02:18, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0059.jpg` (t=02:20, reason=uniform)
+- `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld/frames/frame_0060.jpg` (t=02:23, reason=uniform)
+
+## Transcript
+
+_Source: captions (en, automatic, original)._
+
+```
+[00:00] Hey, I'm Roy and I'm excited to
+[00:01] Hey, I'm Roy and I'm excited to
+[00:02] Hey, I'm Roy and I'm excited to introduce Cluey, the AI desktop
+[00:03] introduce Cluey, the AI desktop
+[00:03] introduce Cluey, the AI desktop assistant that sees what you see and
+[00:05] assistant that sees what you see and
+[00:05] assistant that sees what you see and hears what you hear. Let's jump into a
+[00:06] hears what you hear. Let's jump into a
+[00:06] hears what you hear. Let's jump into a call with my co-founder Neil to see
+[00:07] call with my co-founder Neil to see
+[00:07] call with my co-founder Neil to see Cluey in action.
+[00:10] Cluey in action.
+[00:10] Cluey in action. Clue shows up as a translucent window
+[00:12] Clue shows up as a translucent window
+[00:12] Clue shows up as a translucent window that appears over all other applications
+[00:13] that appears over all other applications
+[00:13] that appears over all other applications on your screen. I can either press
+[00:15] on your screen. I can either press
+[00:15] on your screen. I can either press listen or record with Cluey while in a
+[00:17] listen or record with Cluey while in a
+[00:17] listen or record with Cluey while in a meeting to have Cluey start picking up
+[00:18] meeting to have Cluey start picking up
+[00:18] meeting to have Cluey start picking up my microphone and system audio. Hey
+[00:20] my microphone and system audio. Hey
+[00:20] my microphone and system audio. Hey Neil, what's up? Hey Roy. Uh, as you can
+[00:23] Neil, what's up? Hey Roy. Uh, as you can
+[00:23] Neil, what's up? Hey Roy. Uh, as you can see, there's a real-time notepad that
+[00:25] see, there's a real-time notepad that
+[00:25] see, there's a real-time notepad that pops up that allows Cluey to uh suggest
+[00:27] pops up that allows Cluey to uh suggest
+[00:27] pops up that allows Cluey to uh suggest questions for me to ask or to find
+[00:29] questions for me to ask or to find
+[00:29] questions for me to ask or to find things that I might need to find. Neil,
+[00:31] things that I might need to find. Neil,
+[00:31] things that I might need to find. Neil, you went on a pretty interesting date
+[00:32] you went on a pretty interesting date
+[00:32] you went on a pretty interesting date last week. Can you tell me a little bit
+[00:33] last week. Can you tell me a little bit
+[00:33] last week. Can you tell me a little bit more about that? I did. Yeah. Uh, it was
+[00:36] more about that? I did. Yeah. Uh, it was
+[00:36] more about that? I did. Yeah. Uh, it was pretty fun. We went to Japan Town for
+[00:39] pretty fun. We went to Japan Town for
+[00:39] pretty fun. We went to Japan Town for dinner. Um, I think it went pretty good,
+[00:41] dinner. Um, I think it went pretty good,
+[00:41] dinner. Um, I think it went pretty good, but I talked way too much about prompt
+[00:42] but I talked way too much about prompt
+[00:42] but I talked way too much about prompt engineering. Yeah, that's um pretty
+[00:45] engineering. Yeah, that's um pretty
+[00:45] engineering. Yeah, that's um pretty cool. Uh, as you can see throughout the
+[00:46] cool. Uh, as you can see throughout the
+[00:46] cool. Uh, as you can see throughout the conversation, Clue picked up that Neil
+[00:48] conversation, Clue picked up that Neil
+[00:48] conversation, Clue picked up that Neil said Japan Town and prompt engineering
+[00:49] said Japan Town and prompt engineering
+[00:49] said Japan Town and prompt engineering and offered to define both terms. Uh,
+[00:51] and offered to define both terms. Uh,
+[00:51] and offered to define both terms. Uh, Clue can also suggest follow-up
+[00:53] Clue can also suggest follow-up
+[00:53] Clue can also suggest follow-up questions for me so that I can keep the
+[00:55] questions for me so that I can keep the
+[00:55] questions for me so that I can keep the conversation going every single time.
+[00:56] conversation going every single time.
+[00:56] conversation going every single time. Um, what got you interested in prop
+[00:58] Um, what got you interested in prop
+[00:58] Um, what got you interested in prop engineering and did you use any specific
+[00:59] engineering and did you use any specific
+[00:59] engineering and did you use any specific techniques during your conversation in
+[01:01] techniques during your conversation in
+[01:01] techniques during your conversation in Japan Town? Um, this works for
+[01:03] Japan Town? Um, this works for
+[01:03] Japan Town? Um, this works for everything, too. Um, definitions,
+[01:04] everything, too. Um, definitions,
+[01:04] everything, too. Um, definitions, questions, and and much much more.
+[01:07] questions, and and much much more.
+[01:07] questions, and and much much more. That's pretty cool. Does it work for all
+[01:09] That's pretty cool. Does it work for all
+[01:09] That's pretty cool. Does it work for all kinds of meetings? Uh, yeah. I mean, it
+[01:10] kinds of meetings? Uh, yeah. I mean, it
+[01:10] kinds of meetings? Uh, yeah. I mean, it even works in person, too. Uh, a lot of
+[01:12] even works in person, too. Uh, a lot of
+[01:12] even works in person, too. Uh, a lot of the magic happens in the dashboard. I'm
+[01:14] the magic happens in the dashboard. I'm
+[01:14] the magic happens in the dashboard. I'm going to stop the recording. I'm going
+[01:15] going to stop the recording. I'm going
+[01:15] going to stop the recording. I'm going to finish up. Draft a follow-up email to
+[01:17] to finish up. Draft a follow-up email to
+[01:17] to finish up. Draft a follow-up email to send Neil based on the conversation that
+[01:18] send Neil based on the conversation that
+[01:18] send Neil based on the conversation that we had. Um, I would send this along and
+[01:20] we had. Um, I would send this along and
+[01:20] we had. Um, I would send this along and let's take a look at the dashboard. In
+[01:23] let's take a look at the dashboard. In
+[01:23] let's take a look at the dashboard. In the dashboard, you'll see an AI
+[01:24] the dashboard, you'll see an AI
+[01:24] the dashboard, you'll see an AI generated summary of every meeting I've
+[01:26] generated summary of every meeting I've
+[01:26] generated summary of every meeting I've ever taken with Cluey. You can ask
+[01:28] ever taken with Cluey. You can ask
+[01:28] ever taken with Cluey. You can ask anything here, like what are yesterday's
+[01:29] anything here, like what are yesterday's
+[01:29] anything here, like what are yesterday's action items. You can also see the
+[01:31] action items. You can also see the
+[01:31] action items. You can also see the latest meeting I was just in.
+[01:34] latest meeting I was just in.
+[01:34] latest meeting I was just in. Here's the summary. Here you can see all
+[01:36] Here's the summary. Here you can see all
+[01:36] Here's the summary. Here you can see all the times I used Cluey in the call. See
+[01:39] the times I used Cluey in the call. See
+[01:39] the times I used Cluey in the call. See the entire summary as well as share the
+[01:42] the entire summary as well as share the
+[01:42] the entire summary as well as share the summary. I can make this entire thing
+[01:44] summary. I can make this entire thing
+[01:44] summary. I can make this entire thing public, get a link to copy it,
+[01:47] public, get a link to copy it,
+[01:47] public, get a link to copy it, and share this link with anybody.
+[01:51] and share this link with anybody.
+[01:51] and share this link with anybody. A ton of the magic behind Cluey also
+[01:53] A ton of the magic behind Cluey also
+[01:53] A ton of the magic behind Cluey also happens in the personalized tab. Let's
+[01:54] happens in the personalized tab. Let's
+[01:54] happens in the personalized tab. Let's ask Clue how it can do that.
+[01:57] ask Clue how it can do that.
+[01:57] ask Clue how it can do that. [Music]
+[02:02] [Music]
+[02:02] [Music] If you head over to the personalize tab,
+[02:04] If you head over to the personalize tab,
+[02:04] If you head over to the personalize tab, you can share anything about yourself
+[02:05] you can share anything about yourself
+[02:05] you can share anything about yourself that you want Chloe to know or use one
+[02:07] that you want Chloe to know or use one
+[02:07] that you want Chloe to know or use one of our default templates to use it for
+[02:08] of our default templates to use it for
+[02:08] of our default templates to use it for some of our most common use cases like
+[02:10] some of our most common use cases like
+[02:10] some of our most common use cases like for school meetings, sales, recruiting,
+[02:13] for school meetings, sales, recruiting,
+[02:13] for school meetings, sales, recruiting, or customer support.
+[02:15] or customer support.
+[02:15] or customer support. AI is too smart to trap inside a
+[02:17] AI is too smart to trap inside a
+[02:17] AI is too smart to trap inside a chatbot. We believe in the future there
+[02:18] chatbot. We believe in the future there
+[02:18] chatbot. We believe in the future there will be a better way to interact with
+[02:19] will be a better way to interact with
+[02:20] will be a better way to interact with AI. And at Clely, we're just getting
+[02:21] AI. And at Clely, we're just getting
+[02:21] AI. And at Clely, we're just getting started.
+```
+
+---
+_Work dir: `/Users/katana/experiments/cluely-clone/research/videos/official-launch-2025/work/watch-qooto1ld` — delete when done._

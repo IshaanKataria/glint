@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- Glint dashboard: history + note view, with Settings as a sheet. Owner: UI agent. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:" />
+  <title>Glint</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <!-- Title bar (hiddenInset: traffic lights sit on the left; the whole strip drags the window) -->
+  <header class="titlebar">
+    <div class="tb-left">
+      <!-- Back to the previously viewed note/tab (or out of Settings); disabled when there's nowhere to go -->
+      <button id="back" class="tb-icon back" type="button" title="Back (⌘[)" aria-label="Back" data-icon="ArrowLeft" disabled></button>
+    </div>
+    <form id="search-form" class="search" role="search" autocomplete="off">
+      <span data-icon="Search"></span>
+      <input id="search" type="search" placeholder="Search or ask anything..." spellcheck="false" aria-label="Search sessions (⌘K)" />
+      <button id="search-go" class="search-go" type="submit" title="Open the first match (↵)" aria-label="Search" data-icon="ArrowUpRight"></button>
+    </form>
+    <div class="tb-right">
+      <button id="start" class="start-btn" type="button">Start Glint</button>
+      <button id="open-settings" class="avatar" type="button" title="Settings (⌘,)" data-icon="Settings"></button>
+    </div>
+  </header>
+
+  <div class="layout" id="layout">
+    <aside class="history" id="history" aria-label="History">
+      <div id="history-list" class="history-list"></div>
+    </aside>
+
+    <main class="note-pane" id="note-pane">
+      <!-- Sidebar toggle sits in the note pane's top-left corner, as in research/screens/notes-history.png -->
+      <button id="toggle-list" class="pane-toggle" type="button" title="Toggle history" data-icon="PanelLeft"></button>
+      <div id="note-scroll" class="note-scroll">
+        <div id="note" class="note"></div>
+      </div>
+      <!-- Pinned to the bottom centre of the pane, floating over the content -->
+      <div id="note-float" class="note-float" hidden>
+        <button id="view-transcript" class="float-btn" type="button">View Transcript</button>
+        <button id="resume" class="float-btn" type="button"><span data-icon="Play"></span>Resume Session</button>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <!-- Settings sheet (research/screens/settings.png) -->
+  <div id="settings" class="sheet-backdrop" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Settings">
+      <nav class="s-side">
+        <button id="s-close" class="s-close" type="button" title="Close (Esc)" data-icon="X"></button>
+        <button class="s-nav" type="button" data-pane="general"><span data-icon="Settings"></span>General</button>
+        <button class="s-nav" type="button" data-pane="keybinds"><span data-icon="SquarePen"></span>Keybinds</button>
+        <div class="s-label">Glint</div>
+        <button class="s-nav" type="button" data-pane="about"><span data-icon="Info"></span>About</button>
+        <div class="s-spacer"></div>
+        <button id="s-quit" class="s-nav" type="button"><span data-icon="Frown"></span>Quit Glint</button>
+      </nav>
+
+      <section class="s-pane" id="pane-general" hidden>
+        <div class="protect-card">
+          <div>
+            <div class="protect-title"><span data-icon="EyeOff" id="protect-icon"></span><span id="protect-heading">Hidden from screen share</span></div>
+            <div class="protect-sub" id="protect-sub">Glint windows don't appear in screen shares, recordings or screenshots.</div>
+          </div>
+          <label class="toggle"><input id="set-protect" type="checkbox" /><span></span></label>
+        </div>
+
+        <h3 class="s-h">General settings</h3>
+        <p class="s-sub">Customize how Glint works for you</p>
+
+        <div class="s-row">
+          <span class="s-row-icon" data-icon="MousePointerClick"></span>
+          <div class="s-row-text"><div class="s-row-title">Click-through overlay</div><div class="s-row-sub">The overlay ignores the mouse so you can click the app behind it (⌘⌥\).</div></div>
+          <label class="toggle"><input id="set-click" type="checkbox" /><span></span></label>
+        </div>
+        <div class="s-row">
+          <span class="s-row-icon" data-icon="ScanText"></span>
+          <div class="s-row-text"><div class="s-row-title">Include screen with questions</div><div class="s-row-sub">Read the text on your screen (on-device OCR) and send it with each question.</div></div>
+          <label class="toggle"><input id="set-shot" type="checkbox" /><span></span></label>
+        </div>
+        <div class="s-row">
+          <span class="s-row-icon" data-icon="BadgeCheck"></span>
+          <div class="s-row-text"><div class="s-row-title">Version</div><div class="s-row-sub" id="version-sub">You are using Glint</div></div>
+        </div>
+        <div class="s-about" id="about"></div>
+      </section>
+
+      <section class="s-pane" id="pane-about" hidden>
+        <h3 class="s-title">About Glint</h3>
+        <p class="s-sub">An on-screen assistant for meetings: ask about your screen, get live insights, keep notes.</p>
+        <div class="about-list">
+          <div class="about-row"><span>Version</span><span id="about-version">–</span></div>
+          <div class="about-row"><span>Platform</span><span id="about-platform">–</span></div>
+          <div class="about-row"><span>Notes folder</span><span id="about-data" class="about-path">–</span></div>
+        </div>
+      </section>
+
+      <section class="s-pane" id="pane-keybinds" hidden>
+        <h3 class="s-title">Keyboard shortcuts</h3>
+        <p class="s-sub">Glint works with these easy to remember commands.</p>
+        <div id="keybinds"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

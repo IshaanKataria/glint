@@ -1,0 +1,9 @@
+{"sessionId":"ai-smoke-1793984620623","id":"seg-0","speaker":"them","text":"Thanks for joining. So we are evaluating Glint for our support team of about forty agents.","tStart":0,"tEnd":8}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-1","speaker":"me","text":"Great to meet you, Priya. What tools are the agents using today?","tStart":9,"tEnd":17}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-2","speaker":"them","text":"Mostly Zendesk, and we built an internal RAG pipeline on top of our knowledge base last year.","tStart":18,"tEnd":26}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-3","speaker":"them","text":"Our biggest worry is SOC 2 compliance. Does your product store any call audio in the cloud?","tStart":27,"tEnd":35}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-4","speaker":"me","text":"No, transcription runs locally with WhisperX, so audio never leaves the laptop.","tStart":36,"tEnd":44}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-5","speaker":"them","text":"Okay. And what would pricing look like for forty seats on an annual plan?","tStart":45,"tEnd":53}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-6","speaker":"me","text":"I will send over a quote by Friday with the annual discount included.","tStart":54,"tEnd":62}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-7","speaker":"them","text":"Perfect. I also need to loop in Marcus from security before we sign anything.","tStart":63,"tEnd":71}
+{"sessionId":"ai-smoke-1793984620623","id":"seg-8","speaker":"me","text":"Sounds good. I can set up a thirty minute security review with Marcus next week.","tStart":72,"tEnd":80}

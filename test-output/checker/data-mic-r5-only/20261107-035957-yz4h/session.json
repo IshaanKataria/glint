@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "20261107-035957-yz4h",
+  "title": "Session Nov 7, 3:59 AM",
+  "status": "summarizing",
+  "startedAt": 1793984397517,
+  "durationSec": 10,
+  "durationMs": 10464,
+  "source": "mic",
+  "transcript": [
+    {
+      "sessionId": "20261107-035957-yz4h",
+      "id": "mw57zob1-me-0001",
+      "speaker": "me",
+      "text": "Testing the glint microphone.",
+      "tStart": 4.89,
+      "tEnd": 7.21
+    }
+  ],
+  "actionItems": [],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793984397517,
+      "endedAt": 1793984407981
+    }
+  ],
+  "endedAt": 1793984407981
+}

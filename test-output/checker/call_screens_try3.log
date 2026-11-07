@@ -1,0 +1,43 @@
+# call_screens_try3.log  2026-11-06T16:55:06.092Z
+clip /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/call_line.wav | line: Thanks for joining. Could you walk me through how the pilot went for your support team? | 6 s leading silence
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=realtime, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-call)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: OFF
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:whisper] worker spawned pid=2362 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+  [glint out] [glint:whisper] [whisper_worker] model small/int8 loaded in 5443 ms
+  [glint out] [glint:whisper] worker ready: model=small loadMs=5443
+overlay default position {"x":441,"y":46,"width":588,"height":76} protection false
+  [glint out] [glint:audio] file source spawned pid=2376: ffmpeg -hide_banner -loglevel error -nostdin -re -i /Users/katana/experiments/cluely-clone/test-output/checker/notes-clips/call_line.wav -vn -ac 1 -ar 16000 -f s16le -
+  [glint out] [glint:sessions] started 20261107-035513-t2rd -> /Users/katana/experiments/cluely-clone/test-output/checker/data-call/20261107-035513-t2rd
+  [glint out] [glint:audio] session 20261107-035513-t2rd recording (source file, timeOffset 0s)
+overlay-bar attempt 1 {"bar":{"x":546.9140625,"y":54,"width":376.1640625,"height":38},"region":{"x":265,"y":0,"width":940,"height":529},"ratio":0.4,"pre":{"segs":0,"idle":true,"actions":0},"post":{"segs":0,"idle":true}} ok= true
+  [glint out] [glint:audio] chunk them/file t=0s dur=4.14s SKIPPED (silence): peak=-120dBFS rms=-120 maxFrame=-120 floor=-90.3 voicedThr=-62.7 voiced=0s
+  [glint out] [glint:audio] file source exited code=0 signal=null bytes=329882
+  [glint out] [glint:audio] chunk them/file t=4.14s dur=6.17s queued: peak=-2.4dBFS rms=-17.5 maxFrame=-11 floor=-50.3 voicedThr=-32.2 voiced=3.48s
+  [glint out] [glint:audio] segment them [6.04-10.31s] worker=2648ms latency=2650ms: Thanks for joining. Could you walk me through how the pilot went for your suppor
+  [glint out] [glint:audio] file source finished: 10.31s of audio, 1 segment(s); autoStop=false
+live-suggestions attempt 1 {"bar":{"x":546.9140625,"y":54,"width":376.1640625,"height":38},"region":{"x":317,"y":38,"width":836,"height":470},"ratio":0.45,"pre":{"ins":0,"idle":true,"actions":["💬\nSuggest follow-up questions"],"panelBottom":225.2421875},"post":{"ins":0,"msAfterSeg":407,"idle":true,"actions":1},"panelFits":true} ok= true
+  [glint out] [glint:ai] insights #1 for 20261107-035513-t2rd: 1 segments, 1 actions, 1426 ms, model=deepseek-flash
+insight events [{"at":1793984113588,"real":false,"summaryChars":0,"actions":0,"msAfterFirstSeg":-12465},{"at":1793984129494,"real":true,"summaryChars":108,"actions":1,"msAfterFirstSeg":3441}]
+  [glint out] [glint:audio] session 20261107-035513-t2rd stopped: 1 segment(s)
+  [glint out] [glint:sessions] [20261107-035513-t2rd] notes attempt 1: 1 sections, valid
+  [glint out] [glint:sessions] summary for 20261107-035513-t2rd: model=deepseek-v4-pro 1867 ms, 1 attempt(s), 1 sections, title="Support Team Pilot Walkthrough", 1 action items, tokens=882/119
+attempt 1 first insights arrived 3441 ms after the first segment
+compare /Users/katana/experiments/cluely-clone/test-output/checker/compare/overlay-bar.png /Users/katana/experiments/cluely-clone/test-output/checker/compare/live-suggestions.png
+  [glint out] [glint:audio] quit: stopping capture and the WhisperX worker
+  [glint out] [glint:whisper] [whisper_worker] stdin closed or shutdown; exiting
+  [glint err] Debugger ending on ws://127.0.0.1:64765/52bc0e97-3eca-4c65-9fe8-342580731672
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging

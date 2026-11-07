@@ -1,0 +1,44 @@
+
+===== run 1/1 =====
+   379 ms calling session.start()
+   786 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261106-180248-f3bw","startedAt":1793948568350,"source":"mic","message":"Loading transcription model..."}}
+   786 ms recording live for 6 s...
+  6797 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261106-180248-f3bw","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+   401 status   recording source=mic "Loading transcription model..."
+  4986 status   recording source=mic
+  5244 status   recording source=mic "Microphone is delivering pure silence (all-zero samples): macOS permission is probably missing"
+  6392 status   stopping source=mic "Finishing transcript..."
+  6412 status   idle "Stopped"
+  6412 status   summarizing source=mic "Writing notes..."
+  6413 status   error source=mic "Saved without summary: nothing was transcribed"
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":89254,"loadMs":4966}
+sources: [{"kind":"mic","speaker":"me","bytes":170666,"running":false}]  systemAudio: off: system capture exited before any audio (code 0): {"event":"started","inputChannels":2,"outputDevice":"BuiltInSpeakerDevice","inputSampleRate":48000} | {"seconds":0,"reason":"signal","event":"stopped","nonZeroSamples":0}
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk me t=0.39s dur=4.14s SKIPPED (silence)
+chunk me t=4.53s dur=1.19s SKIPPED (silence)
+
+transcript: (none)
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=89254 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=89256: ffmpeg -hide_banner -loglevel error -nostdin -f avfoundation -i :default -ac 1 -ar 16000 -f s16le -
+[glint:audio] session 20261106-180248-f3bw recording (source mic, timeOffset 0s)
+[glint:audio] compiled system tap helper in 1539 ms -> /Users/katana/Library/Application Support/Glint/bin/glint-system-tap-32da87325a
+[glint:audio] system source spawned pid=89273: glint-system-tap-32da87325a
+[glint:audio] system tap: {"event":"started","inputChannels":2,"outputDevice":"BuiltInSpeakerDevice","inputSampleRate":48000}
+[glint:whisper] [whisper_worker] model small/int8 loaded in 4966 ms
+[glint:whisper] worker ready: model=small loadMs=4966
+[glint:audio] Microphone is delivering pure silence (all-zero samples): macOS permission is probably missing
+[glint:audio] system tap: {"seconds":0,"reason":"signal","event":"stopped","nonZeroSamples":0}
+[glint:audio] system source exited code=0 signal=null bytes=0
+[glint:audio] system audio unavailable, continuing mic-only: system capture exited before any audio (code 0): {"event":"started","inputChannels":2,"outputDevice":"BuiltInSpeakerDevice","inputSampleRate":48000} | {"seconds":0,"reason":"signal","event":"stopped","nonZeroSamples":0}
+[glint:audio] mic source exited code=255 signal=null bytes=170666
+[glint:audio] session 20261106-180248-f3bw stopped: 0 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

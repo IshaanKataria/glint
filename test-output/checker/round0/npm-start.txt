@@ -1,0 +1,37 @@
+$ npm start   (cwd /Users/katana/experiments/cluely-clone, started 2026-11-06T07:12:02.180Z)
+[+0.5s] out > glint@0.1.0 start
+[+0.5s] out > node scripts/build.mjs && electron .
+[+0.9s] err   dist/preload/preload.js       5.3kb
+[+0.9s] err   dist/preload/preload.js.map  32.5kb
+[+0.9s] err ⚡ Done in 63ms
+[+0.9s] err   dist/main/main.js      108.1kb
+[+0.9s] err   dist/main/main.js.map  234.2kb
+[+0.9s] err ⚡ Done in 77ms
+[+2.0s] err   dist/renderer/dashboard.js      171.0kb
+[+2.0s] err   dist/renderer/overlay.js        168.4kb
+[+2.0s] err   dist/renderer/dashboard.js.map  479.7kb
+[+2.0s] err   dist/renderer/overlay.js.map    461.7kb
+[+2.0s] err ⚡ Done in 1162ms
+[+3.3s] out [glint:main] Glint 0.1.0 electron 45.2.3 test=false dataDir=/Users/katana/Library/Application Support/Glint/sessions
+[+3.3s] out [glint:main] audio source override: none (microphone)
+[+3.4s] out [glint:main] DeepSeek key: fish
+[+3.4s] out [glint:ai] registered (key available)
+[+3.4s] out [glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[+3.4s] out [glint:sessions] registered (dataDir=/Users/katana/Library/Application Support/Glint/sessions)
+[+3.6s] out [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+[+3.6s] out [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+[+3.6s] out [glint:main] hide from screen share default: ON
+[+4.0s] out [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[+4.0s] out [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+[+4.4s] out [glint:whisper] worker spawned pid=95454 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[+15.0s] checker: still running after 15 s (good); sending SIGTERM to process group
+[+15.1s] out [glint:audio] quit: stopping capture and the WhisperX worker
+[+15.1s] err /Users/katana/experiments/cluely-clone/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron exited with signal SIGTERM
+[+18.2s] checker: leftover electron processes after quit: 0

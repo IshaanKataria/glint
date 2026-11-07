@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "id": "20261107-035616-uarh",
+  "title": "Support Team Pilot Walkthrough",
+  "status": "saved",
+  "startedAt": 1793984176179,
+  "durationSec": 16,
+  "durationMs": 15631,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-035616-uarh",
+      "id": "mw57uxir-them-0001",
+      "speaker": "them",
+      "text": "Thanks for joining. Could you walk me through how the pilot went for your support team?",
+      "tStart": 6.04,
+      "tEnd": 10.31
+    }
+  ],
+  "actionItems": [
+    "Walk through how the pilot went for the support team (Me)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793984176179,
+      "endedAt": 1793984191810
+    }
+  ],
+  "endedAt": 1793984191810,
+  "summaryMarkdown": "Them asked the user to walk through how the pilot went for the support team.\n\n### Pilot Results\n- Them asked the user to walk through how the pilot went for the support team.",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-call/20261107-035616-uarh/notes.md"
+}

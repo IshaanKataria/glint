@@ -1,0 +1,30 @@
+# bc_ask.log  2026-11-06T07:21:01.406Z
+  [glint out] [glint:main] DeepSeek key: fish
+  [glint out] [glint:ai] registered (key available)
+  [glint out] [glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+  [glint out] [glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/checker/data-bc)
+  [glint out] [glint:hotkeys] register Command+\ (toggleOverlay, always) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+\ (toggleSession, always) -> ok; isRegistered=true
+  [glint out] [glint:main] hide from screen share default: ON
+  [glint out] [glint:hotkeys] register Command+Return (askOrAssist, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+R (clear, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Alt+\ (toggleClickThrough, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Up (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Down (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Left (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Right (moveWindow, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Up (scrollAnswer, whileVisible) -> ok; isRegistered=true
+  [glint out] [glint:hotkeys] register Command+Shift+Down (scrollAnswer, whileVisible) -> ok; isRegistered=true
+(b) question: What is 85 multiplied by 97? Reply with just the number. expected 8245
+  [glint out] [glint:ai] screen: display 1 2940x1912, capture 1202 ms, vision OCR 3098 ms, 1935 chars
+  [glint out] [glint:ai] ask ask done: model=deepseek-v4-pro 6195 ms, screen=true (1935 chars), transcript=0 chars, thread=1, tokens=992/2
+(b) result {"model":"deepseek-v4-pro","chunks":2,"firstChunkMs":5930,"totalMs":6295,"stages":["capturing","ocr","thinking","streaming"],"answer":"8245","usedScreenshot":true}
+(b) answer text in overlay DOM: 8245
+(c) secret shown on screen: COMET 572-790 | question (does not contain it): What is the access code shown in the window on my screen? Reply with just the code.
+  [glint out] [glint:ai] screen: display 1 2940x1912, capture 520 ms, vision OCR 2058 ms, 1385 chars
+  [glint out] [glint:ai] ask ask done: model=deepseek-v4-pro 4085 ms, screen=true (1385 chars), transcript=0 chars, thread=2, tokens=1517/3
+(c) result {"model":"deepseek-v4-pro","usedScreenshot":true,"ocrChars":1385,"chunks":3,"stages":["capturing","ocr","thinking","streaming"],"answer":"512-790","shotNoteVisible":true}
+(c) OCR (Vision) of the image the app sent through OCR contains secret: false | tesseract: false
+(c) OCR lines with "access": ["\"T3 Code (Beta)\" wants access","Deployment checklis\taccess to documents and data in","The access code is Cume I 512-790\t白\tPrevious agents"]
+  [glint err] Debugger ending on ws://127.0.0.1:62517/77c5cc34-35fb-4f17-8909-26bd7ae9f727
+  [glint err] For help, see: https://nodejs.org/learn/getting-started/debugging

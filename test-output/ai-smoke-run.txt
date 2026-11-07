@@ -1,0 +1,185 @@
+
+=== (a) typed ask, withScreenshot:false ===
+ask:ask -> {"ok":true,"value":{"requestId":"f255ddd1-de5b-4212-ad9d-82d9a160e114"}}
+answer (1075 ms, 8 chunks): "17 × 23 = 391."
+meta: {"requestId":"f255ddd1-de5b-4212-ad9d-82d9a160e114","kind":"ask","question":"What is 17 times 23? Reply in one short sentence.","usedScreenshot":false,"ocrChars":0,"model":"deepseek-v4-pro","startedAt":1793983054117,"finishedAt":1793983055164,"usage":{"promptTokens":387,"completionTokens":8}}
+stages: thinking > streaming
+PASS  (a) answer streamed in >1 chunk
+PASS  (a) model is deepseek-v4-pro  -- deepseek-v4-pro
+PASS  (a) answer contains 391
+PASS  (a) usedScreenshot false, ocrChars 0
+
+=== (a2) follow-up in the same thread (F05) ===
+follow-up answer: "782"
+PASS  (a2) follow-up uses the thread (782)
+
+=== (a3) cancel and clear ===
+after cancel: {"code":"CANCELLED","message":"Cancelled"}
+PASS  (a3) cancel -> ask:error CANCELLED
+PASS  (a3) ask:clear empties thread and emits ask:cleared  -- thread=0 cleared=1
+
+=== (b) screen question with OCR ===
+direct OCR: screen permission=granted engine=vision 2940x1912 capture=424 ms ocr=1728 ms chars=481
+OCR lines with the markers: ["GLINT-OCR-TEST: The secret pineapple code is 4471","run marker 899095 • invoice ref zq9-Kx • do not share"]
+PASS  (b) OCR text contains 4471
+PASS  (b) OCR text contains this run's marker 899095 (text came from the test window)
+overlay window during capture: {"visible":true,"contentProtection":true,"bounds":{"x":441,"y":38,"width":588,"height":104}}
+answer (2863 ms): "The secret pineapple code is **4471**."
+meta: {"requestId":"a1d356ef-2bf8-464c-8d17-11c1c3bae8ac","kind":"ask","question":"What is the secret code on my screen?","usedScreenshot":true,"ocrChars":484,"model":"deepseek-v4-pro","startedAt":1793983060627,"finishedAt":1793983063311,"usage":{"promptTokens":585,"completionTokens":9}}
+stages: capturing > ocr > thinking > streaming
+PASS  (b) usedScreenshot true and ocrChars > 0  -- ocrChars=484
+PASS  (b) answer contains 4471
+PASS  (b) stages capturing > ocr > thinking > streaming  -- capturing,ocr,thinking,streaming
+overlay strings found in capture: [] (content protection: expect none)
+
+=== (c) synthetic transcript -> live insights -> saved notes ===
+session:insights received in the overlay (3576 ms after last segment), model=deepseek-flash
+summaryMarkdown:
+**Evaluation context**
+- Priya evaluating Glint for a support team of ~40 agents
+- Current stack: Zendesk plus an internal RAG pipeline built on their knowledge base last year
+
+**Security & compliance**
+- Priya's biggest concern is SOC 2 compliance
+- Asked whether call audio is stored in the cloud; answer: no, transcription runs locally with WhisperX, audio never leaves the laptop
+- Marcus from security must be looped in before signing
+
+**Pricing & next steps**
+- Pricing requested for 40 seats on an annual plan
+- Agreed to send a quote by Friday including the annual discount
+- Agreed to set up a 30-minute security review with Marcus next week
+actionItems: [
+ {
+  "id": "ins_b8b87196dd",
+  "kind": "actionItem",
+  "text": "Send 40-seat annual quote by Friday"
+ },
+ {
+  "id": "ins_9fcf351586",
+  "kind": "actionItem",
+  "text": "Schedule 30-min security review with Marcus"
+ },
+ {
+  "id": "ins_42c8dd75c2",
+  "kind": "question",
+  "text": "Does Glint store any call audio in the cloud?"
+ },
+ {
+  "id": "ins_5471d19f6b",
+  "kind": "define",
+  "text": "Define SOC 2"
+ },
+ {
+  "id": "ins_3a517d5b05",
+  "kind": "define",
+  "text": "Define WhisperX"
+ }
+]
+PASS  (c) insights from deepseek-flash  -- deepseek-flash
+PASS  (c) summary has a bold heading and bullets
+PASS  (c) at least one detected question
+insight click "Does Glint store any call audio in the cloud?" -> pill "Does Glint store any call audio in the cloud?": "No, Glint does not store call audio in the cloud. Transcription runs entirely on-device using WhisperX, so raw audio never leaves the laptop.\n\nSupporting points:\n- **On-device processing** — audio is transcribed locally and discarded; only the text transcript is available to you.\n- **No audio retent"
+PASS  (c) insight click answered with the transcript
+quick whatShouldISay: "> Great — I'll send over a few time slots for next week and we'll get Marcus set up.\n\n**Or:**\n\n> Perfect. I'll put something on the calendar for next week and send both of you an invite."
+PASS  (c) quick action answered, pill label
+notes written 3843 ms after session:stopped
+files: notes.md, session.json, transcript.jsonl
+session.json: {
+ "version": 1,
+ "id": "ai-smoke-1793983063503",
+ "title": "Glint Evaluation: SOC 2 and Pricing for Support Team",
+ "status": "saved",
+ "startedAt": 1793982968503,
+ "durationSec": 107,
+ "durationMs": 106593,
+ "source": "file",
+ "transcript": "[9 segments]",
+ "actionItems": [
+  "Send the quote for 40 seats on an annual plan with the annual discount included by Friday (Me)",
+  "Set up a 30-minute security review with Marcus next week (Me)"
+ ],
+ "usage": [
+  "ask: Does Glint store any call audio in the cloud?",
+  "whatShouldISay: What should I say?"
+ ],
+ "runs": [
+  {
+   "startedAt": 1793982968503,
+   "endedAt": 1793983075096
+  }
+ ],
+ "endedAt": 1793983075096,
+ "summaryMarkdown": "Priya and the user discussed evaluating Glint for a 40-agent support team, covering current tools, SOC 2 compliance, and pricing. The user agreed to send a quote by Friday and set up a security review with Marcus.\n\n### Current Tools\n- Support team has about 40 agents.\n- Agents currently use Zendesk.\n- They built an internal RAG pipeline on their knowledge base last year.\n\n### SOC 2 Compliance\n- Priya's biggest worry is SOC 2 compliance.\n- Glint does not store call audio in the cloud.\n- Transcription runs locally with WhisperX, so audio never leaves the laptop.\n\n### Pricing\n- Priya asked about pricing for 40 seats on an annual plan.\n- User will send a quote by Friday with the annual discount included.\n\n### Security Review\n- Priya needs to loop in Marcus from security before signing anything.\n- User will set up a 30-minute security review with Marcus next week.",
+ "summaryModel": "deepseek-v4-pro",
+ "notesPath": "/Users/katana/experiments/cluely-clone/test-output/ai-smoke-data/ai-smoke-1793983063503/notes.md"
+}
+notes.md (first 40 lines):
+# Glint Evaluation: SOC 2 and Pricing for Support Team
+
+Sat, Nov 7, 2026, 3:36 AM · 1:47 · 2 AI uses
+
+## Summary
+
+Priya and the user discussed evaluating Glint for a 40-agent support team, covering current tools, SOC 2 compliance, and pricing. The user agreed to send a quote by Friday and set up a security review with Marcus.
+
+### Current Tools
+- Support team has about 40 agents.
+- Agents currently use Zendesk.
+- They built an internal RAG pipeline on their knowledge base last year.
+
+### SOC 2 Compliance
+- Priya's biggest worry is SOC 2 compliance.
+- Glint does not store call audio in the cloud.
+- Transcription runs locally with WhisperX, so audio never leaves the laptop.
+
+### Pricing
+- Priya asked about pricing for 40 seats on an annual plan.
+- User will send a quote by Friday with the annual discount included.
+
+### Security Review
+- Priya needs to loop in Marcus from security before signing anything.
+- User will set up a 30-minute security review with Marcus next week.
+
+## Action items
+
+- [ ] Send the quote for 40 seats on an annual plan with the annual discount included by Friday (Me)
+- [ ] Set up a 30-minute security review with Marcus next week (Me)
+
+## Transcript
+
+**[0:00] Them:** Thanks for joining. So we are evaluating Glint for our support team of about forty agents.
+
+**[0:09] Me:** Great to meet you, Priya. What tools are the agents using today?
+
+**[0:18] Them:** Mostly Zendesk, and we built an internal RAG pipeline on top of our knowledge base last year.
+
+**[0:27] Them:** Our biggest worry is SOC 2 compliance. Does your product store any call audio in the cloud?
+PASS  (c) session.json has title, summary, action items
+PASS  (c) notes summary is sectioned: >= 2 "### Heading" + bullets, figures kept (40, Friday)  -- 4 sections
+PASS  (c) session.json has transcript[9], durationSec, 2 usage entries
+PASS  (c) notes.md has Summary, Action items, Transcript
+
+=== (d) history ===
+history:list -> {"ok":true,"value":[{"id":"ai-smoke-1793983063503","title":"Glint Evaluation: SOC 2 and Pricing for Support Team","startedAt":1793982968503,"endedAt":1793983075096,"durationMs":106593,"uses":2,"hasSummary":true,"status":"saved","dayKey":"2026-11-07","dayLabel":"Today","timeLabel":"3:36 AM","durationLabel":"1:47"}]}
+PASS  (d) history:list returns the session first
+PASS  (d) history:get returns segments + summary  -- title="Glint Evaluation: SOC 2 and Pricing for Support Team"
+PASS  (d) history:copyTranscript  -- {"ok":true,"value":{"chars":833}}
+PASS  (d) history:get unknown id -> NOT_FOUND
+
+=== main-process log (ai/ocr/sessions) ===
+[glint:ai] registered (key available)
+[glint:sessions] registered (dataDir=/Users/katana/experiments/cluely-clone/test-output/ai-smoke-data)
+[glint:ai] ask ask done: model=deepseek-v4-pro 1047 ms, screen=false (0 chars), transcript=0 chars, thread=1, tokens=387/8
+[glint:ai] ask ask done: model=deepseek-v4-pro 1135 ms, screen=false (0 chars), transcript=0 chars, thread=2, tokens=429/1
+[glint:ai] screen: display 1 2940x1912, capture 327 ms, vision OCR 1345 ms, 484 chars
+[glint:ai] ask ask done: model=deepseek-v4-pro 2684 ms, screen=true (484 chars), transcript=0 chars, thread=1, tokens=585/9
+[glint:sessions] started ai-smoke-1793983063503 -> /Users/katana/experiments/cluely-clone/test-output/ai-smoke-data/ai-smoke-1793983063503
+[glint:ai] insights #1 for ai-smoke-1793983063503: 9 segments, 5 actions, 1840 ms, model=deepseek-flash
+[glint:ai] ask ask done: model=deepseek-v4-pro 2552 ms, screen=false (0 chars), transcript=833 chars, thread=1, tokens=652/98
+[glint:ai] ask whatShouldISay done: model=deepseek-v4-pro 1893 ms, screen=false (0 chars), transcript=833 chars, thread=2, tokens=1131/46
+[glint:sessions] [ai-smoke-1793983063503] notes attempt 1: 4 sections, valid
+[glint:sessions] summary for ai-smoke-1793983063503: model=deepseek-v4-pro 3839 ms, 1 attempt(s), 4 sections, title="Glint Evaluation: SOC 2 and Pricing for Support Team", 2 action items, tokens=1103/378
+PASS  key leak scan (3 files, 28 log lines)  -- 0 hits
+
+26/26 checks passed
+capture kept at /Users/katana/experiments/cluely-clone/test-output/ai-smoke-screen.png

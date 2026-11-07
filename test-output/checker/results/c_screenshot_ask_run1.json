@@ -1,0 +1,30 @@
+{
+  "id": "c_screenshot_ask",
+  "at": "2026-11-06T07:21:20.472Z",
+  "status": "FAIL",
+  "threshold": "real window shows a random per-run code; OCR text contains it; answer contains it; usedScreenshot true",
+  "measured": {
+    "secret": "COMET 572-790",
+    "question": "What is the access code shown in the window on my screen? Reply with just the code.",
+    "answer": "512-790",
+    "model": "deepseek-v4-pro",
+    "usedScreenshot": true,
+    "ocrChars": 1385,
+    "stages": [
+      "capturing",
+      "ocr",
+      "thinking",
+      "streaming"
+    ],
+    "ocrContainsSecret": false,
+    "tesseractContainsSecret": false,
+    "answerContainsSecret": false,
+    "shotNoteVisible": true,
+    "status": "FAIL"
+  },
+  "evidence": [
+    "test-output/checker/bc_ask.log",
+    "test-output/checker/c_app_screenshot_kept.png",
+    "test-output/checker/c_screenshot_ask_overlay.png"
+  ]
+}

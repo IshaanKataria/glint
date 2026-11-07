@@ -1,0 +1,47 @@
+
+===== run 1/1 =====
+  3718 ms calling session.start()
+  6750 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261107-022656-s0bj","startedAt":1793978816483,"source":"mic+system","message":"Loading transcription model..."}}
+  6752 ms recording live for 10 s...
+ 49466 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261107-022656-s0bj","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=mic "Loading transcription model..."
+  1861 status   starting source=mic+system
+  2993 status   recording source=mic+system "Loading transcription model..."
+ 13019 status   stopping source=mic+system "Finishing transcript..."
+ 37287 segment  them [2-5.61s] id=mw54o1yb-them-0001 "Oh no."
+ 45683 segment  them [7.33-7.47s] id=mw54o1yb-them-0002 "th th"
+ 45685 status   idle "Stopped"
+ 45687 status   summarizing source=mic+system "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":0,"pid":69228,"loadMs":32228}
+sources: [{"kind":"mic","speaker":"me","bytes":280960,"running":false},{"kind":"system","speaker":"them","bytes":179210,"running":false}]  systemAudio: on
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk me t=2.89s dur=4.14s SKIPPED (silence)
+chunk them t=1.88s dur=4.14s worker=4923ms latency=26747ms chars=6
+chunk me t=7.03s dur=4.14s SKIPPED (silence)
+chunk me t=11.17s dur=0.5s SKIPPED (silence)
+chunk them t=6.02s dur=1.46s worker=8430ms latency=32587ms chars=5
+
+transcript: Oh no. th th
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=0, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=69228 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] mic source spawned pid=69229: ffmpeg -hide_banner -loglevel error -nostdin -f avfoundation -i :default -ac 1 -ar 16000 -f s16le -
+[glint:audio] system source spawned pid=69230: glint-system-tap-32da87325a
+[glint:audio] system tap: {"outputDevice":"CC-22-FE-30-54-D2:output","inputSampleRate":48000,"inputChannels":2,"event":"started"}
+[glint:audio] system audio capture running (speaker them)
+[glint:audio] session 20261107-022656-s0bj recording (source mic+system, timeOffset 0s)
+[glint:audio] system tap: {"seconds":5.6003125000000002,"nonZeroSamples":59810,"event":"stopped","reason":"signal"}
+[glint:audio] system source exited code=0 signal=null bytes=179210
+[glint:audio] mic source exited code=255 signal=null bytes=280960
+[glint:whisper] [whisper_worker] model small/int8 loaded in 32228 ms
+[glint:whisper] worker ready: model=small loadMs=32228
+[glint:audio] segment them [2-5.61s] worker=4923ms latency=26747ms: Oh no.
+[glint:audio] segment them [7.33-7.47s] worker=8430ms latency=32587ms: th th
+[glint:audio] session 20261107-022656-s0bj stopped: 2 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

@@ -1,0 +1,116 @@
+wrote /Users/katana/experiments/cluely-clone/test-output/audio-smoke/clip.wav (10.601375s, 16 kHz mono s16, voice=Samantha)
+clip: /Users/katana/experiments/cluely-clone/test-output/audio-smoke/clip.wav
+spoken: Thanks for joining the call. We reviewed the proposal and the team likes the integration plan. What would the pricing be for two hundred seats, and can you deliver the first version by the end of March?
+
+===== run 1/2 =====
+   403 ms calling session.start()
+   437 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261106-180138-h2ig","startedAt":1793948498129,"source":"file","message":"Loading transcription model..."}}
+  8011 ms --kill-worker: sent SIGKILL to WhisperX worker pid 88343
+ 15345 ms audio:fileDone received
+ 15346 ms status while open after file end: {"state":"recording","sessionId":"20261106-180138-h2ig","startedAt":1793948498129,"source":"file","message":"Audio file finished; session stays open until you stop it"}
+ 15348 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261106-180138-h2ig","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=file "Loading transcription model..."
+    27 status   recording source=file "Loading transcription model..."
+  5416 status   recording source=file
+  7364 segment  them [0.03-5.14s] id=mw4mm85t-them-0001 "Thanks for joining the call. We reviewed the proposal and the team likes the integration plan."
+ 14827 segment  them [5.17-10.6s] id=mw4mm85t-them-0002 "What would the pricing be for 200 seats? And can you deliver the first version by the end of March?"
+ 14828 fileDone {"sessionId":"20261106-180138-h2ig","audioSec":10.6,"segments":2,"autoStop":false}
+ 14829 status   recording source=file "Audio file finished; session stays open until you stop it"
+ 14941 status   stopping source=file "Finishing transcript..."
+ 14942 status   idle "Stopped"
+ 14942 status   summarizing source=file "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":1,"pid":88470,"loadMs":4529}
+sources: [{"kind":"file","speaker":"them","bytes":339244,"running":false}]  systemAudio: -
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk them t=0s dur=5.14s worker=1945ms latency=7331ms chars=94
+chunk them t=5.14s dur=5.46s worker=2137ms latency=14795ms chars=99
+
+transcript: Thanks for joining the call. We reviewed the proposal and the team likes the integration plan. What would the pricing be for 200 seats? And can you deliver the first version by the end of March?
+normalised spoken:     thanks for joining the call we reviewed the proposal and the team likes the integration plan what would the pricing be for two hundred seats and can you deliver the first version by the end of march
+normalised transcript: thanks for joining the call we reviewed the proposal and the team likes the integration plan what would the pricing be for two hundred seats and can you deliver the first version by the end of march
+WER: 0.0% (pass if <= 15%)
+on disk: /Users/katana/experiments/cluely-clone/test-output/audio-smoke/data/20261106-180138-h2ig/session.json has 2 segment(s); files: session.json, transcript.jsonl
+
+--- checks (run 1) ---
+PASS  session started
+PASS  segments received
+PASS  speaker is them (file default)
+PASS  segments belong to session
+PASS  times increase
+PASS  transcript matches spoken text
+PASS  ends idle after stop
+PASS  sessions store saved the segments
+PASS  worker restarted after SIGKILL
+
+===== run 2/2 =====
+ 17855 ms calling session.start()
+ 17907 ms session.start -> {"ok":true,"value":{"state":"recording","sessionId":"20261106-180155-6jd8","startedAt":1793948515580,"source":"file"}}
+ 21953 ms audio:fileDone received
+ 21953 ms status while open after file end: {"state":"recording","sessionId":"20261106-180155-6jd8","startedAt":1793948515580,"source":"file","message":"Audio file finished; session stays open until you stop it"}
+ 21958 ms session.stop -> {"ok":true,"value":{"state":"idle","sessionId":"20261106-180155-6jd8","message":"Stopped"}}
+
+--- events (ms after start() call) ---
+     0 status   starting source=file "Connecting audio..."
+    50 status   recording source=file
+   766 status   saved source=file "Saved "Integration Plan Pricing and Delivery Timeline""
+  1963 segment  them [0.03-5.14s] id=mw4mmlmk-them-0001 "Thanks for joining the call. We reviewed the proposal and the team likes the integration plan."
+  4022 segment  them [5.17-10.6s] id=mw4mmlmk-them-0002 "What would the pricing be for 200 seats? And can you deliver the first version by the end of March?"
+  4022 fileDone {"sessionId":"20261106-180155-6jd8","audioSec":10.6,"segments":2,"autoStop":false}
+  4023 status   recording source=file "Audio file finished; session stays open until you stop it"
+  4098 status   stopping source=file "Finishing transcript..."
+  4098 status   idle "Stopped"
+  4100 status   summarizing source=file "Writing notes..."
+
+--- audio:getStats ---
+worker: {"state":"ready","model":"small","restarts":1,"pid":88470,"loadMs":4529}
+sources: [{"kind":"file","speaker":"them","bytes":339244,"running":false}]  systemAudio: -
+config: {"minChunkSec":4,"maxChunkSec":8,"fileSpeaker":"them","filePace":"fast","fileAutoStop":false}
+chunk them t=0s dur=5.14s worker=1912ms latency=1912ms chars=94
+chunk them t=5.14s dur=5.46s worker=2058ms latency=3970ms chars=99
+
+transcript: Thanks for joining the call. We reviewed the proposal and the team likes the integration plan. What would the pricing be for 200 seats? And can you deliver the first version by the end of March?
+normalised spoken:     thanks for joining the call we reviewed the proposal and the team likes the integration plan what would the pricing be for two hundred seats and can you deliver the first version by the end of march
+normalised transcript: thanks for joining the call we reviewed the proposal and the team likes the integration plan what would the pricing be for two hundred seats and can you deliver the first version by the end of march
+WER: 0.0% (pass if <= 15%)
+on disk: /Users/katana/experiments/cluely-clone/test-output/audio-smoke/data/20261106-180155-6jd8/session.json has 2 segment(s); files: session.json, transcript.jsonl
+
+--- checks (run 2) ---
+PASS  session started
+PASS  segments received
+PASS  speaker is them (file default)
+PASS  segments belong to session
+PASS  times increase
+PASS  transcript matches spoken text
+PASS  ends idle after stop
+PASS  sessions store saved the segments
+
+--- main-process audio log ---
+[glint:audio] registered (prewarm=1, fileSpeaker=them, filePace=fast, fileAutoStop=false, systemAudio=true)
+[glint:whisper] worker spawned pid=88343 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:audio] file source spawned pid=88344: ffmpeg -hide_banner -loglevel error -nostdin -i /Users/katana/experiments/cluely-clone/test-output/audio-smoke/clip.wav -vn -ac 1 -ar 16000 -f s16le -
+[glint:audio] session 20261106-180138-h2ig recording (source file, timeOffset 0s)
+[glint:audio] file source exited code=0 signal=null bytes=339244
+[glint:whisper] [whisper_worker] model small/int8 loaded in 5393 ms
+[glint:whisper] worker ready: model=small loadMs=5393
+[glint:audio] segment them [0.03-5.14s] worker=1945ms latency=7331ms: Thanks for joining the call. We reviewed the proposal and the team likes the int
+[glint:whisper] worker exited code=null signal=SIGKILL after 7642 ms; stderr tail: 2026-11-06 18:01:43 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote... | Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint ../../.cache/watch/whisperx-venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin` | [whisper_worker] model small/int8 loaded in 5393 ms |
+[glint:whisper] restarting worker (restart #1)
+[glint:whisper] worker spawned pid=88470 (/Users/katana/.cache/watch/whisperx-venv/bin/python --model small --compute-type int8 --language en)
+[glint:whisper] [whisper_worker] model small/int8 loaded in 4529 ms
+[glint:whisper] worker ready: model=small loadMs=4529
+[glint:audio] segment them [5.17-10.6s] worker=2137ms latency=14795ms: What would the pricing be for 200 seats? And can you deliver the first version b
+[glint:audio] file source finished: 10.6s of audio, 2 segment(s); autoStop=false
+[glint:audio] session 20261106-180138-h2ig stopped: 2 segment(s)
+[glint:audio] file source spawned pid=88586: ffmpeg -hide_banner -loglevel error -nostdin -i /Users/katana/experiments/cluely-clone/test-output/audio-smoke/clip.wav -vn -ac 1 -ar 16000 -f s16le -
+[glint:audio] session 20261106-180155-6jd8 recording (source file, timeOffset 0s)
+[glint:audio] file source exited code=0 signal=null bytes=339244
+[glint:audio] segment them [0.03-5.14s] worker=1912ms latency=1912ms: Thanks for joining the call. We reviewed the proposal and the team likes the int
+[glint:audio] segment them [5.17-10.6s] worker=2058ms latency=3970ms: What would the pricing be for 200 seats? And can you deliver the first version b
+[glint:audio] file source finished: 10.6s of audio, 2 segment(s); autoStop=false
+[glint:audio] session 20261106-180155-6jd8 stopped: 2 segment(s)
+[glint:audio] quit: stopping capture and the WhisperX worker
+[glint:whisper] [whisper_worker] stdin closed or shutdown; exiting

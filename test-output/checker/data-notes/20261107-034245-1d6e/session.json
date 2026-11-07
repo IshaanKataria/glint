@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "id": "20261107-034245-1d6e",
+  "title": "Onboarding Design Review: Setup Steps Cut",
+  "status": "saved",
+  "startedAt": 1793983365498,
+  "durationSec": 10,
+  "durationMs": 10089,
+  "source": "file",
+  "transcript": [
+    {
+      "sessionId": "20261107-034245-1d6e",
+      "id": "mw57djzu-them-0001",
+      "speaker": "them",
+      "text": "design review for the onboarding screens. We agreed to cut the setup steps from 5 to 3.",
+      "tStart": 0.03,
+      "tEnd": 5.32
+    },
+    {
+      "sessionId": "20261107-034245-1d6e",
+      "id": "mw57djzu-them-0002",
+      "speaker": "them",
+      "text": "Priya will update the mock-ups by Thursday.",
+      "tStart": 5.35,
+      "tEnd": 8.02
+    }
+  ],
+  "actionItems": [
+    "Update the mock-ups by Thursday (Priya)"
+  ],
+  "usage": [],
+  "runs": [
+    {
+      "startedAt": 1793983365498,
+      "endedAt": 1793983375587
+    }
+  ],
+  "endedAt": 1793983375587,
+  "summaryMarkdown": "The team reviewed onboarding screen designs and agreed to reduce setup steps from 5 to 3. Priya will update the mock-ups by Thursday.\n\n### Onboarding Setup Steps\n- Agreed to cut setup steps from 5 to 3",
+  "summaryModel": "deepseek-v4-pro",
+  "notesPath": "/Users/katana/experiments/cluely-clone/test-output/checker/data-notes/20261107-034245-1d6e/notes.md"
+}
